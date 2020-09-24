@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g id="Group_562" data-name="Group 562" transform="translate(-939 -4246.483)">
+    <rect id="Rectangle_119" data-name="Rectangle 119" width="55" height="55" rx="8" transform="translate(939 4246.483)" fill="#fff"/>
+    <g id="Group_251" data-name="Group 251" transform="translate(879.574 1452.346)">
+      <text id="N" transform="translate(72.425 2836.138)" fill="#fcb320" font-size="43" font-family="Rubik-Medium, Rubik" font-weight="500"><tspan x="0" y="0">N</tspan></text>
+      <line id="Line_1" data-name="Line 1" y1="0.241" x2="29.091" transform="translate(72.866 2816.794)" fill="none" stroke="#fcb320" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_2" data-name="Line 2" y1="0.241" x2="29.091" transform="translate(72.866 2825.083)" fill="none" stroke="#fcb320" stroke-linecap="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

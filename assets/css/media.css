@@ -1,0 +1,342 @@
+@media (max-width: 1440px) {
+  .slide-content {
+    left: 10% !important;
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .slide-content {
+    width: 70%;
+  }
+
+  .ms-partner--type {
+    min-height: 210px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide-content {
+    width: 70%;
+  }
+
+  .ms-header--mobile__cta p:only-child {
+    margin-bottom: 25px;
+  }
+
+  .ms-header--ctas .row {
+    flex-direction: column;
+  }
+
+  .ms-header--ctas .row > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ms-header--cta {
+    width: 33.33% !important
+  }
+
+  .ms-header--ctas p:only-child {
+    margin: 30px 0;
+    font-size: 1.2rem;
+  }
+
+  .about-us .row:last-child {
+    flex-direction: column-reverse;
+  }
+
+  .about-us .row:last-child .col-lg-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .map-image {
+    margin-bottom: 30px;
+  }
+
+  .the-offer img {
+    width: 400px;
+  }
+
+  .our-partners img {
+    height: 110px;
+  }
+
+  .our-partners img.small {
+    height: 80px;
+  }
+
+  .partner-group img {
+    height: 40px;
+  }
+
+  .ms-contact--methods {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ms-header.ms-header--other p {
+    width: 65%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .slide .slide-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .ms-mobile--menu__toggler {
+    display: block;
+  }
+
+  .ms-nav-links {
+    display: none !important;
+  }
+
+  .how-it-works .step-title {
+    justify-content: center;
+  }
+
+  .how-it-works .step-image {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .how-it-works .step-image img {
+    height: 220px;
+    width: auto;
+  }
+
+  .ms-section--heading p {
+    width: 80%;
+  }
+
+  .ms-footer .row:first-child > div:last-child {
+    margin-top: 60px;
+  }
+
+  .ms-partner--type {
+    margin-bottom: 30px;
+  }
+
+  .ms-partner .ms-partner--image {
+    background-position: top;
+    height: 400px;
+  }
+
+  .ms-contractors .ms-partner--image,
+  .ms-suppliers .ms-partner--image {
+    background-position: center;
+  }
+
+  .ms-contact--methods {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ms-submit--button {
+    justify-content: center;
+  }
+
+  .ms-header--ctas p:only-child {
+    margin-bottom: 20px;
+  }
+
+  .ms-header--cta {
+    width: 80% !important;
+    margin: auto auto 10px;
+  }
+
+  .contact-via {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 16px;
+  }
+
+  .slide-content > div {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.1rem !important;
+  }
+
+  .ms-section {
+    padding: 40px 0;
+  }
+
+  .ms-navbar {
+    height: 80px;
+    padding: 15px 0;
+  }
+
+  .ms-logo img {
+    height: 50px;
+  }
+
+  .ms-header {
+    padding-top: 80px;
+    min-height: calc(70vh - 80px);
+  }
+
+  .ms-header.ms-header--other p {
+    width: 85%;
+  }
+
+  .slide {
+    height: 70vh;
+  }
+
+  .slide-content {
+    width: 80%;
+  }
+
+  .slide .slide-content p {
+    font-size: 1.1rem;
+  }
+
+  .slide-image .mobile {
+    display: block;
+  }
+
+  .slide-image .web {
+    display: none !important;
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    display: flex;
+  }
+
+  .ms-header--mobile__cta {
+    display: block !important;
+  }
+
+  .about-content .btn {
+    width: 100%;
+    padding: 0.8rem !important;
+  }
+
+  .map-image img {
+    height: 200px;
+  }
+
+  .the-offer--list li p {
+    text-align: center;
+  }
+
+  .how-it-works .step-title span {
+    height: 36px;
+    width: 36px;
+  }
+
+  .how-it-works .step-image img {
+    height: 150px;
+  }
+
+  .contact-via {
+    margin-bottom: 40px;
+  }
+
+  .partners-logos {
+    display: none;
+  }
+
+  .ms-footer .row:first-child > div:nth-child(2),
+  .ms-footer .row:first-child > div:last-child {
+    margin-top: 20px;
+  }
+
+  .ms-partner .ms-partner--image {
+    height: 250px;
+  }
+
+  .ms-otherpage--illustration img {
+    height: 150px !important;
+  }
+
+  .ms-otherpage--illustration.about img {
+    height: 180px !important;
+  }
+  .ms-otherpage--illustration + p {
+    width: 100% !important;
+  }
+
+  .project-carousel .owl-nav {
+    top: unset;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+  }
+
+  .ms-footer .footer-logo + p {
+    width: 100%;
+  }
+
+  .ms-about--desc {
+    width: 90%;
+  }
+  
+  .ms-projects--illustration img {
+    height: 150px;
+  }
+  
+  .ms-form--card {
+    padding: 10px;
+  }
+
+  .ms-header.ms-header--other {
+    min-height: calc(65vh - 80px);
+  }
+
+  .ms-header.ms-header--other p {
+    font-size: 1rem;
+  }
+
+  .the-offer img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .ms-search ~ div {
+    justify-content: center;
+  }
+
+  .header-carousel .owl-dots {
+    left: 50%;
+    top: 85%;
+    right: unset;
+  }
+
+  .ms-header--cta {
+    width: 100% !important;
+  }
+
+  .ms-header--cta p {
+    font-size: 1rem;
+  }
+
+  .accordion .card-body {
+    padding: 1.5rem;
+  }
+
+  .accordion .card-header button span {
+    width: 90%;
+    display: block;
+  }
+
+  .overlay.header-gradient {
+    background: rgba(0, 0, 0, 0.35) !important;
+  }
+}
