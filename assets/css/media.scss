@@ -1,4 +1,8 @@
 @media (max-width: 1440px) {
+  .el-container {
+    max-width: 1200px;
+  }
+
   .slide-content {
     left: 10% !important;
     width: 70% !important;
@@ -86,14 +90,6 @@
 @media (max-width: 992px) {
   .slide .slide-content h1 {
     font-size: 2.5rem;
-  }
-
-  .ms-mobile--menu__toggler {
-    display: block;
-  }
-
-  .ms-nav-links {
-    display: none !important;
   }
 
   .how-it-works .step-title {
@@ -287,11 +283,11 @@
   .ms-about--desc {
     width: 90%;
   }
-  
+
   .ms-projects--illustration img {
     height: 150px;
   }
-  
+
   .ms-form--card {
     padding: 10px;
   }
