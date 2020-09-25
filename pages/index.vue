@@ -379,7 +379,7 @@ export default {
       slides: [
         {
           text: 'Homes by Nigerians<br> for Nigerians',
-          slide: '1-1',
+          slide: '1',
         },
         {
           text: 'Own a home for<br> as low as ₦2million',
