@@ -89,10 +89,25 @@ p>a:hover {
 
 .el-container {
   margin: auto;
+  justify-content: center;
 }
 
-.el-row {
+.el-form {
   width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.el-input__inner {
+  font-size: 1rem;
+  font-weight: 600;
+
+  &::placeholder {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
 }
 
 .ms-font-light {
@@ -152,6 +167,7 @@ a:hover {
   /* =================== Accordion ========================= */
 .el-collapse-item {
   .el-collapse-item__header {
+    line-height: 1.4;
     border-left: 5px solid #58bb8c;
     padding-left: 15px;
     font-size: 0.875rem;
@@ -402,130 +418,7 @@ a:hover {
     letter-spacing: 1px;
   }
 
-  /* =================== Homepage - Our Partners ========================= */
-  .our-partners img {
-    margin-bottom: 50px;
-    height: 120px;
-    width: auto !important;
-  }
-
-  .our-partners img.small {
-    height: 100px;
-  }
-
-  .partner-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .partner-group {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .partner-group img {
-    height: 40px;
-  }
   /* =================== Footer ========================= */
-
-  .ms-footer {
-    padding: 80px 0 40px;
-    background: #0B1207;
-  }
-
-  .ms-footer .footer-logo {
-    margin-bottom: 15px;
-    opacity: 0.74;
-  }
-
-  .ms-footer .footer-logo img {
-    height: 70px;
-  }
-
-  .ms-footer .footer-logo+p {
-    width: 80%;
-  }
-
-  .ms-footer p {
-    font-size: 0.75rem;
-    color: #fff;
-  }
-
-  .ms-footer h5 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin-bottom: 15px;
-  }
-
-  .ms-footer-links a {
-    color: #fff;
-    font-size: 0.8rem;
-    margin: 10px 0;
-    opacity: 0.8;
-  }
-
-  .ms-footer-links a:hover {
-    opacity: 1;
-    color: #FCB320;
-    transition: all 0.3s ease-out;
-  }
-
-  .ms-footer-social {
-    margin-right: 15px;
-  }
-
-  .ms-footer-social svg {
-    height: 42px;
-    width: 42px;
-  }
-
-  .ms-footer-social svg:hover circle {
-    opacity: 1;
-    transition: all 0.25s ease-out;
-  }
-
-  .ms-footer-social.facebook svg:hover circle {
-    fill: #3D5A99;
-  }
-
-  .ms-footer-social.twitter svg:hover circle {
-    fill: #2EAAE1;
-  }
-
-  .ms-footer-social.youtube svg:hover circle {
-    fill: #CD211F;
-  }
-
-  .ms-footer-social.instagram svg:hover circle {
-    fill: #B4408D;
-  }
-
-  .ms-search {
-    display: flex;
-  }
-
-  .ms-footer-input {
-    background: #FFFFFF;
-    box-shadow: 0px 2px 52px rgba(0, 0, 0, 0.0783435);
-    border-radius: 5px;
-    border: none;
-    height: 50px;
-    padding-right: 60px;
-    margin-right: 5px;
-  }
-
-  .copyright hr {
-    border-color: #fff;
-    opacity: 0.1;
-    margin-top: 70px;
-  }
-
-  .copyright p {
-    text-align: center;
-    opacity: 0.6;
-  }
 
 
   /* =================== Header For Other Pages ========================= */
@@ -617,67 +510,6 @@ a:hover {
 
   .ms-partner .overlay {
     background: rgba(0, 0, 0, 0.2)
-  }
-
-  .ms-partner--type {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 15px;
-    min-height: 180px;
-    background: #001A0B10;
-    border-radius: 5px;
-    position: relative;
-    text-align: center;
-    transition: background 0.25s ease-in;
-  }
-
-  .ms-partner--type:hover {
-    background: #FCB320;
-    transition: background 0.25s ease-out;
-  }
-
-  .ms-partner--type.inverse:hover {
-    background: #00923F;
-    transition: background 0.25s ease-out;
-  }
-
-  .ms-partner--type img {
-    margin-bottom: 10px;
-    height: 42px;
-  }
-
-  .ms-partner--type img.hover {
-    display: none;
-  }
-
-  .ms-partner--type:hover img.hover {
-    display: block !important;
-  }
-
-  .ms-partner--type:hover img.default {
-    display: none !important;
-  }
-
-  .ms-partner--type:hover p {
-    opacity: 1;
-    font-weight: 500;
-
-  }
-
-  .ms-partner--type:hover p {
-    color: #fff;
-    transition: color 0.25s ease-out;
-  }
-
-  .ms-partner--type a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
   }
 
   .ms-partner p {

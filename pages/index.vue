@@ -39,9 +39,9 @@
     </header>
     <div class="ms-header--ctas ms-section">
       <el-container>
-        <el-row type="flex" :gutter="40">
-          <el-col :lg="8">
-            <div class="ms-header--cta">
+        <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
+          <el-col :sm="24" :md="8" :lg="8">
+            <div class="ms-header--cta individual">
               <router-link to="/"></router-link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
-          <el-col :lg="8">
+          <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
               <router-link to="/"></router-link>
               <svg
@@ -88,7 +88,7 @@
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
-          <el-col :lg="8">
+          <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
               <router-link to="/"></router-link>
               <svg
@@ -121,8 +121,8 @@
         <h3>The NSHP</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="80" align="middle">
-          <el-col :lg="12">
+        <el-row type="flex" :gutter="80" align="middle" class="flex-wrap">
+          <el-col :sm="24" :md="14" :lg="12">
             <div class="ms-about--content">
               <p>
                 Becoming a homeowner in any part of Nigeria just became easier!
@@ -134,7 +134,7 @@
               <el-button type="primary">Learn More</el-button>
             </div>
           </el-col>
-          <el-col :lg="12">
+          <el-col :sm="24" :md="10" :lg="12">
             <div class="ms-about--image">
               <img :src="getImage('map.svg')" alt="Map" />
             </div>
@@ -147,8 +147,8 @@
         <h3>Home options you can buy</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="80" align="middle">
-          <el-col :lg="12">
+        <el-row type="flex" :gutter="80" align="middle" class="flex-wrap">
+          <el-col :md="24" :lg="12">
             <div class="ms-home--options__content">
               <p>
                 Here are some of the offers we would be making available for
@@ -163,13 +163,13 @@
                 >
               </el-timeline>
               <p>
-                Flexible Mortgage Repayment with the<br />
+                Flexible Mortgage Repayment with the
                 <span class="text-primary strong">LOWEST INTEREST</span> rates
                 nationwide.
               </p>
             </div>
           </el-col>
-          <el-col :lg="12">
+          <el-col :md="24" :lg="12">
             <div class="ms-home--options__image">
               <img
                 :src="getImage(`home/${homeOption}-bedroom.jpg`)"
@@ -189,8 +189,8 @@
         <h3>3 simple steps to owning your home</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="80" align="middle" class="mt-4">
-          <el-col :lg="8">
+        <el-row type="flex" :gutter="60" align="middle" class="flex-wrap mt-4">
+          <el-col :sm="24" :md="24" :lg="8">
             <div class="ms-steps--step">
               <span>1</span>
               <h6 class="step-title">Register</h6>
@@ -205,13 +205,11 @@
                   Complete your profile by submitting your personal details and
                   required documents.
                 </p>
-                <el-button type="primary" size="medium"
-                  >I'm interested</el-button
-                >
+                <el-button type="primary">I'm interested</el-button>
               </div>
             </div>
           </el-col>
-          <el-col :lg="8">
+          <el-col :sm="24" :md="24" :lg="8">
             <div class="ms-steps--step inverse">
               <span>2</span>
               <h6 class="step-title">Selection</h6>
@@ -226,13 +224,11 @@
                   A unique identification number will be assigned to you for the
                   house allocation.
                 </p>
-                <el-button size="medium" class="el-button--secondary"
-                  >Read more</el-button
-                >
+                <el-button class="el-button--secondary">Read more</el-button>
               </div>
             </div>
           </el-col>
-          <el-col :lg="8">
+          <el-col :sm="24" :md="24" :lg="8">
             <div class="ms-steps--step">
               <span>3</span>
               <h6 class="step-title">Own</h6>
@@ -247,7 +243,7 @@
                   Houses will be distributed to applicants as soon as
                   construction begins
                 </p>
-                <el-button type="primary" size="medium">Start here</el-button>
+                <el-button type="primary">Start here</el-button>
               </div>
             </div>
           </el-col>
@@ -259,13 +255,13 @@
         <h3>Find out more</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="80" align="top" class="mt-4">
-          <el-col :lg="10">
+        <el-row type="flex" :gutter="60" align="middle" class="flex-wrap mt-4">
+          <el-col :sm="24" :md="8" :lg="10">
             <div class="faq">
               <img :src="getImage('home/faqs.svg')" alt="FAQ" />
             </div>
           </el-col>
-          <el-col :lg="14">
+          <el-col :sm="24" :md="16" :lg="14">
             <el-collapse v-model="activeName" accordion>
               <el-collapse-item title="How does it work?" name="1">
                 <div>
@@ -336,25 +332,22 @@
         <h3>Contact us</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="50">
-          <el-col :lg="12">
+        <el-row type="flex" :gutter="20" align="middle" class="flex-wrap">
+          <el-col :sm="12" :lg="12">
             <div class="contact-via">
               <img :src="getImage('home/whatsapp.svg')" alt="Home" />
               <div>
-                <p>Reach out to us on WhatsApp</p>
-                <el-button type="primary" size="medium">Message</el-button>
+                <p>Message via WhatsApp</p>
+                <el-button type="primary">Message</el-button>
               </div>
             </div>
           </el-col>
-          <el-col :lg="12">
+          <el-col :sm="12" :lg="12">
             <div class="contact-via">
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>
-                <p>Send us an email today!</p>
-                <el-button
-                  type="primary"
-                  size="medium"
-                  class="el-button--secondary"
+                <p>Send us an email today</p>
+                <el-button type="primary" class="el-button--secondary"
                   >Send</el-button
                 >
               </div>
@@ -363,22 +356,14 @@
         </el-row>
       </el-container>
     </div>
-    <div class="ms-our--partner ms-section">
-      <div class="ms-section--heading">
-        <h3>Our Partner</h3>
-      </div>
-      <el-container>
-        <el-row type="flex" :gutter="50">
-          <el-col :lg="8"></el-col>
-          <el-col :lg="16"> </el-col>
-        </el-row>
-      </el-container>
-    </div>
+    <ms-partners />
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
+import MsPartners from '../components/MsPartners'
+
 import image from '../mixin/image'
 
 export default {
@@ -386,6 +371,7 @@ export default {
   components: {
     Carousel,
     Slide,
+    MsPartners,
   },
   mixins: [image],
   data() {
@@ -422,6 +408,14 @@ export default {
       ],
       homeOption: 'one',
       activeName: '',
+      financial_partners: ['partners/finance.png', 'partners/central_bank.png'],
+      strategic_partners: [
+        'partners/federal-mortage.png',
+        'partners/federal-housing.png',
+        'partners/works-and-housing.png',
+        'partners/state_government.png',
+        'partners/family-home-funds.png',
+      ],
     }
   },
   mounted() {
@@ -792,6 +786,10 @@ export default {
 }
 
 .ms-contact--via {
+  .el-row {
+    width: 100%;
+  }
+
   .contact-via {
     display: flex;
     align-items: center;
@@ -823,7 +821,144 @@ export default {
   }
 }
 
-.ms-our--partner {
-  background: #ededed;
+@media (max-width: 992px) {
+  .ms-header {
+    height: 70vh !important;
+
+    h1 {
+      font-size: 2.5rem !important;
+    }
+
+    .slide-image img {
+      height: 70vh !important;
+    }
+  }
+  .ms-header--cta {
+    flex-direction: row !important;
+    justify-content: flex-start;
+
+    svg {
+      height: 42px !important;
+      margin-right: 30px !important;
+      margin-bottom: 0 !important;
+    }
+
+    &.individual svg {
+      margin-right: 50px !important;
+    }
+
+    div {
+      text-align: left !important;
+    }
+  }
+
+  .ms-about .ms-about--image img {
+    height: 220px !important;
+    margin-top: 70px;
+  }
+
+  .contact-via {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    > div {
+      margin: 0;
+      text-align: center !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-header--ctas {
+    .el-row {
+      width: 100%;
+    }
+
+    .ms-header--cta {
+      padding: 30px !important;
+
+      &.individual svg {
+        margin-right: 30px !important;
+      }
+
+      svg {
+        height: 28px !important;
+        margin-right: 20px !important;
+      }
+    }
+  }
+
+  .ms-home--options__image img {
+    width: 300px !important;
+  }
+
+  .el-radio-button__inner {
+    font-size: 13px !important;
+  }
+
+  .ms-steps {
+    .ms-steps--step {
+      text-align: center;
+      flex-direction: column !important;
+
+      span {
+        border: 5px solid #fff;
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: -21px !important;
+      }
+
+      .step-title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #58bb8c;
+        font-weight: 600;
+      }
+
+      .step-image {
+        height: 120px;
+        margin: 0;
+        position: relative !important;
+
+        img {
+          height: 90px;
+          position: relative !important;
+        }
+      }
+
+      .step-content {
+        text-align: center;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      &.inverse {
+        span {
+          background: #fcb320;
+        }
+
+        .step-title {
+          color: #fcb320;
+        }
+      }
+      &:hover {
+        border-color: #fcb320;
+        transition: border 0.2s ease-out;
+
+        .step-image img {
+          animation: wobble 0.3s ease-in-out forwards;
+        }
+      }
+    }
+  }
+
+  .contact-via {
+    margin-bottom: 50px;
+  }
 }
 </style>

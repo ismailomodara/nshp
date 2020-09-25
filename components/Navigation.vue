@@ -9,7 +9,7 @@
               alt="Federal Government of Nigeria, NSHP"
           /></nuxt-link>
         </div>
-        <div id="toggle" class="ms-mobile--menu__toggler">
+        <div id="toggle" class="ms-mobile--menu__toggler" @click="toggleMenu">
           <span class="top"></span>
           <span class="middle"></span>
           <span class="bottom"></span>
@@ -30,7 +30,7 @@
     </div>
     <div id="ms-mobile--menu" class="ms-mobile--menu">
       <div class="ms-mobile--menu__content">
-        <div class="ms-mobile--menu__toggler">
+        <div class="ms-mobile--menu__toggler" @click="toggleMenu">
           <span class="top"></span>
           <span class="middle"></span>
           <span class="bottom"></span>
@@ -92,6 +92,14 @@ export default {
   },
   mounted() {
     this.page = this.$route.path
+  },
+  methods: {
+    toggleMenu() {
+      document
+        .querySelector('.ms-mobile--menu__toggler')
+        .classList.toggle('active')
+      document.querySelector('.ms-mobile--menu').classList.toggle('open')
+    },
   },
 }
 </script>
@@ -164,7 +172,7 @@ export default {
 }
 
 .ms-mobile--menu__toggler span {
-  background: #00923f;
+  background: #58bb8c;
   border: none;
   height: 3px;
   width: 100%;
@@ -220,7 +228,7 @@ export default {
 
 .ms-mobile--menu:after {
   content: '';
-  background: #00923f;
+  background: #58bb8c;
   right: -100%;
   top: 0;
   width: 100%;
@@ -246,7 +254,7 @@ export default {
 
 .ms-mobile--menu.open .ms-mobile--menu__toggler .middle {
   opacity: 0;
-  background: #00923f;
+  background: #58bb8c;
 }
 
 .ms-mobile--menu.open .ms-mobile--menu__toggler .bottom {
@@ -286,8 +294,8 @@ export default {
 .ms-mobile--menu__links li.active a {
   padding-bottom: 10px;
   opacity: 1;
-  color: #fcb320 !important;
-  border-bottom: 2px solid #fff;
+  color: #0b1207 !important;
+  border-bottom: 4px solid #fcb320;
   font-weight: 600;
 }
 
