@@ -25,12 +25,6 @@
             }}</nuxt-link>
             <a v-else href="#" target="_blank">News</a>
           </li>
-          <li>
-            <img
-              src="../assets/img/partners/family-home-funds.png"
-              alt="Family Home Funds"
-            />
-          </li>
         </ul>
       </el-container>
     </div>
@@ -104,7 +98,7 @@ export default {
 
 <style scoped lang="scss">
 .ms-navbar {
-  padding: 15px 0;
+  padding: 10px 0;
   background: #fff;
   z-index: 2;
   width: 100%;
@@ -117,6 +111,10 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .ms-logo img {
+    height: 60px;
   }
 
   .ms-nav-links {
@@ -146,11 +144,6 @@ export default {
         color: #58bb8c;
         transition: color 0.3s ease-out;
       }
-    }
-
-    img {
-      height: 60px;
-      width: auto;
     }
   }
 }

@@ -1,8 +1,10 @@
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .el-container {
     max-width: 1200px;
   }
+}
 
+@media (max-width: 1440px) {
   .slide-content {
     left: 10% !important;
     width: 70% !important;
