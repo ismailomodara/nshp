@@ -116,7 +116,10 @@ a:hover {
   margin: auto;
 }
 
-/* =================== Home onSlider Pagination ========================= */
+.mt-4 {
+  margin-top: 2rem;
+}
+/* ===================  Pagination ========================= */
 .ms-header {
   .VueCarousel-pagination {
     position: relative;
@@ -135,6 +138,51 @@ a:hover {
     transform: translateY(-4px);
     box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.08) !important;
     transition: all 0.2s ease-out;
+  }
+
+  &.el-button--secondary,
+  &.el-button--secondary:hover,
+  &.el-button--secondary:focus {
+    background: #FCB320;
+    border-color: #FCB320;
+    color: #fff;
+  }
+}
+
+  /* =================== Accordion ========================= */
+.el-collapse-item {
+  .el-collapse-item__header {
+    border-left: 5px solid #58bb8c;
+    padding-left: 15px;
+    font-size: 0.875rem;
+    height: 60px;
+  }
+
+  &.inverse .el-collapse-item__header {
+    border-left: 5px solid #FCB320;
+  }
+
+  .el-collapse-item__content {
+    padding: 20px;
+
+    p {
+      font-size: 0.875rem;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    ul {
+      list-style: square;
+
+      li {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 5px 0;
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -290,73 +338,7 @@ a:hover {
   }
 
   /* =================== Homepage - How It Works ========================= */
-  .step-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
 
-  .step-title span {
-    height: 50px;
-    width: 50px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FCB320;
-    color: #001A0B;
-    font-weight: 600;
-    margin-right: 15px;
-    font-size: 1.2rem;
-  }
-
-  .step-title h4 {
-    color: #00923F;
-  }
-
-  .step-image img {
-    width: 150px;
-    height: auto;
-  }
-
-  .step-content p {
-    margin-bottom: 15px;
-    text-align: justify;
-    opacity: 1;
-  }
-
-  .italic {
-    font-style: italic;
-    opacity: 0.8;
-  }
-
-  .about-content ul,
-  .step-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .about-content li,
-  .step-content li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 15px;
-    line-height: 1.8;
-    text-align: justify;
-    color: #001A0B;
-  }
-
-  .about-content li::before,
-  .step-content li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 10px;
-    height: 10px;
-    width: 10px;
-    background: #001A0B;
-  }
 
   /* =================== Homepage - The Vision ========================= */
   .vision {
@@ -420,31 +402,6 @@ a:hover {
     letter-spacing: 1px;
   }
 
-  /* =================== Homepage - Contact ========================= */
-  .contact-via {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .contact-via>img {
-    height: 120px;
-    width: auto;
-    margin-bottom: 20px;
-  }
-
-  .contact-via p {
-    opacity: 1;
-    font-weight: 500;
-    margin-bottom: 10px;
-    line-height: 1.2;
-  }
-
-  .contact-via .email {
-    display: block;
-    color: #00923F;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
   /* =================== Homepage - Our Partners ========================= */
   .our-partners img {
     margin-bottom: 50px;

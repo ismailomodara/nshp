@@ -10,7 +10,7 @@
             ref="slider"
             :per-page="1"
             :loop="true"
-            :autoplay="false"
+            :autoplay="true"
             :autoplay-timeout="6000"
             :autoplay-hover-pause="false"
             :pagination-padding="6"
@@ -156,10 +156,10 @@
               </p>
               <el-timeline>
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h5>1 Bedroom for ₦2,000,000</h5></el-timeline-item
+                  ><h6>1 Bedroom for ₦2,000,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h5>2 Bedroom for ₦2,750,000</h5></el-timeline-item
+                  ><h6>2 Bedroom for ₦2,750,000</h6></el-timeline-item
                 >
               </el-timeline>
               <p>
@@ -181,6 +181,196 @@
               </el-radio-group>
             </div>
           </el-col>
+        </el-row>
+      </el-container>
+    </div>
+    <div class="ms-steps ms-section">
+      <div class="ms-section--heading">
+        <h3>3 simple steps to owning your home</h3>
+      </div>
+      <el-container>
+        <el-row type="flex" :gutter="80" align="middle" class="mt-4">
+          <el-col :lg="8">
+            <div class="ms-steps--step">
+              <span>1</span>
+              <h6 class="step-title">Register</h6>
+              <div class="step-image">
+                <img
+                  :src="getImage('home/register.svg')"
+                  alt="Show interest for NSHP"
+                />
+              </div>
+              <div class="step-content">
+                <p>
+                  Complete your profile by submitting your personal details and
+                  required documents.
+                </p>
+                <el-button type="primary" size="medium"
+                  >I'm interested</el-button
+                >
+              </div>
+            </div>
+          </el-col>
+          <el-col :lg="8">
+            <div class="ms-steps--step inverse">
+              <span>2</span>
+              <h6 class="step-title">Selection</h6>
+              <div class="step-image">
+                <img
+                  :src="getImage('home/selection.svg')"
+                  alt="Get Selected for NSHP"
+                />
+              </div>
+              <div class="step-content">
+                <p>
+                  A unique identification number will be assigned to you for the
+                  house allocation.
+                </p>
+                <el-button size="medium" class="el-button--secondary"
+                  >Read more</el-button
+                >
+              </div>
+            </div>
+          </el-col>
+          <el-col :lg="8">
+            <div class="ms-steps--step">
+              <span>3</span>
+              <h6 class="step-title">Own</h6>
+              <div class="step-image">
+                <img
+                  :src="getImage('home/own.svg')"
+                  alt="Get Selected for NSHP"
+                />
+              </div>
+              <div class="step-content">
+                <p>
+                  Houses will be distributed to applicants as soon as
+                  construction begins
+                </p>
+                <el-button type="primary" size="medium">Start here</el-button>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </el-container>
+    </div>
+    <div class="ms-find-out--more ms-section">
+      <div class="ms-section--heading">
+        <h3>Find out more</h3>
+      </div>
+      <el-container>
+        <el-row type="flex" :gutter="80" align="top" class="mt-4">
+          <el-col :lg="10">
+            <div class="faq">
+              <img :src="getImage('home/faqs.svg')" alt="FAQ" />
+            </div>
+          </el-col>
+          <el-col :lg="14">
+            <el-collapse v-model="activeName" accordion>
+              <el-collapse-item title="How does it work?" name="1">
+                <div>
+                  <p>
+                    We have put in place a seamless process in three simple
+                    steps
+                  </p>
+                  <ul>
+                    <li>Show Interest</li>
+                    <li>Selection</li>
+                    <li>Own</li>
+                  </ul>
+                  <el-button type="primary" size="small"
+                    >Find out more</el-button
+                  >
+                </div>
+              </el-collapse-item>
+              <el-collapse-item
+                title="Who is eligible/qualifies to own a home on the NSHP?"
+                name="2"
+                class="inverse"
+              >
+                <div>
+                  <p>
+                    To be eligible to own a home, you must fulfil the following
+                    criteria:
+                  </p>
+                  <ul>
+                    <li>Be a Nigerian citizen.</li>
+                    <li>Be over 18 years of age.</li>
+                    <li>Have a valid national identity card.</li>
+                    <li>
+                      You must then complete your profile by submitting your
+                      personal details, housing preferences (the type of house
+                      you are applying for).
+                    </li>
+                  </ul>
+                </div>
+              </el-collapse-item>
+              <el-collapse-item
+                title="How long will it take for me to get an allocation?"
+                name="3"
+              >
+                <div>
+                  <p>
+                    There is no fixed time. NSHP is committed to giving you an
+                    allocation as soon as you save at least 25% of the cost of
+                    your house.
+                  </p>
+                  <p>
+                    This means that if the current price of your home is
+                    ₦3,000,000, you will be required to have saved a minimum of
+                    NGN 750,000 before you are allocated a house.
+                  </p>
+                  <p>
+                    The quicker the minimum savings is reached, the quicker the
+                    allocation.
+                  </p>
+                </div>
+              </el-collapse-item>
+            </el-collapse>
+          </el-col>
+        </el-row>
+      </el-container>
+    </div>
+    <div class="ms-contact--via ms-section">
+      <div class="ms-section--heading">
+        <h3>Contact us</h3>
+      </div>
+      <el-container>
+        <el-row type="flex" :gutter="50">
+          <el-col :lg="12">
+            <div class="contact-via">
+              <img :src="getImage('home/whatsapp.svg')" alt="Home" />
+              <div>
+                <p>Reach out to us on WhatsApp</p>
+                <el-button type="primary" size="medium">Message</el-button>
+              </div>
+            </div>
+          </el-col>
+          <el-col :lg="12">
+            <div class="contact-via">
+              <img :src="getImage('home/email.svg')" alt="Home" />
+              <div>
+                <p>Send us an email today!</p>
+                <el-button
+                  type="primary"
+                  size="medium"
+                  class="el-button--secondary"
+                  >Send</el-button
+                >
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </el-container>
+    </div>
+    <div class="ms-our--partner ms-section">
+      <div class="ms-section--heading">
+        <h3>Our Partner</h3>
+      </div>
+      <el-container>
+        <el-row type="flex" :gutter="50">
+          <el-col :lg="8"></el-col>
+          <el-col :lg="16"> </el-col>
         </el-row>
       </el-container>
     </div>
@@ -231,6 +421,7 @@ export default {
         },
       ],
       homeOption: 'one',
+      activeName: '',
     }
   },
   mounted() {
@@ -463,8 +654,15 @@ export default {
 }
 
 .ms-home--options {
+  background: #f4faf7;
+
   .el-timeline {
     margin: 25px 0;
+
+    h6 {
+      font-weight: 500;
+    }
+
     .el-timeline-item:last-child {
       padding-bottom: 0;
     }
@@ -483,7 +681,149 @@ export default {
       width: 100%;
       object-fit: cover;
       margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.06);
     }
   }
+}
+
+.ms-steps {
+  .ms-steps--step {
+    border: 1px solid #0b120710;
+    border-radius: 8px;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+
+    span {
+      height: 32px;
+      width: 32px;
+      border-radius: 100px;
+      border: 5px solid #fff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #58bb8c;
+      color: #fff;
+      font-weight: 600;
+      margin-right: 15px;
+      font-size: 1rem;
+    }
+
+    .step-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #58bb8c;
+      font-weight: 600;
+    }
+
+    .step-image {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120px;
+
+      img {
+        width: auto;
+        height: 90px;
+        object-fit: contain;
+        transform: rotate(0deg);
+        transition: transform 0.2s ease-in;
+      }
+    }
+
+    .step-content p {
+      line-height: 1.8;
+      font-size: 0.75rem;
+      margin-bottom: 15px;
+      text-align: center;
+      opacity: 1;
+    }
+
+    &.inverse {
+      span {
+        background: #fcb320;
+      }
+
+      .step-title {
+        color: #fcb320;
+      }
+    }
+    &:hover {
+      border-color: #fcb320;
+      transition: border 0.2s ease-out;
+
+      .step-image img {
+        animation: wobble 0.3s ease-in-out forwards;
+      }
+    }
+  }
+}
+
+@keyframes wobble {
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+.ms-find-out--more {
+  background: #fafcfc;
+  .faq {
+    text-align: center;
+
+    h6 {
+      font-size: 0.875rem;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    img {
+      height: 150px;
+      width: auto;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.ms-contact--via {
+  .contact-via {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+
+    img {
+      width: 120px;
+      height: auto;
+    }
+
+    div {
+      margin-left: 20px;
+      text-align: left;
+
+      p {
+        margin-bottom: 10px;
+        span {
+          img {
+            height: 22px;
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ms-our--partner {
+  background: #ededed;
 }
 </style>
