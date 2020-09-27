@@ -5,7 +5,7 @@
         <div class="ms-logo">
           <nuxt-link to="/"
             ><img
-              src="../assets/img/website/navlogos.svg"
+              :src="getImage('navlogos.svg')"
               alt="Federal Government of Nigeria, NSHP"
           /></nuxt-link>
         </div>
@@ -56,8 +56,11 @@
 </template>
 
 <script>
+import image from '../mixin/image'
+
 export default {
   name: 'Navigation',
+  mixins: [image],
   data() {
     return {
       navLinks: [
