@@ -148,7 +148,7 @@
       </div>
       <el-container>
         <el-row type="flex" :gutter="80" align="middle" class="flex-wrap">
-          <el-col :md="24" :lg="12">
+          <el-col :sm="24" :md="12" :lg="12">
             <div class="ms-home--options__content">
               <p>
                 Here are some of the offers we would be making available for
@@ -169,7 +169,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :md="24" :lg="12">
+          <el-col :sm="24" :md="12" :lg="12">
             <div class="ms-home--options__image">
               <img
                 :src="getImage(`home/${homeOption}-bedroom.jpg`)"
@@ -190,7 +190,7 @@
       </div>
       <el-container>
         <el-row type="flex" :gutter="60" align="middle" class="flex-wrap mt-4">
-          <el-col :sm="24" :md="24" :lg="8">
+          <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-steps--step">
               <span>1</span>
               <h6 class="step-title">Register</h6>
@@ -209,7 +209,7 @@
               </div>
             </div>
           </el-col>
-          <el-col :sm="24" :md="24" :lg="8">
+          <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-steps--step inverse">
               <span>2</span>
               <h6 class="step-title">Selection</h6>
@@ -228,7 +228,7 @@
               </div>
             </div>
           </el-col>
-          <el-col :sm="24" :md="24" :lg="8">
+          <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-steps--step">
               <span>3</span>
               <h6 class="step-title">Own</h6>
@@ -255,13 +255,19 @@
         <h3>Find out more</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="60" align="middle" class="flex-wrap mt-4">
-          <el-col :sm="24" :md="8" :lg="10">
+        <el-row
+          type="flex"
+          :gutter="60"
+          justify="between"
+          align="middle"
+          class="flex-wrap mt-4"
+        >
+          <el-col :sm="24" :md="8" :lg="9">
             <div class="faq">
               <img :src="getImage('home/faqs.svg')" alt="FAQ" />
             </div>
           </el-col>
-          <el-col :sm="24" :md="16" :lg="14">
+          <el-col :sm="24" :md="16" :lg="15">
             <el-collapse v-model="activeName" accordion>
               <el-collapse-item title="How does it work?" name="1">
                 <div>
@@ -408,14 +414,6 @@ export default {
       ],
       homeOption: 'one',
       activeName: '',
-      financial_partners: ['partners/finance.png', 'partners/central_bank.png'],
-      strategic_partners: [
-        'partners/federal-mortage.png',
-        'partners/federal-housing.png',
-        'partners/works-and-housing.png',
-        'partners/state_government.png',
-        'partners/family-home-funds.png',
-      ],
     }
   },
   mounted() {
@@ -485,7 +483,7 @@ export default {
 
     .slide-image {
       position: relative;
-      height: 100%;
+      height: 70vh;
       overflow: hidden;
 
       img {
@@ -528,34 +526,17 @@ export default {
   }
 }
 
-@keyframes scale {
-  to {
-    transform: scale(1.3);
-  }
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.35);
-}
-
-.overlay.header-gradient {
-  background: rgb(0, 146, 63);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.2) 54%,
-    rgba(255, 255, 255, 0) 76%
-  );
-}
-
 .ms-header--ctas {
   background: #f4faf7;
   padding: 50px 0;
+
+  .el-container {
+    justify-content: center;
+  }
+
+  .el-row {
+    width: 100%;
+  }
 
   .ms-header--cta {
     position: relative;
@@ -639,7 +620,6 @@ export default {
     img {
       height: 280px;
       width: auto;
-      animation: scale 7000ms ease-in-out forwards;
     }
   }
   .ms-about--content p {
@@ -669,9 +649,11 @@ export default {
   }
   .ms-home--options__image {
     text-align: center;
+    height: 100%;
+    width: 100%;
 
     img {
-      height: auto;
+      height: 100%;
       width: 100%;
       object-fit: cover;
       margin-bottom: 20px;
@@ -769,6 +751,8 @@ export default {
   background: #fafcfc;
   .faq {
     text-align: center;
+    height: 100%;
+    width: 100%;
 
     h6 {
       font-size: 0.875rem;
@@ -778,8 +762,8 @@ export default {
     }
 
     img {
-      height: 150px;
-      width: auto;
+      height: 100%;
+      width: 100%;
       margin-bottom: 10px;
     }
   }
@@ -866,6 +850,18 @@ export default {
     > div {
       margin: 0;
       text-align: center !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .ms-steps {
+    .el-row {
+      flex-direction: column;
+
+      .el-col-md-8 {
+        width: 100% !important;
+      }
     }
   }
 }

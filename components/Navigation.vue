@@ -87,7 +87,10 @@ export default {
   },
   watch: {
     $route() {
-      this.page = this.$route.path
+      document
+        .querySelector('.ms-mobile--menu__toggler')
+        .classList.remove('active')
+      document.querySelector('.ms-mobile--menu').classList.remove('open')
     },
   },
   mounted() {
