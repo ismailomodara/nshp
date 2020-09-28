@@ -385,7 +385,7 @@ export default {
       slides: [
         {
           text: 'Homes by Nigerians<br> for Nigerians',
-          slide: '1',
+          slide: '1-1',
         },
         {
           text: 'Own a home for<br> as low as ₦2million',
@@ -397,11 +397,11 @@ export default {
         },
         {
           text: 'Owó Kekeré fun<br>ilé tò dàrá',
-          slide: '4',
+          slide: '4-4',
         },
         {
           text: 'Biyan kuɗi kaɗan<br> don gida mai kyau',
-          slide: '5',
+          slide: '5-5',
         },
         {
           text: 'Kwụ ụgwọ obere ego<br> maka ezigbo ụlọ',
@@ -409,7 +409,7 @@ export default {
         },
         {
           text: 'Beta work. Beta house.<br> Beta life for evribodi',
-          slide: '2',
+          slide: '7',
         },
       ],
       homeOption: 'one',
