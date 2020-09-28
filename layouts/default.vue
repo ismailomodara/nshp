@@ -29,6 +29,15 @@ export default {
       showBackToTop: false,
     }
   },
+  watch: {
+    $route() {
+      this.$nextTick(() => {
+        this.$nuxt.$loading.start()
+
+        setTimeout(() => this.$nuxt.$loading.finish(), 500)
+      })
+    },
+  },
   mounted() {
     window.addEventListener('scroll', () => {
       this.showBackToTop = window.pageYOffset > 200

@@ -111,6 +111,11 @@ export default {
     '@nuxtjs/eslint-module',
   ],
 
+  router: {
+    middleware: 'delay'
+  },
+  loading: { color: '#58bb8c' },
+  // loading: '~/components/Loader.vue',
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [],
 

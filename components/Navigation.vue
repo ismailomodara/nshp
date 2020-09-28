@@ -94,6 +94,7 @@ export default {
         .querySelector('.ms-mobile--menu__toggler')
         .classList.remove('active')
       document.querySelector('.ms-mobile--menu').classList.remove('open')
+      this.page = this.$route.path
     },
   },
   mounted() {
