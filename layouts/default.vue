@@ -72,9 +72,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#topPage {
-  animation: fadeIn 1s ease-out;
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -87,7 +84,7 @@ export default {
   position: fixed;
   z-index: 99;
   right: 40px;
-  bottom: 60px;
+  bottom: 40px;
 
   .el-button {
     box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.2) !important;
@@ -102,7 +99,7 @@ export default {
   position: fixed;
   z-index: 99;
   right: 40px;
-  bottom: 60px;
+  bottom: 40px;
 
   .el-button {
     box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.1) !important;

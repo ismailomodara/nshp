@@ -158,6 +158,10 @@
     font-size: 16px;
   }
 
+  .el-row {
+    width: unset;
+  }
+
   .el-container,
   .ms-section--heading {
     max-width: 90% !important;

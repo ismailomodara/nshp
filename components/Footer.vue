@@ -11,7 +11,7 @@
             affordable mortgages in all states in Nigeria and the FCT.
           </p>
         </el-col>
-        <el-col :sm="24" :md="4" :lg="4">
+        <el-col :sm="12" :md="12" :lg="4">
           <h5>Quick Links</h5>
           <ul class="ms-footer-links">
             <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
@@ -20,7 +20,7 @@
             <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
           </ul>
         </el-col>
-        <el-col :sm="24" :md="8" :lg="8">
+        <el-col :sm="12" :md="12" :lg="8">
           <!--          <div class="ms-footer&#45;&#45;actions">-->
           <!--            <h5>Search Website</h5>-->
           <!--            <div class="ms-search">-->
@@ -369,16 +369,15 @@ export default {
     .el-col-24:not(:last-child) {
       margin-bottom: 40px;
     }
-
-    .ms-footer-links {
-      display: flex;
-      justify-content: space-between;
-    }
   }
 }
 
 @media (max-width: 992px) {
   .ms-footer {
+    .footer-logo + p {
+      width: 100%;
+    }
+
     .ms-footer--search {
       flex-direction: column;
       justify-content: center;
