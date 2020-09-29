@@ -52,6 +52,12 @@ export default {
       })
     },
   },
+  created() {
+    this.$nextTick(() => {
+      this.loading = true
+      setTimeout(() => (this.loading = false), 3000)
+    })
+  },
   mounted() {
     window.addEventListener('scroll', () => {
       this.showBackToTop = window.pageYOffset > 200
