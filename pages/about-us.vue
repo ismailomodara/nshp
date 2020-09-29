@@ -247,4 +247,11 @@ export default {
     }
   }
 }
+
+@media (max-width: 992px) {
+  .ms-about .ms-about--image img {
+    height: 200px !important;
+    margin-top: 70px;
+  }
+}
 </style>

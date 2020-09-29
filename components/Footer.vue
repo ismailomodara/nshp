@@ -2,7 +2,7 @@
   <footer class="ms-footer">
     <el-container>
       <el-row type="flex" :gutter="10" class="flex-wrap">
-        <el-col :sm="24" :md="12" :lg="12">
+        <el-col :sm="24" :md="8" :lg="12">
           <div class="footer-logo">
             <img :src="getImage('footer-logo-new.svg')" alt="" />
           </div>
@@ -11,7 +11,7 @@
             affordable mortgages in all states in Nigeria and the FCT.
           </p>
         </el-col>
-        <el-col :sm="12" :md="12" :lg="4">
+        <el-col :sm="12" :md="8" :lg="4">
           <h5>Quick Links</h5>
           <ul class="ms-footer-links">
             <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
@@ -20,7 +20,7 @@
             <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
           </ul>
         </el-col>
-        <el-col :sm="12" :md="12" :lg="8">
+        <el-col :sm="12" :md="8" :lg="8">
           <!--          <div class="ms-footer&#45;&#45;actions">-->
           <!--            <h5>Search Website</h5>-->
           <!--            <div class="ms-search">-->
