@@ -42,7 +42,7 @@
         <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta individual">
-              <router-link to="/"></router-link>
+              <a href="https://register.nshp.ng/individual"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -59,14 +59,14 @@
               </svg>
               <div>
                 <h4>Individuals</h4>
-                <p>Home for you</p>
+                <p>A home for You</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <router-link to="/"></router-link>
+              <a href="https://register.nshp.ng/co-operatives"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -82,15 +82,15 @@
                 />
               </svg>
               <div>
-                <h4>Group</h4>
-                <p>Home for groups</p>
+                <h4>Cooperatives</h4>
+                <p>Homes for groups</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <router-link to="/"></router-link>
+              <router-link to="/partners"></router-link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -131,7 +131,9 @@
                 <span class="strong">₦2,000,000 only</span> -
                 <span class="italic">Beta house, beta life for everybody!</span>
               </p>
-              <el-button type="primary">Learn More</el-button>
+              <el-button type="primary" @click="$router.push('/about-us')"
+                >Learn More</el-button
+              >
             </div>
           </el-col>
           <el-col :sm="24" :md="10" :lg="12">
@@ -205,7 +207,9 @@
                   Complete your profile by submitting your personal details and
                   required documents.
                 </p>
-                <el-button type="primary">I'm interested</el-button>
+                <a href="https://register.nshp.ng/individual"
+                  ><el-button type="primary">I'm interested </el-button></a
+                >
               </div>
             </div>
           </el-col>
@@ -224,7 +228,11 @@
                   A unique identification number will be assigned to you for the
                   house allocation.
                 </p>
-                <el-button class="el-button--secondary">Read more</el-button>
+                <el-button
+                  class="el-button--secondary"
+                  @click="$router.push('/about-us')"
+                  >Read more</el-button
+                >
               </div>
             </div>
           </el-col>
@@ -243,7 +251,9 @@
                   Houses will be distributed to applicants as soon as
                   construction begins
                 </p>
-                <el-button type="primary">Start here</el-button>
+                <el-badge value="Soon" class="item">
+                  <el-button type="primary">Start here</el-button>
+                </el-badge>
               </div>
             </div>
           </el-col>
@@ -262,12 +272,12 @@
           align="middle"
           class="flex-wrap mt-4"
         >
-          <el-col :sm="24" :md="8" :lg="9">
+          <el-col :sm="24" :md="10" :lg="9">
             <div class="faq">
               <img :src="getImage('home/faqs.svg')" alt="FAQ" />
             </div>
           </el-col>
-          <el-col :sm="24" :md="16" :lg="15">
+          <el-col :sm="24" :md="14" :lg="15">
             <el-collapse v-model="activeName" accordion>
               <el-collapse-item title="How does it work?" name="1">
                 <div>
@@ -344,7 +354,9 @@
               <img :src="getImage('home/whatsapp.svg')" alt="Home" />
               <div>
                 <p>Message via WhatsApp</p>
-                <el-button type="primary">Message</el-button>
+                <a href="https://linktr.ee/nshp.ng"
+                  ><el-button type="primary">Message</el-button></a
+                >
               </div>
             </div>
           </el-col>
@@ -353,8 +365,10 @@
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>
                 <p>Send us an email today</p>
-                <el-button type="primary" class="el-button--secondary"
-                  >Send</el-button
+                <a href="mailto:hello@nshp.ng"
+                  ><el-button type="primary" class="el-button--secondary"
+                    >Send</el-button
+                  ></a
                 >
               </div>
             </div>
@@ -438,7 +452,7 @@ export default {
 <style lang="scss" scoped>
 .ms-header {
   position: relative;
-  height: 70vh;
+  height: 60vh;
 
   .carousel-container {
     padding: 0;
@@ -483,7 +497,7 @@ export default {
 
     .slide-image {
       position: relative;
-      height: 70vh;
+      height: 60vh;
       overflow: hidden;
 
       img {
@@ -624,6 +638,7 @@ export default {
   }
   .ms-about--content p {
     margin-bottom: 30px;
+    text-align: justify;
   }
 }
 
@@ -653,8 +668,8 @@ export default {
     width: 100%;
 
     img {
-      height: 100%;
-      width: 100%;
+      height: 80%;
+      width: 80%;
       object-fit: cover;
       margin-bottom: 20px;
       border-radius: 8px;
@@ -749,6 +764,7 @@ export default {
 
 .ms-find-out--more {
   background: #fafcfc;
+
   .faq {
     text-align: center;
     height: 100%;

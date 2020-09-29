@@ -63,7 +63,10 @@
                       <li>Selection</li>
                       <li>Own</li>
                     </ul>
-                    <el-button type="primary" size="small"
+                    <el-button
+                      type="primary"
+                      size="small"
+                      @click="$router.push('/about-us')"
                       >Find out details</el-button
                     >
                   </div>
@@ -238,7 +241,8 @@
                     certified to manufacture products for use in the
                     construction value chain. Complete the form as a
                     prerequisite for registration with accurate and valid
-                    details <a href="#">here</a>
+                    details
+                    <a href="https://register.nshp.ng/manufacturers">here</a>
                   </p>
                 </div>
               </el-collapse-item>
@@ -272,7 +276,7 @@ export default {
   }
 
   .el-collapse {
-    width: 70%;
+    width: 100%;
     margin: auto;
   }
 }

@@ -2,7 +2,7 @@
   <div>
     <header class="ms-header--other">
       <div class="ms-header--other__bg">
-        <img :src="getImage('home/slider/slide-2.jpg')" alt="About NSHP" />
+        <img :src="getImage('contact/contact-header.jpg')" alt="About NSHP" />
       </div>
       <el-container>
         <div class="ms-header--other__content">
@@ -23,7 +23,9 @@
                 <img :src="getImage('home/whatsapp.svg')" alt="Home" />
                 <div>
                   <p>Message via WhatsApp</p>
-                  <el-button type="primary">Message</el-button>
+                  <a href="https://linktr.ee/nshp.ng"
+                    ><el-button type="primary">Message</el-button></a
+                  >
                 </div>
               </div>
               <div class="contact-via">
@@ -63,7 +65,7 @@
                   </el-form-item>
                 </el-col>
               </el-row>
-              <el-row type="flex">
+              <el-row type="flex" :gutter="15" :style="{ width: 'auto' }">
                 <el-col :lg="12">
                   <el-form-item label="EMAIL">
                     <el-input v-model="form.email" type="text" />

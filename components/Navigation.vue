@@ -23,7 +23,7 @@
             <nuxt-link v-if="link.url !== '/news'" :to="link.url">{{
               link.label
             }}</nuxt-link>
-            <a v-else href="#" target="_blank">News</a>
+            <!--            <a v-else href="#" target="_blank">News</a>-->
           </li>
         </ul>
       </el-container>
@@ -73,13 +73,13 @@ export default {
           url: '/about-us',
         },
         {
-          label: 'Faq',
+          label: 'FAQ',
           url: '/faq',
         },
-        {
-          label: 'News',
-          url: '/news',
-        },
+        // {
+        //   label: 'News',
+        //   url: '/news',
+        // },
         {
           label: 'Contact',
           url: '/contact',
@@ -105,6 +105,7 @@ export default {
       document
         .querySelector('.ms-mobile--menu__toggler')
         .classList.toggle('active')
+      document.querySelector('body').classList.toggle('mobile-nav')
       document.querySelector('.ms-mobile--menu').classList.toggle('open')
     },
   },
@@ -165,7 +166,7 @@ export default {
 
 .ms-mobile--menu__toggler {
   position: absolute;
-  right: 7%;
+  right: 5%;
   height: 27px;
   width: 35px;
   cursor: pointer;
@@ -189,10 +190,6 @@ export default {
   transition: all 0.35s ease;
   cursor: pointer;
   z-index: 5;
-}
-
-.ms-navbar.light .ms-mobile--menu__toggler span {
-  background: #fff;
 }
 
 .ms-mobile--menu__toggler span:nth-of-type(2) {
@@ -222,6 +219,7 @@ export default {
 .ms-mobile--menu.open .ms-mobile--menu__toggler {
   opacity: 1;
   transition: 0.3s ease-in;
+  right: 15% !important;
 }
 
 .ms-mobile--menu__content {

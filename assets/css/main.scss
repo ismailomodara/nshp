@@ -20,6 +20,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
 
   &::-webkit-scrollbar {
@@ -33,6 +34,10 @@ body {
 
   &::-webkit-scrollbar-thumb {
     background: #58bb8c;
+  }
+
+  &.mobile-nav {
+    overflow: hidden;
   }
 }
 
@@ -100,6 +105,7 @@ p>a:hover {
 }
 
 .el-container {
+  max-width: 90% !important;
   margin: auto;
 }
 
@@ -144,6 +150,14 @@ a:hover {
     position: relative;
     top: -80px;
   }
+}
+
+.VueCarousel-dot,
+.VueCarousel-dot:hover,
+.VueCarousel-dot:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .overlay {
@@ -191,8 +205,33 @@ a:hover {
     border-color: #FCB320;
     color: #fff;
   }
+
+  a {
+    color: #fff !important;
+  }
 }
 
+.ms-to-bottom .el-button i {
+  font-weight: 600;
+  font-size: 1.2rem;
+  animation: fadeInDown 2s ease-in infinite;
+}
+
+.ms-back-to-top .el-button i {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
   /* =================== Accordion ========================= */
 .el-collapse-item {
   .el-collapse-item__header {
@@ -233,7 +272,7 @@ a:hover {
 
   /* =================== Section ========================= */
   .ms-section {
-    padding: 50px 0;
+    padding: 40px 0;
     background: #fff;
   }
 
@@ -244,7 +283,7 @@ a:hover {
   .ms-section--heading {
     position: relative;
     max-width: 1200px;
-    margin: auto auto 60px;
+    margin: auto auto 40px;
 
     h3 {
       margin-bottom: 20px;
@@ -297,7 +336,7 @@ a:hover {
   /* =================== Other Page Header ========================= */
 .ms-header--other {
   position: relative;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -356,3 +395,4 @@ a:hover {
     font-size: 1.1rem;
     margin-bottom: 0;
   }
+

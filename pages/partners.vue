@@ -91,9 +91,7 @@
               </ul>
               <p>
                 There amazing offers waiting for you
-                <a href="https://register.nshp.ng/individual" target="_blank"
-                  >I'm interested</a
-                >
+                <a href="#" target="_blank">I'm interested</a>
               </p>
             </div>
           </el-col>
@@ -115,7 +113,7 @@ import MsPartners from '../components/MsPartners'
 import image from '../mixin/image'
 
 export default {
-  name: 'AboutUs',
+  name: 'Partners',
   components: {
     MsPartners,
   },
