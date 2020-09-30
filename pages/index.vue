@@ -51,11 +51,8 @@
               >
                 <defs>
                   <style>
-                    .a {
-                      fill: none;
-                    }
                     .b {
-                      fill: #58bb8c;
+                      fill: #58bb8c !important;
                     }
                   </style>
                 </defs>
@@ -85,11 +82,8 @@
               >
                 <defs>
                   <style>
-                    .c {
-                      fill: none;
-                    }
                     .b {
-                      fill: #58bb8c;
+                      fill: #58bb8c !important;
                     }
                   </style>
                 </defs>
@@ -119,11 +113,8 @@
               >
                 <defs>
                   <style>
-                    .d {
-                      fill: none;
-                    }
                     .b {
-                      fill: #58bb8c;
+                      fill: #58bb8c !important;
                     }
                   </style>
                 </defs>
