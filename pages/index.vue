@@ -91,7 +91,7 @@
               >
                 <defs>
                   <style>
-                    .a {
+                    .c {
                       fill: none;
                     }
                     .b {
@@ -101,7 +101,7 @@
                 </defs>
                 <g transform="translate(21558 8189)">
                   <rect
-                    class="a"
+                    class="c"
                     width="91"
                     height="91"
                     transform="translate(-21558 -8189)"
@@ -131,7 +131,7 @@
               >
                 <defs>
                   <style>
-                    .a {
+                    .d {
                       fill: none;
                     }
                     .b {
@@ -141,7 +141,7 @@
                 </defs>
                 <g transform="translate(21558 8189)">
                   <rect
-                    class="a"
+                    class="d"
                     width="91"
                     height="91"
                     transform="translate(-21558 -8189)"
