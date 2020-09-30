@@ -42,7 +42,7 @@
         <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta individual">
-              <a href="https://register.nshp.ng/individual"></a>
+              <a href="https://assessment.nshp.ng/individual"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="91"
@@ -73,7 +73,7 @@
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <a href="https://register.nshp.ng/co-operatives"></a>
+              <a href="https://assessment.nshp.ng/co-operatives"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="91"
@@ -234,7 +234,7 @@
                   Complete your profile by submitting your personal details and
                   required documents.
                 </p>
-                <a href="https://register.nshp.ng/individual"
+                <a href="https://assessment.nshp.ng/individual"
                   ><el-button type="primary">I'm interested </el-button></a
                 >
               </div>

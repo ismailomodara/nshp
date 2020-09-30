@@ -91,7 +91,7 @@
               </ul>
               <p>
                 There amazing offers waiting for you
-                <a href="https://register.nshp.ng/individual" target="_blank"
+                <a href="https://assessment.nshp.ng/individual" target="_blank"
                   >I'm interested</a
                 >
               </p>
