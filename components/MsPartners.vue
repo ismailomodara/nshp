@@ -1,7 +1,7 @@
 <template>
   <div class="ms-our--partner ms-section">
     <div class="ms-section--heading">
-      <h3>Our Partners</h3>
+      <h3>Partners</h3>
     </div>
     <el-container>
       <el-row type="flex" :gutter="30" class="flex-wrap mt-4">
