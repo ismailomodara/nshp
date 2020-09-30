@@ -47,11 +47,7 @@
               :data-index="index"
             >
               <div class="partner-logo">
-                <img
-                  :src="getImage(partner)"
-                  alt="NSHP"
-                  :class="{ small: partner.includes('family') }"
-                />
+                <img :src="getImage(partner)" alt="NSHP" />
               </div>
             </slide>
           </carousel>
@@ -93,6 +89,10 @@ export default {
 
   .el-row {
     width: 100%;
+  }
+
+  .el-container {
+    justify-content: center;
   }
 
   .ms-partner--type {

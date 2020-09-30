@@ -2,7 +2,7 @@
   <div>
     <header class="ms-header">
       <div class="carousel-container">
-        <span class="prev" @click="prevMenu">
+        <span class="prev" @click="prevSlide">
           <img :src="getImage('arrow-left.svg')" alt="<" />
         </span>
         <div class="carousel">
@@ -32,7 +32,7 @@
             </slide>
           </carousel>
         </div>
-        <span class="next" @click="nextMenu">
+        <span class="next" @click="nextSlide">
           <img :src="getImage('arrow-right.svg')" alt="<" />
         </span>
       </div>
@@ -45,17 +45,33 @@
               <a href="https://register.nshp.ng/individual"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="27"
-                height="31.5"
-                viewBox="0 0 27 31.5"
+                width="91"
+                height="91"
+                viewBox="0 0 91 91"
               >
-                <path
-                  id="Icon_awesome-user-friends"
-                  data-name="Icon awesome-user-friends"
-                  d="M13.5,18a7.875,7.875,0,1,0-7.875-7.875A7.871,7.871,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35A8.1,8.1,0,0,0,18.9,20.25Z"
-                  transform="translate(0 -2.25)"
-                  fill="#58bb8c"
-                />
+                <defs>
+                  <style>
+                    .a {
+                      fill: none;
+                    }
+                    .b {
+                      fill: #58bb8c;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(21558 8189)">
+                  <rect
+                    class="a"
+                    width="91"
+                    height="91"
+                    transform="translate(-21558 -8189)"
+                  />
+                  <path
+                    class="b"
+                    d="M30.389,34.73A17.365,17.365,0,1,0,13.024,17.365,17.364,17.364,0,0,0,30.389,34.73Zm12.156,4.341H40.279a23.616,23.616,0,0,1-19.78,0H18.233A18.238,18.238,0,0,0,0,57.305v5.644a6.514,6.514,0,0,0,6.512,6.512H54.266a6.514,6.514,0,0,0,6.512-6.512V57.305A18.238,18.238,0,0,0,42.545,39.072Z"
+                    transform="translate(-21543 -8178)"
+                  />
+                </g>
               </svg>
               <div>
                 <h4>Individuals</h4>
@@ -69,17 +85,33 @@
               <a href="https://register.nshp.ng/co-operatives"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="45"
-                height="31.5"
-                viewBox="0 0 45 31.5"
+                width="91"
+                height="91"
+                viewBox="0 0 91 91"
               >
-                <path
-                  id="Icon_awesome-user-friends"
-                  data-name="Icon awesome-user-friends"
-                  d="M13.5,18a7.871,7.871,0,1,0-5.57-2.305A7.875,7.875,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35a8.1,8.1,0,0,0-8.1-8.1ZM33.75,18A6.75,6.75,0,1,0,27,11.25,6.75,6.75,0,0,0,33.75,18Zm3.375,2.25h-.267a8.867,8.867,0,0,1-6.216,0h-.267a7.81,7.81,0,0,0-3.916,1.083A10.29,10.29,0,0,1,29.25,28.35v2.7c0,.155-.035.3-.042.45H41.625A3.376,3.376,0,0,0,45,28.125a7.871,7.871,0,0,0-7.875-7.875Z"
-                  transform="translate(0 -2.25)"
-                  fill="#58bb8c"
-                />
+                <defs>
+                  <style>
+                    .a {
+                      fill: none;
+                    }
+                    .b {
+                      fill: #58bb8c;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(21558 8189)">
+                  <rect
+                    class="a"
+                    width="91"
+                    height="91"
+                    transform="translate(-21558 -8189)"
+                  />
+                  <path
+                    class="b"
+                    d="M29.786,37A17.375,17.375,0,1,0,12.411,19.625,17.366,17.366,0,0,0,29.786,37ZM41.7,41.964H40.412a23.989,23.989,0,0,1-21.253,0H17.871A17.876,17.876,0,0,0,0,59.835V64.3A7.448,7.448,0,0,0,7.446,71.75H52.125A7.448,7.448,0,0,0,59.571,64.3V59.835A17.876,17.876,0,0,0,41.7,41.964ZM63.464,37A14.893,14.893,0,1,0,48.571,22.107,14.9,14.9,0,0,0,63.464,37Zm7.446,4.964h-.59a19.563,19.563,0,0,1-13.714,0h-.59a17.231,17.231,0,0,0-8.641,2.389,22.7,22.7,0,0,1,6.159,15.482v5.957c0,.341-.078.667-.093.993h27.4a7.448,7.448,0,0,0,7.446-7.446A17.366,17.366,0,0,0,70.91,41.964Z"
+                    transform="translate(-21556.143 -8180.25)"
+                  />
+                </g>
               </svg>
               <div>
                 <h4>Cooperatives</h4>
@@ -93,17 +125,33 @@
               <router-link to="/partners"></router-link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="45"
-                height="27.01"
-                viewBox="0 0 45 27.01"
+                width="91"
+                height="91"
+                viewBox="0 0 91 91"
               >
-                <path
-                  id="Icon_awesome-handshake"
-                  data-name="Icon awesome-handshake"
-                  d="M30.565,4.5h-6.04a2.249,2.249,0,0,0-1.519.591l-6.912,6.328c-.007.007-.014.021-.021.028a2.8,2.8,0,0,0-.148,3.938,2.933,2.933,0,0,0,3.945.19c.007-.007.021-.007.028-.014l5.618-5.147a1.125,1.125,0,0,1,1.519,1.659L25.2,13.753l10.237,8.311a5.066,5.066,0,0,1,.555.541V9L32.154,5.161A2.234,2.234,0,0,0,30.565,4.5ZM38.25,9.014V24.757a2.248,2.248,0,0,0,2.25,2.25H45V9.014Zm3.375,15.743a1.125,1.125,0,1,1,1.125-1.125A1.128,1.128,0,0,1,41.625,24.757ZM0,27H4.5a2.248,2.248,0,0,0,2.25-2.25V9.014H0Zm3.375-4.493A1.125,1.125,0,1,1,2.25,23.632,1.128,1.128,0,0,1,3.375,22.507Zm30.649,1.308-10.5-8.522-2.109,1.934a5.061,5.061,0,0,1-6.841-7.46L20.327,4.5H14.435a2.246,2.246,0,0,0-1.589.661L9,9V24.743h1.287L16.65,30.5a4.5,4.5,0,0,0,6.328-.654l.014-.014,1.259,1.09a2.613,2.613,0,0,0,3.677-.38l2.208-2.714.38.309a2.246,2.246,0,0,0,3.164-.33l.668-.823a2.254,2.254,0,0,0-.323-3.171Z"
-                  transform="translate(0 -4.5)"
-                  fill="#58bb8c"
-                />
+                <defs>
+                  <style>
+                    .a {
+                      fill: none;
+                    }
+                    .b {
+                      fill: #58bb8c;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(21558 8189)">
+                  <rect
+                    class="a"
+                    width="91"
+                    height="91"
+                    transform="translate(-21558 -8189)"
+                  />
+                  <path
+                    class="b"
+                    d="M53.568,4.5H42.983a3.942,3.942,0,0,0-2.662,1.035L28.207,16.626c-.012.012-.025.037-.037.049a4.9,4.9,0,0,0-.259,6.9,5.14,5.14,0,0,0,6.913.333c.012-.012.037-.012.049-.025l9.846-9.02a1.971,1.971,0,0,1,2.662,2.908l-3.216,2.945L62.108,35.283a8.878,8.878,0,0,1,.974.949V12.387L56.353,5.658A3.915,3.915,0,0,0,53.568,4.5Zm13.469,7.911V40a3.939,3.939,0,0,0,3.943,3.943h7.887V12.411ZM72.952,40a1.972,1.972,0,1,1,1.972-1.972A1.977,1.977,0,0,1,72.952,40ZM0,43.934H7.887A3.939,3.939,0,0,0,11.83,39.99V12.411H0Zm5.915-7.874a1.972,1.972,0,1,1-1.972,1.972A1.977,1.977,0,0,1,5.915,36.059Zm53.716,2.292-18.4-14.935-3.7,3.389A8.87,8.87,0,0,1,25.546,13.73L35.626,4.5H25.3a3.936,3.936,0,0,0-2.785,1.158l-6.741,6.728V39.978h2.255L29.181,50.07a7.885,7.885,0,0,0,11.091-1.146L40.3,48.9,42.5,50.81a4.58,4.58,0,0,0,6.445-.665l3.869-4.757.665.542a3.937,3.937,0,0,0,5.545-.579L60.2,43.909a3.95,3.95,0,0,0-.567-5.558Z"
+                    transform="translate(-21551.934 -8171.664)"
+                  />
+                </g>
               </svg>
 
               <div>
@@ -174,7 +222,13 @@
           <el-col :sm="24" :md="12" :lg="12">
             <div class="ms-home--options__image">
               <img
-                :src="getImage(`home/${homeOption}-bedroom.jpg`)"
+                v-if="homeOption === 'one'"
+                :src="getImage('home/one-bedroom.jpg')"
+                alt="Map"
+              />
+              <img
+                v-else-if="homeOption === 'two'"
+                :src="getImage('home/two-bedroom.jpg')"
                 alt="Map"
               />
               <el-radio-group v-model="homeOption">
@@ -251,7 +305,7 @@
                   Houses will be distributed to applicants as soon as
                   construction begins
                 </p>
-                <el-badge value="Soon" class="item">
+                <el-badge value="Coming soon" class="item">
                   <el-button type="primary">Start here</el-button>
                 </el-badge>
               </div>
@@ -330,7 +384,7 @@
                   <p>
                     This means that if the current price of your home is
                     ₦3,000,000, you will be required to have saved a minimum of
-                    NGN 750,000 before you are allocated a house.
+                    ₦750,000 before you are allocated a house.
                   </p>
                   <p>
                     The quicker the minimum savings is reached, the quicker the
@@ -434,12 +488,19 @@ export default {
     document
       .querySelectorAll('.VueCarousel-slide')[0]
       .classList.add('VueCarousel-slide-active')
+    document.addEventListener('keydown', (e) => {
+      if (e.keyCode === 39) {
+        this.nextSlide()
+      } else if (e.keyCode === 37) {
+        this.prevSlide()
+      }
+    })
   },
   methods: {
-    nextMenu() {
+    nextSlide() {
       this.$refs.slider.goToPage(this.$refs.slider.getNextPage())
     },
-    prevMenu() {
+    prevSlide() {
       this.$refs.slider.goToPage(this.$refs.slider.getPreviousPage())
     },
     url(image) {
@@ -490,6 +551,7 @@ export default {
 
   .VueCarousel-inner {
     height: 100% !important;
+    align-items: center;
   }
 
   .VueCarousel-slide {
@@ -574,7 +636,7 @@ export default {
     }
 
     svg {
-      height: 45px;
+      height: 50px;
       width: auto;
       margin-right: 20px;
     }

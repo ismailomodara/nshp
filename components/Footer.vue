@@ -2,7 +2,7 @@
   <footer class="ms-footer">
     <el-container>
       <el-row type="flex" :gutter="10" class="flex-wrap">
-        <el-col :sm="24" :md="8" :lg="12">
+        <el-col :sm="24" :md="12" :lg="12">
           <div class="footer-logo">
             <img :src="getImage('footer-logo-new.svg')" alt="" />
           </div>
@@ -11,11 +11,11 @@
             affordable mortgages in all states in Nigeria and the FCT.
           </p>
         </el-col>
-        <el-col :sm="12" :md="8" :lg="4">
+        <el-col :sm="12" :md="4" :lg="4">
           <h5>Quick Links</h5>
           <ul class="ms-footer-links">
             <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
-            <li><nuxt-link to="/partners"> Partners </nuxt-link></li>
+            <li><nuxt-link to="/partners"> Partnerships </nuxt-link></li>
             <li><nuxt-link to="/faqs">FAQs</nuxt-link></li>
             <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
           </ul>
@@ -325,27 +325,50 @@ export default {
       height: 42px;
       width: 42px;
       margin-right: 10px;
+    }
 
-      &:hover circle {
+    &.facebook:hover {
+      svg circle {
+        fill: #3d5a99 !important;
         opacity: 1;
         transition: all 0.25s ease-out;
       }
+      span {
+        color: #3d5a99;
+      }
     }
 
-    &.facebook svg:hover circle {
-      fill: #3d5a99;
+    &.twitter:hover {
+      svg circle {
+        fill: #2eaae1;
+        opacity: 1;
+        transition: all 0.25s ease-out;
+      }
+      span {
+        color: #2eaae1;
+      }
     }
 
-    &.twitter svg:hover circle {
-      fill: #2eaae1;
+    &.youtube:hover {
+      svg circle {
+        fill: #cd211f;
+        opacity: 1;
+        transition: all 0.25s ease-out;
+      }
+      span {
+        color: #cd211f;
+      }
     }
 
-    &.youtube svg:hover circle {
-      fill: #cd211f;
-    }
-
-    &.instagram svg:hover circle {
-      fill: #b4408d;
+    &.instagram:hover {
+      svg circle {
+        fill: #b4408d;
+        opacity: 1;
+        transition: all 0.25s ease-out;
+      }
+      span {
+        color: #b4408d;
+      }
     }
   }
 

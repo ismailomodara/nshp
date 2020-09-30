@@ -199,7 +199,8 @@ export default {
     img {
       height: 60px;
       position: absolute;
-      top: 30px;
+      top: 50%;
+      transform: translateY(-50%);
       right: 30px;
       opacity: 0.94;
     }

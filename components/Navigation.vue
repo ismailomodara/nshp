@@ -5,7 +5,7 @@
         <div class="ms-logo">
           <nuxt-link to="/"
             ><img
-              :src="getImage('navlogos.jpg')"
+              :src="getImage('navlogos.svg')"
               alt="Federal Government of Nigeria, NSHP"
           /></nuxt-link>
         </div>
