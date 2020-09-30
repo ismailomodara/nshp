@@ -612,6 +612,10 @@ export default {
       height: 50px;
       width: auto;
       margin-right: 20px;
+
+      path {
+        fill: #58bb8c !important;
+      }
     }
 
     h4 {
@@ -642,7 +646,7 @@ export default {
       transition: all 0.2s ease-out;
 
       svg path {
-        fill: #fff;
+        fill: #fff !important;
       }
 
       h4,
