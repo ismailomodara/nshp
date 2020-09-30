@@ -1,0 +1,32 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Loader": {
+    "description": "Auto imported from components/Loader.vue"
+  },
+  "LazyLoader": {
+    "description": "Auto imported from components/Loader.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "MsPartners": {
+    "description": "Auto imported from components/MsPartners.vue"
+  },
+  "LazyMsPartners": {
+    "description": "Auto imported from components/MsPartners.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "LazyNavigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  }
+}

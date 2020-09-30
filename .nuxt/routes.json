@@ -1,0 +1,37 @@
+[
+  {
+    "name": "about-us",
+    "path": "/about-us",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/about-us.vue",
+    "chunkName": "pages/about-us",
+    "_name": "_65a29abe"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_3cd4f9a6"
+  },
+  {
+    "name": "faq",
+    "path": "/faq",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/faq.vue",
+    "chunkName": "pages/faq",
+    "_name": "_d7cbfcba"
+  },
+  {
+    "name": "partners",
+    "path": "/partners",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/partners.vue",
+    "chunkName": "pages/partners",
+    "_name": "_1241f3ee"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_b1fb0fc2"
+  }
+]

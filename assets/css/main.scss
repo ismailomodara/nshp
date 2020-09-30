@@ -1,0 +1,410 @@
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+html,
+body {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  > #__nuxt {
+    overflow-x: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ccc;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #58bb8c;
+  }
+
+  &.mobile-nav {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+  color: #001A0B;
+  opacity: 0.8;
+  margin: 0;
+}
+
+p>a {
+  color: #FCB320;
+  text-decoration: underline !important;
+}
+
+p>a:hover {
+  color: #00923F;
+  transition: color 0.3s ease-out;
+}
+
+.text-primary {
+  color: #58bb8c;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.ms-section--heading,
+.el-container {
+  max-width: 90% !important;
+  margin: auto;
+}
+
+.el-row {
+  width: 100%;
+}
+
+.el-form {
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.el-input__inner {
+  font-size: 1rem;
+  font-weight: 600;
+
+  &::placeholder {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
+
+.el-badge__content.is-fixed {
+  right: 60px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.w-85 {
+  width: 85%;
+  margin: auto;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.el-select {
+  width: 100%;
+}
+/* ===================  Carousel Pagination ========================= */
+.ms-header {
+  .VueCarousel-pagination {
+    position: relative;
+    top: -80px;
+  }
+}
+
+.VueCarousel-dot,
+.VueCarousel-dot:hover,
+.VueCarousel-dot:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+
+  .header-gradient {
+    background: rgb(0, 146, 63);
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.2) 54%,
+        rgba(255, 255, 255, 0) 76%
+    );
+  }
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.3);
+  }
+}
+
+  /* =================== El Button ========================= */
+.el-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    position: relative;
+    transform: translateY(-4px);
+    box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease-out;
+  }
+
+  &.el-button--secondary,
+  &.el-button--secondary:hover,
+  &.el-button--secondary:focus {
+    background: #FCB320;
+    border-color: #FCB320;
+    color: #fff;
+  }
+
+  a {
+    color: #fff !important;
+  }
+}
+
+.ms-to-bottom .el-button i {
+  font-weight: 600;
+  font-size: 1.2rem;
+  animation: fadeInDown 2s ease-in infinite;
+}
+
+.ms-back-to-top .el-button i {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+  /* =================== Accordion ========================= */
+.el-collapse-item {
+  .el-collapse-item__header {
+    line-height: 1.6;
+    border-left: 5px solid #58bb8c;
+    padding-left: 15px;
+    font-size: 1rem;
+    height: 70px;
+  }
+
+  &.inverse .el-collapse-item__header {
+    border-left: 5px solid #FCB320;
+  }
+
+  .el-collapse-item__content {
+    padding: 20px;
+
+    p {
+      font-size: 0.875rem;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    ul {
+      list-style: square;
+
+      li {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 5px 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+  /* =================== Section ========================= */
+  .ms-section {
+    padding: 40px 0;
+    background: #fff;
+  }
+
+  .ms-section.grey {
+    background: #EDEDED;
+  }
+
+  .ms-section--heading {
+    position: relative;
+    max-width: 1200px;
+    margin: auto auto 40px;
+
+    h3 {
+      margin-bottom: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 130%;
+        height: 8px;
+        width: 40px;
+        border-bottom-left-radius: 4px;
+        background: #58bb8c;
+      }
+    }
+
+    &.inverse {
+      h3 {
+        color: #fff;
+
+        &::after {
+          background: #FCB320;
+        }
+      }
+    }
+
+    p {
+      opacity: 1;
+      font-weight: 500;
+      margin-top: 40px;
+      width: 70%;
+    }
+  }
+
+  .ms-img-title-text img {
+    margin-bottom: 20px;
+  }
+
+  .ms-img-title-text h3 {
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  .ms-img-title-text p {
+    color: #8E8E8E;
+    font-size: 0.75rem;
+  }
+
+  /* =================== Other Page Header ========================= */
+.ms-header--other {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .ms-header--other__bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      animation: scale 10000ms ease-in-out forwards;
+    }
+  }
+
+  .ms-header--other__content {
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      color: #fff;
+      text-align: left;
+    }
+  }
+}
+
+
+  /* =================== Homepage - The Vision ========================= */
+  .vision {
+    width: 100%;
+    background: #00923F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+
+  .vision img {
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  .vision div h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .vision div p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
