@@ -1,0 +1,245 @@
+@media (min-width: 1440px) {
+  .ms-section--heading,
+  .el-container {
+    max-width: 1200px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .slide-content {
+    left: 10% !important;
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .slide-content {
+    width: 70%;
+  }
+
+  .el-container,
+  .ms-section--heading {
+    max-width: 90%;
+  }
+
+  .ms-header h1 {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .el-container,
+  .ms-section--heading {
+    max-width: 900px;
+  }
+
+  .ms-header {
+    height: 65vh !important;
+
+    .slide-image {
+      height: 65vh !important;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .ms-header--ctas {
+    .ms-header--cta {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      svg {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        height: 36px;
+      }
+
+      div {
+        text-align: center;
+      }
+    }
+  }
+
+  .ms-about .ms-about--image img {
+    height: 200px;
+  }
+
+  .ms-home--options__image {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-top: 30px;
+    }
+  }
+
+  .ms-steps--step {
+    text-align: left !important;
+    display: flex;
+    margin-bottom: 25px;
+
+    span {
+      top: 30px !important;
+      left: 0 !important;
+    }
+
+    .step-title {
+      font-size: 1.2rem;
+      min-width: 100px;
+    }
+
+    .step-image {
+      position: absolute;
+      margin-top: 50px;
+
+      img {
+        height: 100px !important;
+      }
+    }
+
+    .step-content {
+      margin-top: 50px;
+      margin-left: 100px;
+
+      p {
+        text-align: left !important;
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  .ms-find-out--more .faq img {
+    height: 130px !important;
+  }
+
+  .ms-section--heading p {
+    width: 100%;
+  }
+
+  .ms-faqs .el-row .el-collapse {
+    width: 100%
+  }
+}
+
+@media (max-width: 992px) {
+  .el-container,
+  .ms-section--heading {
+    max-width: 932px !important;
+  }
+
+  .ms-header {
+    height: 70vh !important;
+
+    h1 {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  .slide .slide-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .el-container,
+  .ms-section--heading {
+    max-width: 700px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 16px;
+  }
+
+  .el-row {
+    width: unset;
+  }
+
+  .el-container,
+  .ms-section--heading {
+    max-width: 90% !important;
+  }
+
+  h1 {
+    font-size: 2.1rem !important;
+  }
+
+  .ms-section {
+    padding: 40px 0;
+
+    .ms-section--heading p {
+      width: 100%;
+    }
+  }
+
+  .ms-logo img {
+    height: 50px;
+  }
+
+  .ms-header {
+    height: 70vh !important;
+
+    .slide-image {
+      height: 70vh !important;
+    }
+
+    .carousel-container span {
+      top: 91% !important;
+
+      &.next {
+        right: 20px !important;
+      }
+
+      &.prev {
+        left: 20px !important
+      }
+    }
+  }
+
+  .overlay.header-gradient {
+    background: rgba(0, 0, 0, 0.35) !important;
+  }
+
+  .el-radio-button__inner {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .ms-steps {
+    .ms-steps--step {
+      padding: 40px 20px !important;
+
+      span {
+        margin-right: 0 !important;
+        font-size: 1.3rem;
+        height: 40px;
+        width: 40px;
+      }
+
+      .step-content {
+        margin-left: 0 !important;
+        margin-top: 15px !important
+      }
+    }
+  }
+
+  .ms-about .ms-about--content p {
+    text-align: justify;
+  }
+
+  .ms-faqs .el-row .el-collapse {
+    width: 100% !important;
+  }
+
+  .ms-header--other {
+    height: 40vh;
+  }
+}
