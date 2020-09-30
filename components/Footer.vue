@@ -17,7 +17,7 @@
             <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
             <li><nuxt-link to="/partners"> Partnerships </nuxt-link></li>
             <li><nuxt-link to="/faqs">FAQs</nuxt-link></li>
-            <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
+            <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
           </ul>
         </el-col>
         <el-col :sm="12" :md="8" :lg="8">
