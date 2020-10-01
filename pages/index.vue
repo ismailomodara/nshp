@@ -10,7 +10,7 @@
             ref="slider"
             :per-page="1"
             :loop="true"
-            :autoplay="true"
+            :autoplay="false"
             :autoplay-timeout="6000"
             :autoplay-hover-pause="false"
             :pagination-padding="6"
@@ -60,7 +60,7 @@
               </svg>
               <div>
                 <h4>Individuals</h4>
-                <p>A home for You</p>
+                <p>Own a house</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -82,7 +82,7 @@
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>Homes for groups</p>
+                <p>Own group homes</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -104,7 +104,7 @@
               </svg>
               <div>
                 <h4>Partnership</h4>
-                <p>Help us build</p>
+                <p>Build with us</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>

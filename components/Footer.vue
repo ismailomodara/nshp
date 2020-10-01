@@ -1,5 +1,6 @@
 <template>
   <footer class="ms-footer">
+    <img class="footer-illustration" :src="getImage('footer-svg.png')" alt="" />
     <el-container>
       <el-row type="flex" :gutter="10" class="flex-wrap">
         <el-col :sm="24" :md="12" :lg="12">
@@ -11,35 +12,19 @@
             affordable mortgages in all states in Nigeria and the FCT.
           </p>
         </el-col>
-        <el-col :sm="12" :md="4" :lg="4">
-          <h5>Quick Links</h5>
-          <ul class="ms-footer-links">
-            <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
-            <li><nuxt-link to="/partners"> Partnerships </nuxt-link></li>
-            <li><nuxt-link to="/faq">FAQs</nuxt-link></li>
-            <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
-          </ul>
-        </el-col>
-        <el-col :sm="12" :md="8" :lg="8">
-          <!--          <div class="ms-footer&#45;&#45;actions">-->
-          <!--            <h5>Search Website</h5>-->
-          <!--            <div class="ms-search">-->
-          <!--              <el-form :model="search">-->
-          <!--                <el-form-item>-->
-          <!--                  <div class="ms-footer&#45;&#45;search">-->
-          <!--                    <el-input-->
-          <!--                      v-model="search.query"-->
-          <!--                      placeholder="What are you looking for?"-->
-          <!--                    ></el-input>-->
-          <!--                    <el-button type="primary">Search</el-button>-->
-          <!--                  </div>-->
-          <!--                </el-form-item>-->
-          <!--              </el-form>-->
-          <!--            </div>-->
-          <!--          </div>-->
+        <el-col :sm="24" :md="12" :lg="12">
+          <div class="ms-footer--actions">
+            <h5>Quick Links</h5>
+            <ul class="ms-footer-links">
+              <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
+              <li><nuxt-link to="/partners"> Partnerships </nuxt-link></li>
+              <li><nuxt-link to="/faq">FAQs</nuxt-link></li>
+              <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
+            </ul>
+          </div>
           <div class="ms-footer--actions">
             <h5>Follow Us on</h5>
-            <div>
+            <div class="ms-social--links">
               <a
                 href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
                 target="_blank"
@@ -75,7 +60,6 @@
                     />
                   </g>
                 </svg>
-                <span>Facebook</span>
               </a>
               <a
                 href="https://mobile.twitter.com/nshp_ng"
@@ -112,7 +96,6 @@
                     />
                   </g>
                 </svg>
-                <span>Twitter</span>
               </a>
               <!--            <a href="#" class="ms-footer-social youtube" target="_blank"-->
               <!--              ><svg-->
@@ -212,7 +195,6 @@
                     </g>
                   </g>
                 </svg>
-                <span>Instagram</span>
               </a>
             </div>
           </div>
@@ -222,7 +204,7 @@
     <el-container>
       <div class="copyright">
         <hr />
-        <p>Copyright © 2020 - NSHP. All rights reserved.</p>
+        <p>copyright © 2020 - NSHP. All rights reserved.</p>
       </div>
     </el-container>
   </footer>
@@ -245,8 +227,17 @@ export default {
 
 <style lang="scss" scoped>
 .ms-footer {
-  padding: 80px 0 40px;
-  background: #0b1207;
+  margin-top: 55px;
+  padding: 40px 0;
+  background: #163627;
+  position: relative;
+
+  .footer-illustration {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+  }
 
   .footer-logo {
     margin-bottom: 15px;
@@ -257,7 +248,7 @@ export default {
     }
 
     + p {
-      width: 80%;
+      width: 90%;
       opacity: 0.74;
     }
   }
@@ -268,7 +259,7 @@ export default {
   }
 
   h5 {
-    color: #fff;
+    color: #58bb8c;
     text-transform: uppercase;
     font-size: 0.8rem;
     margin-bottom: 15px;
@@ -278,9 +269,19 @@ export default {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    align-items: center;
 
     li {
-      padding: 10px 0;
+      padding: 0 20px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
 
       a {
         color: #ffffff;
@@ -298,7 +299,7 @@ export default {
   }
 
   .ms-footer--actions {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     > a {
       color: #58bb8c;
       text-decoration: underline;
@@ -310,64 +311,68 @@ export default {
     align-items: center;
   }
 
-  .ms-footer-social {
+  .ms-social--links {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
 
-    span {
-      color: #fff;
-      font-size: 0.75rem;
-      opacity: 0.74;
-    }
+    .ms-footer-social {
+      display: flex;
+      align-items: center;
 
-    svg {
-      height: 42px;
-      width: 42px;
-      margin-right: 10px;
-    }
-
-    &.facebook:hover {
-      svg circle {
-        fill: #3d5a99 !important;
-        opacity: 1;
-        transition: all 0.25s ease-out;
-      }
       span {
-        color: #3d5a99;
+        color: #fff;
+        font-size: 0.75rem;
+        opacity: 0.74;
       }
-    }
 
-    &.twitter:hover {
-      svg circle {
-        fill: #2eaae1;
-        opacity: 1;
-        transition: all 0.25s ease-out;
+      svg {
+        height: 36px;
+        width: 36px;
+        margin-right: 20px;
       }
-      span {
-        color: #2eaae1;
-      }
-    }
 
-    &.youtube:hover {
-      svg circle {
-        fill: #cd211f;
-        opacity: 1;
-        transition: all 0.25s ease-out;
+      &.facebook:hover {
+        svg circle {
+          fill: #3d5a99 !important;
+          opacity: 1;
+          transition: all 0.25s ease-out;
+        }
+        span {
+          color: #3d5a99;
+        }
       }
-      span {
-        color: #cd211f;
-      }
-    }
 
-    &.instagram:hover {
-      svg circle {
-        fill: #b4408d;
-        opacity: 1;
-        transition: all 0.25s ease-out;
+      &.twitter:hover {
+        svg circle {
+          fill: #2eaae1;
+          opacity: 1;
+          transition: all 0.25s ease-out;
+        }
+        span {
+          color: #2eaae1;
+        }
       }
-      span {
-        color: #b4408d;
+
+      &.youtube:hover {
+        svg circle {
+          fill: #cd211f;
+          opacity: 1;
+          transition: all 0.25s ease-out;
+        }
+        span {
+          color: #cd211f;
+        }
+      }
+
+      &.instagram:hover {
+        svg circle {
+          fill: #b4408d;
+          opacity: 1;
+          transition: all 0.25s ease-out;
+        }
+        span {
+          color: #b4408d;
+        }
       }
     }
   }
@@ -377,12 +382,21 @@ export default {
     hr {
       border-color: #fff;
       opacity: 0.1;
-      margin-top: 70px;
+      margin-top: 20px;
     }
 
     p {
       text-align: center;
       opacity: 0.6;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .ms-footer {
+    .footer-illustration {
+      top: -40px !important;
     }
   }
 }
@@ -392,11 +406,12 @@ export default {
     .el-col-24:not(:last-child) {
       margin-bottom: 40px;
     }
-  }
-}
 
-@media (max-width: 992px) {
-  .ms-footer {
+    .footer-illustration {
+      top: -30px !important;
+      transform: scale(2);
+    }
+
     .footer-logo + p {
       width: 100%;
     }
@@ -408,6 +423,22 @@ export default {
       .el-button {
         margin-top: 10px;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-footer {
+    .el-col-24:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    .footer-illustration {
+      top: -15px !important;
+    }
+
+    .ms-footer-links li {
+      padding: 0 12px;
     }
   }
 }
