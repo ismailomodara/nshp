@@ -34,10 +34,7 @@
             :key="i"
             :class="{ active: page === link.url }"
           >
-            <nuxt-link v-if="link.url !== '/news'" :to="link.url">{{
-              link.label
-            }}</nuxt-link>
-            <!--            <a v-else href="#" target="_blank">News</a>-->
+            <nuxt-link :to="link.url">{{ link.label }}</nuxt-link>
           </li>
         </ul>
       </el-container>
@@ -91,10 +88,10 @@ export default {
           label: 'FAQ',
           url: '/faq',
         },
-        // {
-        //   label: 'News',
-        //   url: '/news',
-        // },
+        {
+          label: 'News',
+          url: '/news',
+        },
         {
           label: 'Contact',
           url: '/contact',

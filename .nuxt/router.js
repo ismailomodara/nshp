@@ -6,7 +6,9 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _65a29abe = () => interopDefault(import('../pages/about-us.vue' /* webpackChunkName: "pages/about-us" */))
 const _3cd4f9a6 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _d7cbfcba = () => interopDefault(import('../pages/faq.vue' /* webpackChunkName: "pages/faq" */))
+const _2d678cce = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
 const _1241f3ee = () => interopDefault(import('../pages/partners.vue' /* webpackChunkName: "pages/partners" */))
+const _30d4cf5e = () => interopDefault(import('../pages/news/_slug.vue' /* webpackChunkName: "pages/news/_slug" */))
 const _b1fb0fc2 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -38,9 +40,17 @@ export const routerOptions = {
     component: _d7cbfcba,
     name: "faq"
   }, {
+    path: "/news",
+    component: _2d678cce,
+    name: "news"
+  }, {
     path: "/partners",
     component: _1241f3ee,
     name: "partners"
+  }, {
+    path: "/news/:slug",
+    component: _30d4cf5e,
+    name: "news-slug"
   }, {
     path: "/",
     component: _b1fb0fc2,

@@ -110,8 +110,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
   ],
-  loading: { color: '#58bb8c', height: '10px' },
-  // loading: '~/components/Loader.vue',
+  loading: false,
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [],
 
