@@ -1,14 +1,28 @@
 <template>
   <div>
-    <div class="ms-navbar">
+    <div :class="['ms-navbar', { light: showLightNav === true }]">
+      <div class="ms-navbar--strip">
+        <el-container>
+          <div>
+            <a href="mailto:hello@nshp.ng"
+              ><i class="el-icon-message"></i><span>hello@nshp.ng</span></a
+            >
+          </div>
+          <div>
+            <a href="https://linktr.ee/nshp.ng"
+              ><i class="el-icon-phone"></i><span>+234 812 345 6789</span></a
+            >
+          </div>
+        </el-container>
+      </div>
       <el-container>
-        <div class="ms-logo">
-          <nuxt-link to="/"
-            ><img
-              :src="getImage('navlogos.svg')"
+        <nuxt-link to="/"
+          ><div class="ms-logo">
+            <img
+              :src="getImage(`navlogos${!showLightNav ? '-white' : ''}.svg`)"
               alt="Federal Government of Nigeria, NSHP"
-          /></nuxt-link>
-        </div>
+            /></div
+        ></nuxt-link>
         <div id="toggle" class="ms-mobile--menu__toggler" @click="toggleMenu">
           <span class="top"></span>
           <span class="middle"></span>
@@ -63,6 +77,7 @@ export default {
   mixins: [image],
   data() {
     return {
+      showLightNav: false,
       navLinks: [
         {
           label: 'Home',
@@ -100,6 +115,12 @@ export default {
   },
   mounted() {
     this.page = this.$route.path
+    window.addEventListener('scroll', () => {
+      this.showLightNav = window.pageYOffset > 100
+    })
+  },
+  created() {
+    this.showLightNav = !this.$route.name
   },
   methods: {
     toggleMenu() {
@@ -115,23 +136,57 @@ export default {
 
 <style scoped lang="scss">
 .ms-navbar {
-  padding: 10px 0;
-  background: #fff;
-  z-index: 2;
+  padding: 0 0 10px;
+  background: transparent;
+  z-index: 11;
   width: 100%;
+  position: fixed;
+  transition: background 0.3s ease-in;
 
-  .el-container {
+  .ms-navbar--strip {
+    background: #0b1207;
+    color: #fff;
+    padding: 5px 0;
     position: relative;
-    top: 0;
+    top: -80px;
+    transition: top 0.3s ease-in;
+
+    .el-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      > div {
+        margin-right: 30px;
+      }
+
+      a {
+        color: #fff;
+        opacity: 0.74;
+        font-size: 0.75rem;
+        font-weight: 600;
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  > .el-container {
+    position: relative;
+    top: -30px;
     left: 0;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease-in;
   }
 
   .ms-logo img {
-    height: 60px;
+    height: 70px;
+    transition: all 0.3s ease-in;
   }
 
   .ms-nav-links {
@@ -145,11 +200,12 @@ export default {
       padding: 10px 25px;
 
       a {
-        color: #000;
+        color: #fff;
         font-size: 0.75rem;
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
+        transition: color 0.3s ease-in;
       }
 
       &.active a {
@@ -159,7 +215,50 @@ export default {
 
       &:hover:not(.active) a {
         color: #58bb8c;
-        transition: color 0.3s ease-out;
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+
+  &.light {
+    background: #fff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease-out;
+
+    .ms-navbar--strip {
+      top: 0;
+      margin-bottom: 10px;
+      transition: top 0.3s ease-out;
+    }
+
+    .el-container {
+      top: 0;
+      transition: top 0.3s ease-out;
+    }
+
+    .ms-logo img {
+      height: 50px;
+      transition: all 0.3s ease-out;
+    }
+
+    .ms-nav-links {
+      li {
+        padding: 10px 25px;
+
+        a {
+          color: #000;
+          transition: color 0.3s ease-out;
+        }
+
+        &.active a {
+          color: #58bb8c;
+          font-weight: 600;
+        }
+
+        &:hover:not(.active) a {
+          color: #58bb8c;
+          transition: color 0.3s ease-out;
+        }
       }
     }
   }
@@ -361,9 +460,15 @@ export default {
   }
 }
 
+@media (max-width: 1024px) {
+  .ms-navbar {
+    padding: 0 0 20px;
+  }
+}
+
 @media (max-width: 992px) {
   .ms-navbar {
-    padding: 5px 0;
+    padding: 0 0 10px;
   }
 
   .ms-mobile--menu__toggler {
@@ -372,6 +477,14 @@ export default {
 
   .ms-nav-links {
     display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-navbar {
+    .ms-logo img {
+      height: 50px;
+    }
   }
 }
 </style>

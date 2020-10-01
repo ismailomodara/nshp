@@ -48,14 +48,14 @@ export default {
     $route() {
       this.$nextTick(() => {
         this.loading = true
-        setTimeout(() => (this.loading = false), 3000)
+        setTimeout(() => (this.loading = false), 800)
       })
     },
   },
   created() {
     this.$nextTick(() => {
       this.loading = true
-      setTimeout(() => (this.loading = false), 3000)
+      setTimeout(() => (this.loading = false), 800)
     })
   },
   mounted() {
