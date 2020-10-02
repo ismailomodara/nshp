@@ -52,11 +52,9 @@
             :key="i"
             :class="['nav-item', { active: page === link.url }]"
           >
-            <nuxt-link
-              :to="link.url"
-              class="nav-item"
-              >{{ link.label }}</nuxt-link
-            >
+            <nuxt-link :to="link.url" class="nav-item">{{
+              link.label
+            }}</nuxt-link>
           </li>
         </ul>
       </div>
