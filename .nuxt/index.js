@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '../layouts/error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -14,7 +14,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 import nuxt_plugin_plugin_0bb9db09 from 'nuxt_plugin_plugin_0bb9db09' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_elementui_d905880e from 'nuxt_plugin_elementui_d905880e' // Source: ../plugins/element-ui (mode: 'all')
-import nuxt_plugin_wow_caea3baa from 'nuxt_plugin_wow_caea3baa' // Source: ../plugins/wow (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -53,7 +52,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"NSHP - National Social Housing Programme","meta":[{"charset":"utf-8"},{"http-equiv":"X-UA-Compatible","content":"IE=edge"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"author","content":"National Social Housing Programme"},{"name":"theme-color","content":"#20B26D"},{"name":"description","content":""},{"name":"keywords","content":""},{"itemprop":"name","content":""},{"itemprop":"description","content":""},{"itemprop":"image","content":""},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:site","content":"@nshp_ng"},{"name":"twitter:title","content":""},{"name":"twitter:url","content":""},{"name":"twitter:image","content":""},{"name":"twitter:description","content":""},{"name":"twitter:app:country","content":"NG"},{"name":"twitter:creator","content":"@nshp_ng"},{"name":"twitter:domain","content":"@nshp_ng"},{"name":"twitter:image:src","content":""},{"property":"og:title","content":""},{"property":"og:url","content":""},{"property":"og:image","content":""},{"property":"og:description","content":""},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"NSHP"},{"property":"og:title","content":""},{"property":"og:url","content":""},{"property":"og:image","content":""},{"property":"og:description","content":""},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"Eden"}],"link":[{"rel":"icon","href":"\u002Ffavicon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Montserrat:wght@400;500;600;700&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap"}],"script":[{"innerHTML":"(function (i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https:\u002F\u002Fwww.google-analytics.com\u002Fanalytics.js','ga');ga('create', 'UA-178017824-1', 'auto');ga('send', 'pageview');","type":"text\u002Fjavascript","defer":true},{"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-178017824-1","type":"text\u002Fjavascript","body":true,"defer":true},{"innerHTML":"window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n\n        gtag('config', 'UA-178017824-1');","type":"text\u002Fjavascript","body":true,"defer":true}],"style":[]},
+    head: {"title":"NSHP - National Social Housing Programme","meta":[{"charset":"utf-8"},{"http-equiv":"X-UA-Compatible","content":"IE=edge"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"author","content":"National Social Housing Programme (NSHP)"},{"name":"theme-color","content":"#20B26D"},{"name":"description","content":""},{"name":"keywords","content":""},{"itemprop":"name","content":"National Social Housing Programme (NSHP)"},{"itemprop":"description","content":""},{"itemprop":"image","content":"https:\u002F\u002Fnshp.ng\u002Funfurl.jpg"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:site","content":"@nshp_ng"},{"name":"twitter:title","content":"National Social Housing Programme (NSHP)"},{"name":"twitter:url","content":"https:\u002F\u002Fnshp.ng"},{"name":"twitter:image","content":"https:\u002F\u002Fnshp.ng\u002Funfurl.jpg"},{"name":"twitter:description","content":""},{"name":"twitter:app:country","content":"NG"},{"name":"twitter:creator","content":"@nshp_ng"},{"name":"twitter:domain","content":"@nshp_ng"},{"name":"twitter:image:src","content":"https:\u002F\u002Fnshp.ng\u002Funfurl.jpg"},{"property":"og:title","content":"National Social Housing Programme (NSHP)"},{"property":"og:url","content":"https:\u002F\u002Fnshp.ng"},{"property":"og:image","content":"https:\u002F\u002Fnshp.ng\u002Funfurl.jpg"},{"property":"og:description","content":""},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"NSHP"},{"property":"og:title","content":"National Social Housing Programme (NSHP)"},{"property":"og:url","content":"https:\u002F\u002Fnshp.ng"},{"property":"og:image","content":"https:\u002F\u002Fnshp.ng\u002Funfurl-whatsapp.jpg"},{"property":"og:description","content":""},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"National Social Housing Programme"}],"link":[{"rel":"icon","href":"\u002Ffavicon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap"}],"script":[{"innerHTML":"(function (i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https:\u002F\u002Fwww.google-analytics.com\u002Fanalytics.js','ga');ga('create', 'UA-178017824-1', 'auto');ga('send', 'pageview');","type":"text\u002Fjavascript","defer":true},{"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-178017824-1","type":"text\u002Fjavascript","body":true,"defer":true},{"innerHTML":"window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n\n        gtag('config', 'UA-178017824-1');","type":"text\u002Fjavascript","body":true,"defer":true}],"style":[]},
 
     router,
     nuxt: {
@@ -173,10 +172,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_elementui_d905880e === 'function') {
     await nuxt_plugin_elementui_d905880e(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_wow_caea3baa === 'function') {
-    await nuxt_plugin_wow_caea3baa(app.context, inject)
   }
 
   // Lock enablePreview in context

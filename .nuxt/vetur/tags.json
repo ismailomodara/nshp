@@ -28,5 +28,17 @@
   },
   "LazyNavigation": {
     "description": "Auto imported from components/Navigation.vue"
+  },
+  "NewsCard": {
+    "description": "Auto imported from components/NewsCard.vue"
+  },
+  "LazyNewsCard": {
+    "description": "Auto imported from components/NewsCard.vue"
+  },
+  "VideoPlayer": {
+    "description": "Auto imported from components/VideoPlayer.vue"
+  },
+  "LazyVideoPlayer": {
+    "description": "Auto imported from components/VideoPlayer.vue"
   }
 }

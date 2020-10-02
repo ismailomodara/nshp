@@ -21,11 +21,25 @@
     "_name": "_d7cbfcba"
   },
   {
+    "name": "news",
+    "path": "/news",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/news/index.vue",
+    "chunkName": "pages/news/index",
+    "_name": "_2d678cce"
+  },
+  {
     "name": "partners",
     "path": "/partners",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/partners.vue",
     "chunkName": "pages/partners",
     "_name": "_1241f3ee"
+  },
+  {
+    "name": "news-slug",
+    "path": "/news/:slug",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/news/_slug.vue",
+    "chunkName": "pages/news/_slug",
+    "_name": "_30d4cf5e"
   },
   {
     "name": "index",

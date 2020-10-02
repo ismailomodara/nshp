@@ -4,13 +4,42 @@
       <div class="ms-navbar--strip">
         <el-container>
           <div>
-            <a href="mailto:hello@nshp.ng"
-              ><i class="el-icon-message"></i><span>hello@nshp.ng</span></a
+            <a href="mailto:hello@nshp.ng" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline></svg
+              ><span>hello@nshp.ng</span></a
             >
           </div>
           <div>
-            <a href="https://linktr.ee/nshp.ng"
-              ><i class="el-icon-phone"></i><span>+234 812 345 6789</span></a
+            <a href="tel:+2348123456789" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path></svg
+              ><span>+234 812 345 6789</span></a
             >
           </div>
         </el-container>
@@ -34,10 +63,7 @@
             :key="i"
             :class="{ active: page === link.url }"
           >
-            <nuxt-link v-if="link.url !== '/news'" :to="link.url">{{
-              link.label
-            }}</nuxt-link>
-            <!--            <a v-else href="#" target="_blank">News</a>-->
+            <nuxt-link :to="link.url">{{ link.label }}</nuxt-link>
           </li>
         </ul>
       </el-container>
@@ -55,13 +81,9 @@
             :key="i"
             :class="['nav-item', { active: page === link.url }]"
           >
-            <nuxt-link
-              v-if="link.url !== 'news'"
-              :to="link.url"
-              class="nav-item"
-              >{{ link.label }}</nuxt-link
-            >
-            <a v-else href="#" target="_blank">News</a>
+            <nuxt-link :to="link.url" class="nav-item">{{
+              link.label
+            }}</nuxt-link>
           </li>
         </ul>
       </div>
@@ -88,13 +110,13 @@ export default {
           url: '/about-us',
         },
         {
+          label: 'News',
+          url: '/news',
+        },
+        {
           label: 'FAQ',
           url: '/faq',
         },
-        // {
-        //   label: 'News',
-        //   url: '/news',
-        // },
         {
           label: 'Contact',
           url: '/contact',
@@ -136,20 +158,20 @@ export default {
 
 <style scoped lang="scss">
 .ms-navbar {
-  padding: 0 0 10px;
+  padding: 10px 0;
   background: transparent;
   z-index: 11;
   width: 100%;
   position: fixed;
-  transition: background 0.3s ease-in;
+  transition: background 0.7s ease-in;
 
   .ms-navbar--strip {
-    background: #0b1207;
+    background: #163627;
     color: #fff;
     padding: 5px 0;
     position: relative;
     top: -80px;
-    transition: top 0.3s ease-in;
+    transition: top 1s ease 0s;
 
     .el-container {
       display: flex;
@@ -165,8 +187,21 @@ export default {
         opacity: 0.74;
         font-size: 0.75rem;
         font-weight: 600;
+        transition: color 0.3s ease-out;
+        display: flex;
+        align-items: center;
 
-        i {
+        &:hover {
+          color: #fcb320;
+          transition: color 0.3s ease-in;
+
+          svg {
+            stroke: #fcb320;
+            transition: color 0.3s ease-in;
+          }
+        }
+
+        svg {
           margin-right: 10px;
         }
       }
@@ -175,18 +210,17 @@ export default {
 
   > .el-container {
     position: relative;
-    top: -30px;
+    top: -40px;
     left: 0;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease-in;
+    transition: all 0.7s ease-in;
   }
 
   .ms-logo img {
     height: 70px;
-    transition: all 0.3s ease-in;
   }
 
   .ms-nav-links {
@@ -205,7 +239,7 @@ export default {
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        transition: color 0.3s ease-in;
+        transition: color 0.7s ease-in;
       }
 
       &.active a {
@@ -215,30 +249,26 @@ export default {
 
       &:hover:not(.active) a {
         color: #58bb8c;
-        transition: color 0.3s ease-in;
+        transition: color 0.7s ease-in;
       }
     }
   }
 
   &.light {
+    padding-top: 0;
     background: #fff;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2) !important;
-    transition: all 0.3s ease-out;
+    transition: all 0.7s ease-out;
 
     .ms-navbar--strip {
       top: 0;
       margin-bottom: 10px;
-      transition: top 0.3s ease-out;
+      transition: top 0.7s ease-out;
     }
 
     .el-container {
       top: 0;
-      transition: top 0.3s ease-out;
-    }
-
-    .ms-logo img {
-      height: 50px;
-      transition: all 0.3s ease-out;
+      transition: top 0.7s ease-out;
     }
 
     .ms-nav-links {
@@ -247,7 +277,7 @@ export default {
 
         a {
           color: #000;
-          transition: color 0.3s ease-out;
+          transition: color 0.7s ease-out;
         }
 
         &.active a {
@@ -257,7 +287,7 @@ export default {
 
         &:hover:not(.active) a {
           color: #58bb8c;
-          transition: color 0.3s ease-out;
+          transition: color 0.7s ease-out;
         }
       }
     }
@@ -318,7 +348,7 @@ export default {
 
 .ms-mobile--menu.open .ms-mobile--menu__toggler {
   opacity: 1;
-  transition: 0.3s ease-in;
+  transition: 0.7s ease-in;
   right: 15% !important;
 }
 
@@ -468,7 +498,7 @@ export default {
 
 @media (max-width: 992px) {
   .ms-navbar {
-    padding: 0 0 10px;
+    padding: 12px 0;
   }
 
   .ms-mobile--menu__toggler {
@@ -484,6 +514,16 @@ export default {
   .ms-navbar {
     .ms-logo img {
       height: 50px;
+    }
+
+    > .el-container {
+      top: -20px !important;
+    }
+
+    &.light {
+      > .el-container {
+        top: 0 !important;
+      }
     }
   }
 }

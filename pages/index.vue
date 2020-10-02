@@ -60,7 +60,7 @@
               </svg>
               <div>
                 <h4>Individuals</h4>
-                <p>A home for You</p>
+                <p>Own a house</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -82,7 +82,7 @@
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>Homes for groups</p>
+                <p>Own group homes</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -104,7 +104,7 @@
               </svg>
               <div>
                 <h4>Partnership</h4>
-                <p>Help us build</p>
+                <p>Build with us</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -209,7 +209,7 @@
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-steps--step">
               <span>1</span>
-              <h6 class="step-title">Register</h6>
+              <h6 class="step-title">Apply</h6>
               <div class="step-image">
                 <img
                   :src="getImage('home/register.svg')"
@@ -221,16 +221,13 @@
                   Complete your profile by submitting your personal details and
                   required documents.
                 </p>
-                <a href="https://assessment.nshp.ng/individual"
-                  ><el-button type="primary">I'm interested </el-button></a
-                >
               </div>
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-steps--step inverse">
               <span>2</span>
-              <h6 class="step-title">Selection</h6>
+              <h6 class="step-title">Qualify</h6>
               <div class="step-image">
                 <img
                   :src="getImage('home/selection.svg')"
@@ -242,11 +239,6 @@
                   A unique identification number will be assigned to you for the
                   house allocation.
                 </p>
-                <el-button
-                  class="el-button--secondary"
-                  @click="$router.push('/about-us')"
-                  >Read more</el-button
-                >
               </div>
             </div>
           </el-col>
@@ -265,9 +257,6 @@
                   Houses will be distributed to applicants as soon as
                   construction begins
                 </p>
-                <el-badge value="Coming soon" class="item">
-                  <el-button type="primary">Start here</el-button>
-                </el-badge>
               </div>
             </div>
           </el-col>
@@ -367,8 +356,12 @@
             <div class="contact-via">
               <img :src="getImage('home/whatsapp.svg')" alt="Home" />
               <div>
-                <p>Message via WhatsApp</p>
-                <a href="https://linktr.ee/nshp.ng"
+                <p>
+                  Message via
+                  <span><img :src="getImage('home/whatsapp-icon.svg')" /></span>
+                  WhatsApp
+                </p>
+                <a href="https://linktr.ee/nshp.ng" target="_blank"
                   ><el-button type="primary">Message</el-button></a
                 >
               </div>
@@ -379,7 +372,7 @@
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>
                 <p>Send us an email today</p>
-                <a href="mailto:hello@nshp.ng"
+                <a href="mailto:hello@nshp.ng" target="_blank"
                   ><el-button type="primary" class="el-button--secondary"
                     >Send</el-button
                   ></a
@@ -391,7 +384,6 @@
       </el-container>
     </div>
     <video-player :show.sync="showVideoPlayer" />
-    <ms-partners />
   </div>
 </template>
 
@@ -399,7 +391,6 @@
 import { Carousel, Slide } from 'vue-carousel'
 
 import VideoPlayer from '../components/VideoPlayer'
-import MsPartners from '../components/MsPartners'
 
 import image from '../mixin/image'
 
@@ -409,7 +400,6 @@ export default {
     Carousel,
     Slide,
     VideoPlayer,
-    MsPartners,
   },
   mixins: [image],
   data() {
@@ -831,7 +821,7 @@ export default {
       margin-bottom: 70px;
     }
 
-    img {
+    > img {
       width: 120px;
       height: auto;
     }
@@ -842,8 +832,12 @@ export default {
 
       p {
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
         span {
           img {
+            margin: 0 5px;
             height: 22px;
             position: relative;
             top: 3px;

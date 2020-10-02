@@ -4,8 +4,24 @@
       <h3>Partners</h3>
     </div>
     <el-container>
-      <el-row type="flex" :gutter="30" class="flex-wrap mt-4">
-        <el-col :sm="12" :md="10" :lg="8">
+      <el-row type="flex" :gutter="40" class="flex-wrap mt-4">
+        <el-col :sm="12" :md="5" :lg="5" class="mb-1">
+          <div class="ms-partner--type inverse">
+            <span></span>
+            <h6>Implementer</h6>
+          </div>
+          <carousel ref="slider">
+            <slide>
+              <div class="partner-logo">
+                <img
+                  :src="getImage('partners/family-home-funds.png')"
+                  alt="FHF"
+                />
+              </div>
+            </slide>
+          </carousel>
+        </el-col>
+        <el-col :sm="12" :md="8" :lg="8">
           <div class="ms-partner--type">
             <span></span>
             <h6>Financial Partners</h6>
@@ -22,7 +38,7 @@
             </slide>
           </carousel>
         </el-col>
-        <el-col :sm="12" :md="14" :lg="16">
+        <el-col :sm="24" :md="11" :lg="11">
           <div class="ms-partner--type inverse">
             <span></span>
             <h6>Strategic Partners</h6>
@@ -32,7 +48,7 @@
             :per-page-custom="[
               [0, 2],
               [600, 3],
-              [1366, 4],
+              [1366, 3],
             ]"
             :loop="true"
             :autoplay="true"
@@ -78,7 +94,6 @@ export default {
         'partners/federal-housing.png',
         'partners/works-and-housing.png',
         'partners/state_government.png',
-        'partners/family-home-funds.png',
       ],
     }
   },
