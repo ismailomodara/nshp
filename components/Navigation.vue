@@ -53,12 +53,10 @@
             :class="['nav-item', { active: page === link.url }]"
           >
             <nuxt-link
-              v-if="link.url !== 'news'"
               :to="link.url"
               class="nav-item"
               >{{ link.label }}</nuxt-link
             >
-            <a v-else href="#" target="_blank">News</a>
           </li>
         </ul>
       </div>
