@@ -16,97 +16,61 @@
         <h3>Reach out to us</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="20" align="middle">
-          <el-col :lg="12">
-            <div class="ms-contact--methods">
-              <div class="contact-via">
-                <img :src="getImage('home/whatsapp.svg')" alt="Home" />
-                <div>
-                  <p>Message via WhatsApp</p>
-                  <a href="https://linktr.ee/nshp.ng"
-                    ><el-button type="primary">Message</el-button></a
-                  >
-                </div>
+        <el-row type="flex" :gutter="20">
+          <el-col :xs="24" :sm="12" :md="8" :lg="8">
+            <div class="contact-via">
+              <img :src="getImage('home/whatsapp.svg')" alt="Home" />
+              <div>
+                <p>
+                  Message via
+                  <span><img :src="getImage('home/whatsapp-icon.svg')" /></span>
+                  WhatsApp
+                </p>
+                <a href="https://linktr.ee/nshp.ng" target="_blank"
+                  ><el-button type="primary">Message</el-button></a
+                >
               </div>
-              <div class="contact-via">
-                <img :src="getImage('contact/social.svg')" alt="Home" />
+            </div>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="8" :lg="8">
+            <div class="contact-via">
+              <img :src="getImage('contact/social.svg')" alt="Home" />
+              <div>
+                <p>Follow us on our social platforms</p>
                 <div>
-                  <p>Follow us on our social platforms</p>
-                  <div>
-                    <a
-                      href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
-                      class="ms-social"
-                      ><img :src="getImage('contact/facebook.svg')" alt=""
-                    /></a>
-                    <a
-                      href="https://mobile.twitter.com/nshp_ng"
-                      class="ms-social"
-                      ><img :src="getImage('contact/twitter.svg')" alt=""
-                    /></a>
-                    <!--                  <a href="#" class="ms-social"-->
-                    <!--                    ><img src="assets/img/contact/youtube.svg" alt=""-->
-                    <!--                  /></a>-->
-                    <a
-                      href="https://www.instagram.com/nshp_ng/"
-                      class="ms-social"
-                      ><img :src="getImage('contact/instagram.svg')" alt=""
-                    /></a>
-                  </div>
+                  <a
+                    href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/facebook.svg')" alt=""
+                  /></a>
+                  <a
+                    href="https://mobile.twitter.com/nshp_ng"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/twitter.svg')" alt=""
+                  /></a>
+                  <!--                  <a href="#" class="ms-social"-->
+                  <!--                    ><img src="assets/img/contact/youtube.svg" alt=""-->
+                  <!--                  /></a>-->
+                  <a
+                    href="https://www.instagram.com/nshp_ng/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/instagram.svg')" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
           </el-col>
-          <el-col :lg="12">
-            <el-form :model="form" label-position="top">
-              <el-row type="flex">
-                <el-col :lg="24">
-                  <el-form-item label="FULL NAME">
-                    <el-input v-model="form.name" type="text" />
-                  </el-form-item>
-                </el-col>
-              </el-row>
-              <el-row type="flex" :gutter="15" :style="{ width: 'auto' }">
-                <el-col :lg="12">
-                  <el-form-item label="EMAIL">
-                    <el-input v-model="form.email" type="text" />
-                  </el-form-item>
-                </el-col>
-                <el-col :lg="12">
-                  <el-form-item label="PHONE NUMBER">
-                    <el-input v-model="form.phone" type="text" />
-                  </el-form-item>
-                </el-col>
-              </el-row>
-              <el-row type="flex">
-                <el-col :lg="24">
-                  <el-form-item label="INTEREST">
-                    <el-select
-                      v-model="form.interest"
-                      placeholder="Select your interest"
-                    >
-                      <el-option
-                        label="Home for Individuals"
-                        value="individual"
-                      />
-                      <el-option
-                        label="Home for Cooperative"
-                        value="cooperative"
-                      />
-                      <el-option label="Becoming a Partner" value="partner" />
-                      <el-option label="Becoming a Supplier" value="supplier" />
-                    </el-select>
-                  </el-form-item>
-                </el-col>
-              </el-row>
-              <el-row type="flex">
-                <el-col :lg="24">
-                  <el-form-item label="MESSAGE">
-                    <el-input v-model="form.message" type="textarea" rows="4" />
-                  </el-form-item>
-                </el-col>
-              </el-row>
-              <el-button type="primary">Submit</el-button>
-            </el-form>
+          <el-col :xs="24" :sm="12" :md="8" :lg="8">
+            <div class="contact-via">
+              <img :src="getImage('home/email.svg')" alt="Home" />
+              <div>
+                <p>Send us a mail via</p>
+                <a href="mailto:hello@nshp.ng" target="_blank">hello@nshp.ng</a>
+              </div>
+            </div>
           </el-col>
         </el-row>
       </el-container>
@@ -151,18 +115,31 @@ export default {
       margin-bottom: 70px;
     }
 
+    .ms-social:not(:last-child) {
+      margin-right: 15px;
+    }
     img {
       width: auto;
       height: 120px;
+      margin-bottom: 20px;
     }
 
     > div {
       text-align: center;
 
+      a {
+        color: #58bb8c;
+        font-weight: 600;
+      }
+
       p {
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
         span {
           img {
+            margin: 0 5px;
             height: 22px;
             position: relative;
             top: 3px;

@@ -105,20 +105,14 @@
         </el-row>
       </el-container>
     </div>
-    <ms-partners />
   </div>
 </template>
 
 <script>
-import MsPartners from '../components/MsPartners'
-
 import image from '../mixin/image'
 
 export default {
   name: 'AboutUs',
-  components: {
-    MsPartners,
-  },
   mixins: [image],
   data() {
     return {

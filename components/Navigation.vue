@@ -5,12 +5,41 @@
         <el-container>
           <div>
             <a href="mailto:hello@nshp.ng" target="_blank"
-              ><i class="el-icon-message"></i><span>hello@nshp.ng</span></a
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline></svg
+              ><span>hello@nshp.ng</span></a
             >
           </div>
           <div>
-            <a href="https://linktr.ee/nshp.ng" target="_blank"
-              ><i class="el-icon-phone"></i><span>+234 812 345 6789</span></a
+            <a href="tel:+2348123456789" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path></svg
+              ><span>+234 812 345 6789</span></a
             >
           </div>
         </el-container>
@@ -81,12 +110,12 @@ export default {
           url: '/about-us',
         },
         {
-          label: 'FAQ',
-          url: '/faq',
-        },
-        {
           label: 'News',
           url: '/news',
+        },
+        {
+          label: 'FAQ',
+          url: '/faq',
         },
         {
           label: 'Contact',
@@ -159,13 +188,20 @@ export default {
         font-size: 0.75rem;
         font-weight: 600;
         transition: color 0.3s ease-out;
+        display: flex;
+        align-items: center;
 
         &:hover {
           color: #fcb320;
           transition: color 0.3s ease-in;
+
+          svg {
+            stroke: #fcb320;
+            transition: color 0.3s ease-in;
+          }
         }
 
-        i {
+        svg {
           margin-right: 10px;
         }
       }
@@ -462,7 +498,7 @@ export default {
 
 @media (max-width: 992px) {
   .ms-navbar {
-    padding: 0 0 10px;
+    padding: 12px 0;
   }
 
   .ms-mobile--menu__toggler {
