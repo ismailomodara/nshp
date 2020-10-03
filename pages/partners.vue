@@ -65,25 +65,25 @@ export default {
       partnersType: [
         {
           bg: 'delivery-partner.jpg',
-          url: '{{form_base_url}}/delivery-partners',
+          url: 'https://nshp.ng/delivery-partners',
           image: 'partner-w',
           title: 'Delivery Partner',
         },
         {
           bg: 'consultant.jpg',
-          url: '{{form_base_url}}/management-consultants',
+          url: 'https://nshp.ng/management-consultants',
           image: 'consultant-w',
           title: 'Management Consultant',
         },
         {
           bg: 'contractor.jpg',
-          url: '{{form_base_url}}/management-contractors',
+          url: 'https://nshp.ng/management-contractors',
           image: 'contractor-w',
           title: 'Management Contractor',
         },
         {
           bg: 'manufacturer.jpg',
-          url: '{{form_base_url}}/manufacturers',
+          url: 'https://nshp.ng/manufacturers',
           image: 'supplier-w',
           title: 'Manufacturer/Supplier',
         },

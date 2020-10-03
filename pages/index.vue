@@ -45,7 +45,7 @@
         <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta individual">
-              <a href="{{form_base_url}}/individual"></a>
+              <a href="https://nshp.ng/individual"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -67,7 +67,7 @@
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <a href="{{form_base_url}}/co-operatives"></a>
+              <a href="https://nshp.ng/co-operatives"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"

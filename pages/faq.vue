@@ -242,7 +242,7 @@
                     construction value chain. Complete the form as a
                     prerequisite for registration with accurate and valid
                     details
-                    <a href="{{form_base_url}}/manufacturers">here</a>
+                    <a href="https://nshp.ng/manufacturers">here</a>
                   </p>
                 </div>
               </el-collapse-item>
