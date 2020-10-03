@@ -438,8 +438,12 @@ export default {
       top: -15px !important;
     }
 
-    .ms-footer-links li {
-      padding: 0 12px;
+    .ms-footer-links {
+      justify-content: space-between;
+
+      li {
+        padding: 0;
+      }
     }
   }
 }

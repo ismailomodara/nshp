@@ -165,4 +165,14 @@ export default {
     }
   }
 }
+
+@media (max-width: 600px) {
+  .ms-partners .ms-partner--type {
+    padding: 0 12px;
+
+    img.icon {
+      height: 40px;
+    }
+  }
+}
 </style>
