@@ -10,10 +10,7 @@
           @click="scrollToBottom"
         ></el-button>
       </div>
-      <Navigation />
       <nuxt />
-      <MsPartners />
-      <Footer />
       <div v-if="showBackToTop" class="ms-back-to-top">
         <el-button
           type="primary"
@@ -28,17 +25,11 @@
 
 <script>
 import Loader from '../components/Loader'
-import Navigation from '../components/Navigation'
-import MsPartners from '../components/MsPartners'
-import Footer from '../components/Footer'
 
 export default {
   name: 'DefaultLayout',
   components: {
     Loader,
-    Navigation,
-    MsPartners,
-    Footer,
   },
   data() {
     return {

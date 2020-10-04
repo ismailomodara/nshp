@@ -63,7 +63,9 @@
             :key="i"
             :class="{ active: page === link.url }"
           >
-            <nuxt-link :to="link.url">{{ link.label }}</nuxt-link>
+            <a :to="link.url" @click="$emit('scroll', link.url)">{{
+              link.label
+            }}</a>
           </li>
         </ul>
       </el-container>
@@ -81,9 +83,9 @@
             :key="i"
             :class="['nav-item', { active: page === link.url }]"
           >
-            <nuxt-link :to="link.url" class="nav-item">{{
+            <a :to="link.url" @click="$emit('scroll', link.url)">{{
               link.label
-            }}</nuxt-link>
+            }}</a>
           </li>
         </ul>
       </div>
@@ -103,23 +105,23 @@ export default {
       navLinks: [
         {
           label: 'Home',
-          url: '/',
+          url: 'home',
         },
         {
           label: 'About NSHP',
-          url: '/about-us',
-        },
-        {
-          label: 'News',
-          url: '/news',
+          url: 'about-us',
         },
         {
           label: 'FAQ',
-          url: '/faq',
+          url: 'faq',
         },
         {
           label: 'Contact',
-          url: '/contact',
+          url: 'contact',
+        },
+        {
+          label: 'News',
+          url: 'news',
         },
       ],
       page: '/',
@@ -186,7 +188,7 @@ export default {
         color: #fff;
         opacity: 0.74;
         font-size: 0.75rem;
-        font-weight: 600;
+        font-weight: 700;
         transition: color 0.3s ease-out;
         display: flex;
         align-items: center;
@@ -237,8 +239,8 @@ export default {
         color: #fff;
         font-size: 0.75rem;
         text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
         transition: color 0.7s ease-in;
       }
 

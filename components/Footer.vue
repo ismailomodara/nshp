@@ -16,11 +16,11 @@
           <div class="ms-footer--actions">
             <h5>Quick Links</h5>
             <ul class="ms-footer-links">
-              <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
-              <li><nuxt-link to="/partners"> Partnerships </nuxt-link></li>
-              <li><nuxt-link to="/news">News</nuxt-link></li>
-              <li><nuxt-link to="/faq">FAQs</nuxt-link></li>
-              <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
+              <li v-for="(link, i) in links" :key="i">
+                <a :to="link.url" @click="$emit('scroll', link.url)">{{
+                  link.label
+                }}</a>
+              </li>
             </ul>
           </div>
           <div class="ms-footer--actions">
@@ -98,38 +98,6 @@
                   </g>
                 </svg>
               </a>
-              <!--            <a href="#" class="ms-footer-social youtube" target="_blank"-->
-              <!--              ><svg-->
-              <!--                xmlns="http://www.w3.org/2000/svg"-->
-              <!--                width="50"-->
-              <!--                height="50"-->
-              <!--                viewBox="0 0 50 50"-->
-              <!--              >-->
-              <!--                <g-->
-              <!--                  id="Group_269"-->
-              <!--                  data-name="Group 269"-->
-              <!--                  transform="translate(-1150 -8981)"-->
-              <!--                >-->
-              <!--                  <circle-->
-              <!--                    id="Ellipse_29"-->
-              <!--                    data-name="Ellipse 29"-->
-              <!--                    cx="25"-->
-              <!--                    cy="25"-->
-              <!--                    r="25"-->
-              <!--                    transform="translate(1150 8981)"-->
-              <!--                    fill="#fff"-->
-              <!--                    opacity="0.091"-->
-              <!--                  />-->
-              <!--                  <path-->
-              <!--                    id="Icon_awesome-youtube"-->
-              <!--                    data-name="Icon awesome-youtube"-->
-              <!--                    d="M22.541,6.915A2.758,2.758,0,0,0,20.6,4.962C18.888,4.5,12.025,4.5,12.025,4.5s-6.864,0-8.575.462A2.758,2.758,0,0,0,1.509,6.915a28.932,28.932,0,0,0-.459,5.317,28.932,28.932,0,0,0,.459,5.317,2.717,2.717,0,0,0,1.941,1.922c1.712.462,8.575.462,8.575.462s6.864,0,8.575-.462a2.717,2.717,0,0,0,1.941-1.922A28.932,28.932,0,0,0,23,12.232a28.932,28.932,0,0,0-.459-5.317ZM9.78,15.5V8.969l5.737,3.264L9.78,15.5Z"-->
-              <!--                    transform="translate(1163.225 8993.783)"-->
-              <!--                    fill="#fff"-->
-              <!--                  />-->
-              <!--                </g>-->
-              <!--              </svg>-->
-              <!--            </a>-->
               <a
                 href="https://www.instagram.com/nshp_ng/"
                 target="_blank"
@@ -218,9 +186,28 @@ export default {
   mixins: [image],
   data() {
     return {
-      search: {
-        query: '',
-      },
+      links: [
+        {
+          label: 'About NSHP',
+          url: 'about-us',
+        },
+        {
+          label: 'FAQ',
+          url: 'faq',
+        },
+        {
+          label: 'Contact',
+          url: 'contact',
+        },
+        {
+          label: 'Partnerships',
+          url: 'partners',
+        },
+        {
+          label: 'News',
+          url: 'news',
+        },
+      ],
     }
   },
 }
