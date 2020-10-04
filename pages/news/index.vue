@@ -17,18 +17,24 @@
     <div class="ms-all--news ms-section">
       <el-container>
         <el-row type="flex" class="flex-wrap" :gutter="40">
-          <el-col :sm="24" :md="24" :lg="24">
-            <news-card orientation="horizontal" />
+          <el-col
+            v-for="(news, i) in allNews"
+            :key="i"
+            :sm="24"
+            :md="24"
+            :lg="i % 3 === 0 ? 24 : 12"
+          >
+            <news-card
+              :news="news"
+              :orientation="`${i % 3 === 0 ? 'horizontal' : 'vertical'}`"
+            />
           </el-col>
-          <el-col :sm="12" :md="12" :lg="12">
-            <news-card orientation="vertical" />
-          </el-col>
-          <el-col :sm="12" :md="12" :lg="12">
-            <news-card orientation="vertical" />
-          </el-col>
-          <el-col :sm="24" :md="24" :lg="24">
-            <news-card orientation="horizontal" />
-          </el-col>
+          <!--          <el-col :sm="12" :md="12" :lg="12">-->
+          <!--            <news-card orientation="vertical" />-->
+          <!--          </el-col>-->
+          <!--          <el-col :sm="12" :md="12" :lg="12">-->
+          <!--                        <news-card orientation="vertical" />-->
+          <!--          </el-col>-->
         </el-row>
       </el-container>
     </div>
@@ -38,6 +44,7 @@
 <script>
 import image from '../../mixin/image'
 import NewsCard from '../../components/NewsCard'
+import newsContent from './NewsContent'
 
 export default {
   name: 'News',
@@ -46,21 +53,13 @@ export default {
   },
   mixins: [image],
   data() {
-    return {
-      news: {
-        date: '1st Oct, 2020.',
-        title: 'The News Title',
-        desc:
-          'Becoming a homeowner in any part of Nigeria just became easier! The National Social Housing Programme (NSHP) allows you to become an instant homeowner with as low as',
-        contents: [
-          'Imagine becoming the latest homeowner in any part ' +
-            'of Nigeria, amazing right? The National Social Housing Programme ' +
-            '(NSHP) allows you to become an instant landlord with as low as <span>₦2,000,000 only</span>',
-        ],
-      },
-    }
+    return {}
   },
-  methods: {},
+  computed: {
+    allNews() {
+      return newsContent
+    },
+  },
 }
 </script>
 
