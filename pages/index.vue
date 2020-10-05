@@ -103,7 +103,7 @@
                 />
               </svg>
               <div>
-                <h4>Partnership</h4>
+                <h4>Partnerships</h4>
                 <p>Build with us</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />

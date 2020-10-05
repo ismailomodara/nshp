@@ -16,7 +16,7 @@
         <h3>The Vision</h3>
         <p>
           Here are some of the impacts the programme as a whole would be making
-          in the Nigeria Economy.
+          in the Nigerian Economy.
         </p>
       </div>
       <el-container>
