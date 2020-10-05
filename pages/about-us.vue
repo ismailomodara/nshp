@@ -105,6 +105,34 @@
         </el-row>
       </el-container>
     </div>
+    <div class="ms-coming--soon__section ms-section">
+      <el-container>
+        <el-row type="flex" :gutter="20" align="middle" class="flex-wrap">
+          <el-col :sm="12" :lg="12" class="mb-1">
+            <div class="ms-section--heading">
+              <h3>Projects</h3>
+            </div>
+            <div class="ms-coming--soon">
+              <img :src="getImage('projects.svg')" alt="Home" />
+              <div>
+                <el-tag>Coming Soon</el-tag>
+              </div>
+            </div>
+          </el-col>
+          <el-col :sm="12" :lg="12">
+            <div class="ms-section--heading">
+              <h3>Progress</h3>
+            </div>
+            <div class="ms-coming--soon">
+              <img :src="getImage('progress.svg')" alt="Home" />
+              <div>
+                <el-tag>Coming Soon</el-tag>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </el-container>
+    </div>
   </div>
 </template>
 
@@ -239,6 +267,49 @@ export default {
       font-size: 1rem;
       opacity: 0.8;
       line-height: 1.8;
+    }
+  }
+}
+
+.ms-coming--soon__section {
+  .el-row {
+    width: 100%;
+  }
+
+  .ms-coming--soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+
+    > img {
+      height: 160px;
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    div {
+      margin-left: 20px;
+      text-align: left;
+
+      p {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+          img {
+            margin: 0 5px;
+            height: 22px;
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
     }
   }
 }
