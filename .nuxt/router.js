@@ -8,6 +8,7 @@ const _3cd4f9a6 = () => interopDefault(import('../pages/contact.vue' /* webpackC
 const _d7cbfcba = () => interopDefault(import('../pages/faq.vue' /* webpackChunkName: "pages/faq" */))
 const _2d678cce = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
 const _1241f3ee = () => interopDefault(import('../pages/partners.vue' /* webpackChunkName: "pages/partners" */))
+const _75b61c62 = () => interopDefault(import('../pages/news/NewsContent.js' /* webpackChunkName: "pages/news/NewsContent" */))
 const _30d4cf5e = () => interopDefault(import('../pages/news/_slug.vue' /* webpackChunkName: "pages/news/_slug" */))
 const _b1fb0fc2 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -47,6 +48,10 @@ export const routerOptions = {
     path: "/partners",
     component: _1241f3ee,
     name: "partners"
+  }, {
+    path: "/news/NewsContent",
+    component: _75b61c62,
+    name: "news-NewsContent"
   }, {
     path: "/news/:slug",
     component: _30d4cf5e,

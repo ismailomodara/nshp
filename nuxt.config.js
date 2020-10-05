@@ -14,14 +14,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1'},
       // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
 
-      {name: 'author', content: 'National Social Housing Programme (NSHP)'},
+      {name: 'author', content: 'National Social Housing Programme'},
       {name: 'theme-color', content: '#20B26D'},
-      {name: 'description', content: ''},
-      {name: 'keywords', content:''},
+      {name: 'description', content: 'Affordable Housing for Nigerians'},
+      {name: 'keywords', content:' affordable housing, social housing, low interest mortgage'},
 
       // Schema.org markup for Google+
-      {itemprop: 'name', content: 'National Social Housing Programme (NSHP)'},
-      {itemprop: 'description', content: ''},
+      {itemprop: 'name', content: 'National Social Housing Programme'},
+      {itemprop: 'description', content: 'Affordable Housing for Nigerians'},
       {itemprop: 'image', content: 'https://nshp.ng/unfurl.jpg'},
 
       // Twitter Card data
@@ -30,7 +30,7 @@ export default {
       {name: 'twitter:title', content: 'National Social Housing Programme (NSHP)'},
       {name:"twitter:url", content:"https://nshp.ng"},
       {name: 'twitter:image', content: 'https://nshp.ng/unfurl.jpg'},
-      {name: 'twitter:description', content: ''},
+      {name: 'twitter:description', content: 'Affordable Housing for Nigerians'},
       {name: 'twitter:app:country', content: 'NG'},
       {name:"twitter:creator", content:"@nshp_ng"},
       {name:"twitter:domain", content:"@nshp_ng"},
@@ -41,7 +41,7 @@ export default {
       {property: 'og:title', content: 'National Social Housing Programme (NSHP)'},
       {property: 'og:url', content: 'https://nshp.ng'},
       {property: 'og:image', content: 'https://nshp.ng/unfurl.jpg'},
-      {property: 'og:description', content: ''},
+      {property: 'og:description', content: 'Affordable Housing for Nigerians'},
       {property: 'og:type', content: 'website'},
       {property: 'og:site_name', content: 'NSHP'},
 
@@ -49,7 +49,7 @@ export default {
       {property: 'og:title', content: 'National Social Housing Programme (NSHP)'},
       {property: 'og:url', content: 'https://nshp.ng'},
       {property: 'og:image', content: 'https://nshp.ng/unfurl-whatsapp.jpg'},
-      {property: 'og:description', content: ''},
+      {property: 'og:description', content: 'Affordable Housing for Nigerians'},
       {property: 'og:type', content: 'website'},
       {property: 'og:site_name', content: 'National Social Housing Programme'}
     ],
@@ -131,6 +131,9 @@ export default {
           fix: true
         }
       })
+    },
+    filenames: {
+      img: 'img/[name].[ext]'
     }
-  },
+  }
 }

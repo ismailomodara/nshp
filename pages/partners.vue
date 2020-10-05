@@ -65,25 +65,25 @@ export default {
       partnersType: [
         {
           bg: 'delivery-partner.jpg',
-          url: 'https://assessment.nshp.ng/delivery-partners',
+          url: '{{form_base_url}}/delivery-partners',
           image: 'partner-w',
           title: 'Delivery Partner',
         },
         {
           bg: 'consultant.jpg',
-          url: 'https://assessment.nshp.ng/management-consultants',
+          url: '{{form_base_url}}/management-consultants',
           image: 'consultant-w',
           title: 'Management Consultant',
         },
         {
           bg: 'contractor.jpg',
-          url: 'https://assessment.nshp.ng/management-contractors',
+          url: '{{form_base_url}}/management-contractors',
           image: 'contractor-w',
           title: 'Management Contractor',
         },
         {
           bg: 'manufacturer.jpg',
-          url: 'https://assessment.nshp.ng/manufacturers',
+          url: '{{form_base_url}}/manufacturers',
           image: 'supplier-w',
           title: 'Manufacturer/Supplier',
         },
@@ -162,6 +162,16 @@ export default {
         font-size: 1.1rem;
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-partners .ms-partner--type {
+    padding: 0 12px;
+
+    img.icon {
+      height: 40px;
     }
   }
 }

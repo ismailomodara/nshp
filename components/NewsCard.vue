@@ -1,22 +1,21 @@
 <template>
   <div :class="['ms-news', { horizontal: orientation === 'horizontal' }]">
-    <nuxt-link
-      :to="`news/${news.title.toLowerCase().split(' ').join('-')}`"
-    ></nuxt-link>
+    <nuxt-link :to="`news/${news.slug}`"></nuxt-link>
     <div class="ms-news--image">
-      <img :src="getImage('home/slider/slide-1.jpg')" alt="News Image" />
+      <img
+        v-if="news.image"
+        :src="getImage(`news/${news.image}`)"
+        :alt="news.title"
+      />
     </div>
     <div class="ms-news--desc">
-      <h3 class="ms-news--title">The News Title</h3>
-      <p>
-        National Social Housing Programme (NSHP) allows you to become an instant
-        homeowner with as low as
-      </p>
+      <h3 class="ms-news--title">{{ news.title }}</h3>
+      <p>{{ news.desc }}</p>
       <div class="ms-news--desc__footer">
         <nuxt-link to="{ name: 'news', params: { slug: 'the-news-title' } }"
           ><el-button type="primary" size="medium">Read more</el-button>
         </nuxt-link>
-        <span class="ms-news--date">1st Oct, 2020.</span>
+        <span class="ms-news--date">{{ news.date }}</span>
       </div>
     </div>
   </div>
@@ -33,23 +32,16 @@ export default {
       type: String,
       default: 'vertical',
     },
+    news: {
+      type: Object,
+      default() {
+        return {}
+      },
+    },
   },
   data() {
-    return {
-      news: {
-        date: '1st Oct, 2020.',
-        title: 'The News Title',
-        desc:
-          'Becoming a homeowner in any part of Nigeria just became easier! The National Social Housing Programme (NSHP) allows you to become an instant homeowner with as low as',
-        contents: [
-          'Imagine becoming the latest homeowner in any part ' +
-            'of Nigeria, amazing right? The National Social Housing Programme ' +
-            '(NSHP) allows you to become an instant landlord with as low as <span>₦2,000,000 only</span>',
-        ],
-      },
-    }
+    return {}
   },
-  methods: {},
 }
 </script>
 
@@ -104,6 +96,7 @@ export default {
 
     .ms-news--title {
       margin-bottom: 15px;
+      line-height: 1.6;
     }
 
     p {
@@ -153,7 +146,6 @@ export default {
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         border-top-right-radius: 0;
-        width: 80%;
         height: auto;
 
         img {
