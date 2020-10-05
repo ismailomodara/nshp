@@ -251,7 +251,7 @@
         </el-row>
       </el-container>
       <div class="is-flex is-justify-center mt-4">
-        <a href="static/National_Housing_Social_Programme_FAQ.pdf" download>
+        <a href="National_Housing_Social_Programme_FAQ.pdf" download>
           <el-button type="primary">Download FAQ</el-button>
         </a>
       </div>
