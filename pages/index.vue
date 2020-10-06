@@ -23,7 +23,10 @@
               :data-index="index"
             >
               <div class="slide-image">
-                <img :src="url(slide.slide)" alt="NSHP" />
+                <img
+                  :src="getImage(`home/slider/${slide.slide}.jpg`)"
+                  alt="NSHP"
+                />
                 <div class="overlay header-gradient"></div>
               </div>
               <div class="slide-content">
@@ -255,7 +258,7 @@
               <div class="step-content">
                 <p>
                   Houses will be distributed to applicants as soon as
-                  construction begins
+                  construction begins.
                 </p>
               </div>
             </div>
@@ -407,31 +410,31 @@ export default {
       slides: [
         {
           text: 'Homes by Nigerians<br> for Nigerians',
-          slide: '1',
+          slide: 'homes_for_nigerians_by_nigerians',
         },
         {
           text: 'Own a home for<br> as low as ₦2million',
-          slide: '2',
+          slide: 'own_a_home',
         },
         {
           text: 'Shikini money for<br> beta house',
-          slide: '3',
+          slide: 'shikini_money_for_beta_house',
         },
         {
           text: 'Owó Kekeré fun<br>ilé tò dàrá',
-          slide: '4',
+          slide: 'owokekere_fun_ile_to_dara',
         },
         {
           text: 'Biyan kuɗi kaɗan<br> don gida mai kyau',
-          slide: '5',
+          slide: 'biyan_kudi_kadan',
         },
         {
           text: 'Kwụ ụgwọ obere ego<br> maka ezigbo ụlọ',
-          slide: '6',
+          slide: 'kwu_ugwo_obere_ego',
         },
         {
           text: 'Beta work. Beta house.<br> Beta life for evribodi',
-          slide: '7',
+          slide: 'beta_work_beta_house',
         },
       ],
       showVideoPlayer: false,
