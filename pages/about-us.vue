@@ -91,7 +91,7 @@
               </ul>
               <p>
                 There amazing offers waiting for you
-                <a href="https://register.nshp.ng/individual" target="_blank"
+                <a href="{{form_base_url}}/individual" target="_blank"
                   >I'm interested</a
                 >
               </p>
@@ -105,20 +105,14 @@
         </el-row>
       </el-container>
     </div>
-    <ms-partners />
   </div>
 </template>
 
 <script>
-import MsPartners from '../components/MsPartners'
-
 import image from '../mixin/image'
 
 export default {
   name: 'AboutUs',
-  components: {
-    MsPartners,
-  },
   mixins: [image],
   data() {
     return {

@@ -1,14 +1,57 @@
 <template>
   <div>
-    <div class="ms-navbar">
+    <div :class="['ms-navbar', { light: showLightNav === true }]">
+      <div class="ms-navbar--strip">
+        <el-container>
+          <div>
+            <a href="mailto:hello@nshp.ng" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline></svg
+              ><span>hello@nshp.ng</span></a
+            >
+          </div>
+          <div>
+            <a href="tel:+2348123456789" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path></svg
+              ><span>+234 812 345 6789</span></a
+            >
+          </div>
+        </el-container>
+      </div>
       <el-container>
-        <div class="ms-logo">
-          <nuxt-link to="/"
-            ><img
-              :src="getImage('navlogos.svg')"
+        <nuxt-link to="/"
+          ><div class="ms-logo">
+            <img
+              :src="getImage(`navlogos${!showLightNav ? '-white' : ''}.svg`)"
               alt="Federal Government of Nigeria, NSHP"
-          /></nuxt-link>
-        </div>
+            /></div
+        ></nuxt-link>
         <div id="toggle" class="ms-mobile--menu__toggler" @click="toggleMenu">
           <span class="top"></span>
           <span class="middle"></span>
@@ -20,10 +63,7 @@
             :key="i"
             :class="{ active: page === link.url }"
           >
-            <nuxt-link v-if="link.url !== '/news'" :to="link.url">{{
-              link.label
-            }}</nuxt-link>
-            <!--            <a v-else href="#" target="_blank">News</a>-->
+            <nuxt-link :to="link.url">{{ link.label }}</nuxt-link>
           </li>
         </ul>
       </el-container>
@@ -41,13 +81,9 @@
             :key="i"
             :class="['nav-item', { active: page === link.url }]"
           >
-            <nuxt-link
-              v-if="link.url !== 'news'"
-              :to="link.url"
-              class="nav-item"
-              >{{ link.label }}</nuxt-link
-            >
-            <a v-else href="#" target="_blank">News</a>
+            <nuxt-link :to="link.url" class="nav-item">{{
+              link.label
+            }}</nuxt-link>
           </li>
         </ul>
       </div>
@@ -63,6 +99,7 @@ export default {
   mixins: [image],
   data() {
     return {
+      showLightNav: false,
       navLinks: [
         {
           label: 'Home',
@@ -73,13 +110,13 @@ export default {
           url: '/about-us',
         },
         {
+          label: 'News',
+          url: '/news',
+        },
+        {
           label: 'FAQ',
           url: '/faq',
         },
-        // {
-        //   label: 'News',
-        //   url: '/news',
-        // },
         {
           label: 'Contact',
           url: '/contact',
@@ -100,6 +137,12 @@ export default {
   },
   mounted() {
     this.page = this.$route.path
+    window.addEventListener('scroll', () => {
+      this.showLightNav = window.pageYOffset > 100
+    })
+  },
+  created() {
+    this.showLightNav = !this.$route.name
   },
   methods: {
     toggleMenu() {
@@ -116,22 +159,68 @@ export default {
 <style scoped lang="scss">
 .ms-navbar {
   padding: 10px 0;
-  background: #fff;
-  z-index: 2;
+  background: transparent;
+  z-index: 11;
   width: 100%;
+  position: fixed;
+  transition: background 0.7s ease-in;
 
-  .el-container {
+  .ms-navbar--strip {
+    background: #163627;
+    color: #fff;
+    padding: 5px 0;
     position: relative;
-    top: 0;
+    top: -80px;
+    transition: top 1s ease 0s;
+
+    .el-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      > div {
+        margin-right: 30px;
+      }
+
+      a {
+        color: #fff;
+        opacity: 0.74;
+        font-size: 0.75rem;
+        font-weight: 600;
+        transition: color 0.3s ease-out;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: #fcb320;
+          transition: color 0.3s ease-in;
+
+          svg {
+            stroke: #fcb320;
+            transition: color 0.3s ease-in;
+          }
+        }
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  > .el-container {
+    position: relative;
+    top: -40px;
     left: 0;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.7s ease-in;
   }
 
   .ms-logo img {
-    height: 60px;
+    height: 70px;
   }
 
   .ms-nav-links {
@@ -145,11 +234,12 @@ export default {
       padding: 10px 25px;
 
       a {
-        color: #000;
+        color: #fff;
         font-size: 0.75rem;
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
+        transition: color 0.7s ease-in;
       }
 
       &.active a {
@@ -159,7 +249,46 @@ export default {
 
       &:hover:not(.active) a {
         color: #58bb8c;
-        transition: color 0.3s ease-out;
+        transition: color 0.7s ease-in;
+      }
+    }
+  }
+
+  &.light {
+    padding-top: 0;
+    background: #fff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.7s ease-out;
+
+    .ms-navbar--strip {
+      top: 0;
+      margin-bottom: 10px;
+      transition: top 0.7s ease-out;
+    }
+
+    .el-container {
+      top: 0;
+      transition: top 0.7s ease-out;
+    }
+
+    .ms-nav-links {
+      li {
+        padding: 10px 25px;
+
+        a {
+          color: #000;
+          transition: color 0.7s ease-out;
+        }
+
+        &.active a {
+          color: #58bb8c;
+          font-weight: 600;
+        }
+
+        &:hover:not(.active) a {
+          color: #58bb8c;
+          transition: color 0.7s ease-out;
+        }
       }
     }
   }
@@ -219,7 +348,7 @@ export default {
 
 .ms-mobile--menu.open .ms-mobile--menu__toggler {
   opacity: 1;
-  transition: 0.3s ease-in;
+  transition: 0.7s ease-in;
   right: 15% !important;
 }
 
@@ -361,9 +490,15 @@ export default {
   }
 }
 
+@media (max-width: 1024px) {
+  .ms-navbar {
+    padding: 0 0 20px;
+  }
+}
+
 @media (max-width: 992px) {
   .ms-navbar {
-    padding: 5px 0;
+    padding: 12px 0;
   }
 
   .ms-mobile--menu__toggler {
@@ -372,6 +507,24 @@ export default {
 
   .ms-nav-links {
     display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-navbar {
+    .ms-logo img {
+      height: 50px;
+    }
+
+    > .el-container {
+      top: -20px !important;
+    }
+
+    &.light {
+      > .el-container {
+        top: 0 !important;
+      }
+    }
   }
 }
 </style>

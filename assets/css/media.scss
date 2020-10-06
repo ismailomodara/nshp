@@ -23,7 +23,11 @@
   }
 
   .ms-header h1 {
-    font-size: 3.2rem !important;
+    font-size: 3rem !important;
+  }
+
+  .el-dialog {
+    height: 70vh !important;
   }
 }
 
@@ -43,6 +47,10 @@
     h1 {
       font-size: 3rem;
     }
+  }
+
+  .el-dialog {
+    height: 40vh !important;
   }
 
   .ms-header--ctas {
@@ -159,10 +167,6 @@
     font-size: 16px;
   }
 
-  .el-row {
-    width: unset;
-  }
-
   .el-container,
   .ms-section--heading {
     max-width: 90% !important;
@@ -177,30 +181,6 @@
 
     .ms-section--heading p {
       width: 100%;
-    }
-  }
-
-  .ms-logo img {
-    height: 50px;
-  }
-
-  .ms-header {
-    height: 70vh !important;
-
-    .slide-image {
-      height: 70vh !important;
-    }
-
-    .carousel-container span {
-      top: 91% !important;
-
-      &.next {
-        right: 20px !important;
-      }
-
-      &.prev {
-        left: 20px !important
-      }
     }
   }
 
@@ -240,6 +220,10 @@
   }
 
   .ms-header--other {
-    height: 40vh;
+    height: calc(50vh + 100px)
+  }
+
+  .el-dialog {
+    width: 100% !important;
   }
 }

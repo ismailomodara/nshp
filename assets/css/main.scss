@@ -15,7 +15,7 @@ body {
   font-weight: normal;
   scroll-behavior: smooth;
   line-height: 1.5;
-  background: #fff;
+  background: #f4faf7;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -113,10 +113,6 @@ p>a:hover {
   margin: auto;
 }
 
-.el-row {
-  width: 100%;
-}
-
 .el-form {
   width: 100%;
 }
@@ -147,6 +143,14 @@ a:hover {
 .w-85 {
   width: 85%;
   margin: auto;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 .mt-4 {
@@ -229,6 +233,22 @@ a:hover {
   animation: fadeInDown 2s ease-in infinite;
 }
 
+.slide-content .el-button {
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  margin-left: 10px;
+
+  i {
+    font-weight: 600;
+    font-size: 1.2rem;
+    animation: pulsate 2s ease-in infinite;
+    margin-left: 7px;
+  }
+}
+
 .ms-back-to-top .el-button i {
   font-weight: 600;
   font-size: 1.2rem;
@@ -242,6 +262,21 @@ a:hover {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }
   /* =================== Accordion ========================= */
@@ -276,12 +311,37 @@ a:hover {
         font-size: 0.8rem;
         font-weight: 500;
         padding: 5px 0;
-        opacity: 1;
+        opacity: 0.8;
       }
     }
   }
 }
 
+  /* =================== Video Player ========================= */
+.el-dialog {
+  background: transparent;
+  height: 70vh;
+  margin-top: 0 !important;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .el-dialog__body {
+    height: 100%;
+
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .el-dialog__header {
+    padding: 0 !important;
+
+    .el-dialog__headerbtn {
+      display: none;
+    }
+  }
+}
   /* =================== Section ========================= */
   .ms-section {
     padding: 40px 0;
@@ -327,7 +387,7 @@ a:hover {
       opacity: 1;
       font-weight: 500;
       margin-top: 40px;
-      width: 70%;
+      text-align: justify;
     }
   }
 
@@ -348,7 +408,7 @@ a:hover {
   /* =================== Other Page Header ========================= */
 .ms-header--other {
   position: relative;
-  height: 50vh;
+  height: calc(60vh + 100px);
   display: flex;
   align-items: center;
   justify-content: flex-start;

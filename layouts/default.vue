@@ -12,6 +12,7 @@
       </div>
       <Navigation />
       <nuxt />
+      <MsPartners />
       <Footer />
       <div v-if="showBackToTop" class="ms-back-to-top">
         <el-button
@@ -28,6 +29,7 @@
 <script>
 import Loader from '../components/Loader'
 import Navigation from '../components/Navigation'
+import MsPartners from '../components/MsPartners'
 import Footer from '../components/Footer'
 
 export default {
@@ -35,6 +37,7 @@ export default {
   components: {
     Loader,
     Navigation,
+    MsPartners,
     Footer,
   },
   data() {
@@ -48,14 +51,14 @@ export default {
     $route() {
       this.$nextTick(() => {
         this.loading = true
-        setTimeout(() => (this.loading = false), 3000)
+        setTimeout(() => (this.loading = false), 800)
       })
     },
   },
   created() {
     this.$nextTick(() => {
       this.loading = true
-      setTimeout(() => (this.loading = false), 3000)
+      setTimeout(() => (this.loading = false), 800)
     })
   },
   mounted() {

@@ -28,6 +28,9 @@
               </div>
               <div class="slide-content">
                 <h1 v-html="slide.text"></h1>
+                <el-button type="primary" @click="showVideoPlayer = true"
+                  >Learn more <i class="el-icon-video-play"></i
+                ></el-button>
               </div>
             </slide>
           </carousel>
@@ -42,62 +45,44 @@
         <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta individual">
-              <a href="https://register.nshp.ng/individual"></a>
+              <a href="{{form_base_url}}/individual"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="91"
-                height="91"
-                viewBox="0 0 91 91"
+                width="27"
+                height="31.5"
+                viewBox="0 0 27 31.5"
               >
-                <defs>
-                  <style>
-                    .b {
-                      fill: #58bb8c !important;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(21558 8189)">
-                  <path
-                    class="b"
-                    d="M30.389,34.73A17.365,17.365,0,1,0,13.024,17.365,17.364,17.364,0,0,0,30.389,34.73Zm12.156,4.341H40.279a23.616,23.616,0,0,1-19.78,0H18.233A18.238,18.238,0,0,0,0,57.305v5.644a6.514,6.514,0,0,0,6.512,6.512H54.266a6.514,6.514,0,0,0,6.512-6.512V57.305A18.238,18.238,0,0,0,42.545,39.072Z"
-                    transform="translate(-21543 -8178)"
-                  />
-                </g>
+                <path
+                  d="M13.5,18a7.875,7.875,0,1,0-7.875-7.875A7.871,7.871,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35A8.1,8.1,0,0,0,18.9,20.25Z"
+                  transform="translate(0 -2.25)"
+                  fill="#58bb8c"
+                />
               </svg>
               <div>
                 <h4>Individuals</h4>
-                <p>A home for You</p>
+                <p>Own a house</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <a href="https://register.nshp.ng/co-operatives"></a>
+              <a href="{{form_base_url}}/co-operatives"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="91"
-                height="91"
-                viewBox="0 0 91 91"
+                width="45"
+                height="31.5"
+                viewBox="0 0 45 31.5"
               >
-                <defs>
-                  <style>
-                    .b {
-                      fill: #58bb8c !important;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(21558 8189)">
-                  <path
-                    class="b"
-                    d="M29.786,37A17.375,17.375,0,1,0,12.411,19.625,17.366,17.366,0,0,0,29.786,37ZM41.7,41.964H40.412a23.989,23.989,0,0,1-21.253,0H17.871A17.876,17.876,0,0,0,0,59.835V64.3A7.448,7.448,0,0,0,7.446,71.75H52.125A7.448,7.448,0,0,0,59.571,64.3V59.835A17.876,17.876,0,0,0,41.7,41.964ZM63.464,37A14.893,14.893,0,1,0,48.571,22.107,14.9,14.9,0,0,0,63.464,37Zm7.446,4.964h-.59a19.563,19.563,0,0,1-13.714,0h-.59a17.231,17.231,0,0,0-8.641,2.389,22.7,22.7,0,0,1,6.159,15.482v5.957c0,.341-.078.667-.093.993h27.4a7.448,7.448,0,0,0,7.446-7.446A17.366,17.366,0,0,0,70.91,41.964Z"
-                    transform="translate(-21556.143 -8180.25)"
-                  />
-                </g>
+                <path
+                  d="M13.5,18a7.871,7.871,0,1,0-5.57-2.305A7.875,7.875,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35a8.1,8.1,0,0,0-8.1-8.1ZM33.75,18A6.75,6.75,0,1,0,27,11.25,6.75,6.75,0,0,0,33.75,18Zm3.375,2.25h-.267a8.867,8.867,0,0,1-6.216,0h-.267a7.81,7.81,0,0,0-3.916,1.083A10.29,10.29,0,0,1,29.25,28.35v2.7c0,.155-.035.3-.042.45H41.625A3.376,3.376,0,0,0,45,28.125a7.871,7.871,0,0,0-7.875-7.875Z"
+                  transform="translate(0 -2.25)"
+                  fill="#58bb8c"
+                />
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>Homes for groups</p>
+                <p>Own group homes</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -107,29 +92,19 @@
               <router-link to="/partners"></router-link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="91"
-                height="91"
-                viewBox="0 0 91 91"
+                width="51.648"
+                height="31"
+                viewBox="0 0 51.648 31"
               >
-                <defs>
-                  <style>
-                    .b {
-                      fill: #58bb8c !important;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(21558 8189)">
-                  <path
-                    class="b"
-                    d="M53.568,4.5H42.983a3.942,3.942,0,0,0-2.662,1.035L28.207,16.626c-.012.012-.025.037-.037.049a4.9,4.9,0,0,0-.259,6.9,5.14,5.14,0,0,0,6.913.333c.012-.012.037-.012.049-.025l9.846-9.02a1.971,1.971,0,0,1,2.662,2.908l-3.216,2.945L62.108,35.283a8.878,8.878,0,0,1,.974.949V12.387L56.353,5.658A3.915,3.915,0,0,0,53.568,4.5Zm13.469,7.911V40a3.939,3.939,0,0,0,3.943,3.943h7.887V12.411ZM72.952,40a1.972,1.972,0,1,1,1.972-1.972A1.977,1.977,0,0,1,72.952,40ZM0,43.934H7.887A3.939,3.939,0,0,0,11.83,39.99V12.411H0Zm5.915-7.874a1.972,1.972,0,1,1-1.972,1.972A1.977,1.977,0,0,1,5.915,36.059Zm53.716,2.292-18.4-14.935-3.7,3.389A8.87,8.87,0,0,1,25.546,13.73L35.626,4.5H25.3a3.936,3.936,0,0,0-2.785,1.158l-6.741,6.728V39.978h2.255L29.181,50.07a7.885,7.885,0,0,0,11.091-1.146L40.3,48.9,42.5,50.81a4.58,4.58,0,0,0,6.445-.665l3.869-4.757.665.542a3.937,3.937,0,0,0,5.545-.579L60.2,43.909a3.95,3.95,0,0,0-.567-5.558Z"
-                    transform="translate(-21551.934 -8171.664)"
-                  />
-                </g>
+                <path
+                  d="M35.08,4.5H28.148a2.581,2.581,0,0,0-1.743.678l-7.933,7.263c-.008.008-.016.024-.024.032a3.21,3.21,0,0,0-.169,4.519,3.366,3.366,0,0,0,4.527.218c.008-.008.024-.008.032-.016l6.448-5.907a1.291,1.291,0,0,1,1.743,1.9L28.923,15.12l11.75,9.539a5.814,5.814,0,0,1,.638.621V9.665L36.9,5.259A2.564,2.564,0,0,0,35.08,4.5ZM43.9,9.681V27.75a2.58,2.58,0,0,0,2.582,2.582h5.165V9.681ZM47.774,27.75a1.291,1.291,0,1,1,1.291-1.291A1.295,1.295,0,0,1,47.774,27.75ZM0,30.324H5.165a2.58,2.58,0,0,0,2.582-2.582V9.681H0Zm3.874-5.157a1.291,1.291,0,1,1-1.291,1.291A1.295,1.295,0,0,1,3.874,25.167Zm35.177,1.5L27,16.887l-2.421,2.219a5.809,5.809,0,0,1-7.852-8.562L23.33,4.5H16.568a2.578,2.578,0,0,0-1.824.759L10.33,9.665V27.733h1.477l7.3,6.609a5.164,5.164,0,0,0,7.263-.751l.016-.016,1.445,1.251a3,3,0,0,0,4.221-.436l2.534-3.115.436.355a2.578,2.578,0,0,0,3.631-.379l.767-.944a2.587,2.587,0,0,0-.371-3.64Z"
+                  transform="translate(0 -4.5)"
+                  fill="#58bb8c"
+                />
               </svg>
-
               <div>
                 <h4>Partnership</h4>
-                <p>Help us build</p>
+                <p>Build with us</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -142,7 +117,13 @@
         <h3>The NSHP</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="80" align="middle" class="flex-wrap">
+        <el-row
+          type="flex"
+          :gutter="40"
+          justify="between"
+          align="middle"
+          class="flex-wrap"
+        >
           <el-col :sm="24" :md="14" :lg="12">
             <div class="ms-about--content">
               <p>
@@ -170,7 +151,13 @@
         <h3>Home options you can buy</h3>
       </div>
       <el-container>
-        <el-row type="flex" :gutter="80" align="middle" class="flex-wrap">
+        <el-row
+          type="flex"
+          :gutter="40"
+          justify="between"
+          align="middle"
+          class="flex-wrap"
+        >
           <el-col :sm="24" :md="12" :lg="12">
             <div class="ms-home--options__content">
               <p>
@@ -222,7 +209,7 @@
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-steps--step">
               <span>1</span>
-              <h6 class="step-title">Register</h6>
+              <h6 class="step-title">Apply</h6>
               <div class="step-image">
                 <img
                   :src="getImage('home/register.svg')"
@@ -234,16 +221,13 @@
                   Complete your profile by submitting your personal details and
                   required documents.
                 </p>
-                <a href="https://register.nshp.ng/individual"
-                  ><el-button type="primary">I'm interested </el-button></a
-                >
               </div>
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-steps--step inverse">
               <span>2</span>
-              <h6 class="step-title">Selection</h6>
+              <h6 class="step-title">Qualify</h6>
               <div class="step-image">
                 <img
                   :src="getImage('home/selection.svg')"
@@ -255,11 +239,6 @@
                   A unique identification number will be assigned to you for the
                   house allocation.
                 </p>
-                <el-button
-                  class="el-button--secondary"
-                  @click="$router.push('/about-us')"
-                  >Read more</el-button
-                >
               </div>
             </div>
           </el-col>
@@ -278,9 +257,6 @@
                   Houses will be distributed to applicants as soon as
                   construction begins
                 </p>
-                <el-badge value="Coming soon" class="item">
-                  <el-button type="primary">Start here</el-button>
-                </el-badge>
               </div>
             </div>
           </el-col>
@@ -380,8 +356,12 @@
             <div class="contact-via">
               <img :src="getImage('home/whatsapp.svg')" alt="Home" />
               <div>
-                <p>Message via WhatsApp</p>
-                <a href="https://linktr.ee/nshp.ng"
+                <p>
+                  Message via
+                  <span><img :src="getImage('home/whatsapp-icon.svg')" /></span>
+                  WhatsApp
+                </p>
+                <a href="https://linktr.ee/nshp.ng" target="_blank"
                   ><el-button type="primary">Message</el-button></a
                 >
               </div>
@@ -392,7 +372,7 @@
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>
                 <p>Send us an email today</p>
-                <a href="mailto:hello@nshp.ng"
+                <a href="mailto:hello@nshp.ng" target="_blank"
                   ><el-button type="primary" class="el-button--secondary"
                     >Send</el-button
                   ></a
@@ -403,13 +383,14 @@
         </el-row>
       </el-container>
     </div>
-    <ms-partners />
+    <video-player :show.sync="showVideoPlayer" />
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
-import MsPartners from '../components/MsPartners'
+
+import VideoPlayer from '../components/VideoPlayer'
 
 import image from '../mixin/image'
 
@@ -418,7 +399,7 @@ export default {
   components: {
     Carousel,
     Slide,
-    MsPartners,
+    VideoPlayer,
   },
   mixins: [image],
   data() {
@@ -453,6 +434,7 @@ export default {
           slide: '7',
         },
       ],
+      showVideoPlayer: false,
       homeOption: 'one',
       activeName: '',
     }
@@ -486,7 +468,7 @@ export default {
 <style lang="scss" scoped>
 .ms-header {
   position: relative;
-  height: 60vh;
+  height: 80vh;
 
   .carousel-container {
     padding: 0;
@@ -532,7 +514,7 @@ export default {
 
     .slide-image {
       position: relative;
-      height: 60vh;
+      height: 80vh;
       overflow: hidden;
 
       img {
@@ -556,7 +538,7 @@ export default {
         font-weight: 600;
         color: #fff;
         line-height: 1.4;
-        margin: 0;
+        margin: 0 0 20px;
         text-shadow: 1px 1px #0b1207;
       }
     }
@@ -609,8 +591,6 @@ export default {
     }
 
     svg {
-      height: 50px;
-      width: auto;
       margin-right: 20px;
 
       path {
@@ -667,7 +647,7 @@ export default {
 .ms-about {
   .ms-about--image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     img {
@@ -804,6 +784,10 @@ export default {
 .ms-find-out--more {
   background: #fafcfc;
 
+  .el-row {
+    width: 100%;
+  }
+
   .faq {
     text-align: center;
     height: 100%;
@@ -837,7 +821,7 @@ export default {
       margin-bottom: 70px;
     }
 
-    img {
+    > img {
       width: 120px;
       height: auto;
     }
@@ -848,8 +832,12 @@ export default {
 
       p {
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
         span {
           img {
+            margin: 0 5px;
             height: 22px;
             position: relative;
             top: 3px;
@@ -868,7 +856,7 @@ export default {
       font-size: 2.5rem !important;
     }
 
-    .slide-image img {
+    .slide-image {
       height: 70vh !important;
     }
   }
@@ -891,9 +879,13 @@ export default {
     }
   }
 
-  .ms-about .ms-about--image img {
-    height: 220px !important;
-    margin-top: 70px;
+  .ms-about .ms-about--image {
+    justify-content: center;
+
+    img {
+      height: 250px !important;
+      margin-top: 70px;
+    }
   }
 
   .contact-via {
@@ -922,6 +914,37 @@ export default {
 }
 
 @media (max-width: 600px) {
+  .ms-header {
+    height: 80vh !important;
+
+    .slide-image {
+      height: 80vh !important;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem !important;
+    }
+
+    .slide-content {
+      text-align: center !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+    }
+
+    .carousel-container span {
+      top: 91% !important;
+
+      &.next {
+        right: 20px !important;
+      }
+
+      &.prev {
+        left: 20px !important;
+      }
+    }
+  }
+
   .ms-header--ctas {
     .el-row {
       width: 100%;
@@ -1010,6 +1033,10 @@ export default {
 
   .contact-via {
     margin-bottom: 50px;
+  }
+
+  .ms-find-out--more .el-row {
+    width: unset;
   }
 }
 </style>

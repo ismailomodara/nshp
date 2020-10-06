@@ -1,12 +1,29 @@
 <template>
   <div class="ms-our--partner ms-section">
     <div class="ms-section--heading">
-      <h3>Our Partners</h3>
+      <h3>Partners</h3>
     </div>
     <el-container>
-      <el-row type="flex" :gutter="30" class="flex-wrap mt-4">
-        <el-col :sm="12" :md="10" :lg="8">
+      <el-row type="flex" :gutter="40" class="flex-wrap mt-4">
+        <el-col :sm="12" :md="5" :lg="5" class="mb-1">
+          <div class="ms-partner--type inverse">
+            <span></span>
+            <h6>Implementer</h6>
+          </div>
+          <carousel ref="slider">
+            <slide>
+              <div class="partner-logo">
+                <img
+                  :src="getImage('partners/family-home-funds.png')"
+                  alt="FHF"
+                />
+              </div>
+            </slide>
+          </carousel>
+        </el-col>
+        <el-col :sm="12" :md="8" :lg="8">
           <div class="ms-partner--type">
+            <span></span>
             <h6>Financial Partners</h6>
           </div>
           <carousel ref="slider" :per-page="2">
@@ -21,8 +38,9 @@
             </slide>
           </carousel>
         </el-col>
-        <el-col :sm="12" :md="14" :lg="16">
+        <el-col :sm="24" :md="11" :lg="11">
           <div class="ms-partner--type inverse">
+            <span></span>
             <h6>Strategic Partners</h6>
           </div>
           <carousel
@@ -30,7 +48,7 @@
             :per-page-custom="[
               [0, 2],
               [600, 3],
-              [1366, 4],
+              [1366, 3],
             ]"
             :loop="true"
             :autoplay="true"
@@ -76,7 +94,6 @@ export default {
         'partners/federal-housing.png',
         'partners/works-and-housing.png',
         'partners/state_government.png',
-        'partners/family-home-funds.png',
       ],
     }
   },
@@ -96,19 +113,29 @@ export default {
   }
 
   .ms-partner--type {
-    text-align: center;
-    padding: 10px 20px;
-    background: #58bb8c;
-    border-radius: 5px;
+    text-align: left;
     margin-bottom: 40px;
-    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
 
-    &.inverse {
-      background: #fcb320;
+    span {
+      height: 18px;
+      width: 18px;
+      border-radius: 100px;
+      background: #58bb8c;
+      margin-right: 15px;
     }
 
     h6 {
-      color: #fff;
+      color: #0b1207;
+      position: relative;
+    }
+
+    &.inverse {
+      span {
+        background: #fcb320;
+      }
     }
   }
 
@@ -136,6 +163,10 @@ export default {
 
 @media (max-width: 600px) {
   .ms-our--partner {
+    .el-row {
+      width: 100%;
+    }
+
     .ms-partner--type {
       margin: auto auto 30px;
     }

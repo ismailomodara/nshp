@@ -1,0 +1,50 @@
+[
+  {
+    "name": "about-us",
+    "path": "/about-us",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/about-us.vue",
+    "chunkName": "pages/about-us"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/contact.vue",
+    "chunkName": "pages/contact"
+  },
+  {
+    "name": "faq",
+    "path": "/faq",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/faq.vue",
+    "chunkName": "pages/faq"
+  },
+  {
+    "name": "news",
+    "path": "/news",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/news/index.vue",
+    "chunkName": "pages/news/index"
+  },
+  {
+    "name": "partners",
+    "path": "/partners",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/partners.vue",
+    "chunkName": "pages/partners"
+  },
+  {
+    "name": "news-NewsContent",
+    "path": "/news/NewsContent",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/news/NewsContent.js",
+    "chunkName": "pages/news/NewsContent"
+  },
+  {
+    "name": "news-slug",
+    "path": "/news/:slug",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/news/_slug.vue",
+    "chunkName": "pages/news/_slug"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
