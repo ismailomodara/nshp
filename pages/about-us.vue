@@ -2,7 +2,10 @@
   <div>
     <header class="ms-header--other">
       <div class="ms-header--other__bg">
-        <img :src="getImage('home/slider/slide-1.jpg')" alt="About NSHP" />
+        <img
+          :src="getImage('home/slider/homes_for_nigerians_by_nigerians.jpg')"
+          alt="About NSHP"
+        />
       </div>
       <el-container>
         <div class="ms-header--other__content">
@@ -51,7 +54,7 @@
                 Imagine becoming the latest homeowner in any part of Nigeria,
                 amazing right? The National Social Housing Programme (NSHP)
                 allows you to become an instant landlord with as low as
-                <span class="strong">₦2,000,000 only</span>
+                <span class="strong">₦2,000,000 only.</span>
               </p>
               <p>
                 The initiative is a bold response by the Buhari-led
@@ -77,24 +80,19 @@
                   income earners.
                 </li>
                 <li>
-                  Create up to 1.8m jobs in the value chain of the construction
-                  for Nigerians.
+                  Create up to 1.8 million jobs in Construction Value Chain for
+                  Nigerians
                 </li>
                 <li>
                   Increase domestic production of construction materials through
-                  the economies of scale.
+                  economies of scale.
                 </li>
                 <li>
                   Increase access to home ownership for low income Nigerians
                   through reduced housing costs and low interest mortgages.
                 </li>
               </ul>
-              <p>
-                There amazing offers waiting for you
-                <a href="{{form_base_url}}/individual" target="_blank"
-                  >I'm interested</a
-                >
-              </p>
+              <p>Amazing Offers Await You!</p>
             </div>
           </el-col>
           <el-col :sm="24" :md="10" :lg="12">
@@ -153,7 +151,7 @@ export default {
         {
           image: 'estates',
           title: '1,000',
-          tagline: 'Estates per year',
+          tagline: 'Estates to be delivered',
         },
         {
           image: 'states',
@@ -162,7 +160,7 @@ export default {
         },
         {
           image: 'partners',
-          title: '6,000',
+          title: '9,000',
           tagline: 'Partnerships (SMEs)',
         },
         {
@@ -182,18 +180,8 @@ export default {
         },
         {
           image: 'jobs',
-          title: '13,000,000',
+          title: '1,800,000',
           tagline: 'Jobs for Nigerians',
-        },
-        {
-          image: 'enterprises',
-          title: '300,000',
-          tagline: 'Micro Enterprises',
-        },
-        {
-          image: 'women',
-          title: '4,000,000',
-          tagline: 'Jobs for Women',
         },
       ],
     }

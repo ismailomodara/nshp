@@ -3,7 +3,7 @@
     <header class="ms-header--other">
       <div class="ms-header--other__bg">
         <img
-          :src="getImage('partners/partners-header.jpg')"
+          :src="getImage('home/slider/owokekere_fun_ile_to_dara.jpg')"
           alt="Become a Partner NSHP"
         />
       </div>
