@@ -2,7 +2,10 @@
   <div>
     <header class="ms-header--other">
       <div class="ms-header--other__bg">
-        <img :src="getImage('home/slider/slide-2.jpg')" alt="About NSHP" />
+        <img
+          :src="getImage('home/slider/shikini_money_for_beta_house.jpg')"
+          alt="About NSHP"
+        />
       </div>
       <el-container>
         <div class="ms-header--other__content">
