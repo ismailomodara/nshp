@@ -158,8 +158,8 @@
                 <div>
                   <p>
                     There is no fixed time. NSHP is committed to giving you an
-                    allocation as soon as you save at least 25% of the cost of
-                    your house.
+                    allocation as soon as the preferred home option is available
+                    and you have saved at least 25%
                   </p>
                   <p>
                     This means that if the current price of your home is
@@ -176,7 +176,7 @@
               >
                 <div>
                   <p>
-                    The NSHP commit to protecting all Nigerians against fraud
+                    The NSHP commits to protecting all Nigerians against fraud
                     hence all registered and verified participants’
                     subscriptions are managed by a regulated financial
                     institution. In addition, the following measures have also
@@ -190,7 +190,7 @@
                     <li>
                       All disbursements from the account will go towards actual
                       construction of the housing units and can only be
-                      authorized by approved persons
+                      authorized by approved persons.
                     </li>
                     <li>
                       Your conditional sales agreement is a binding commitment
@@ -239,10 +239,11 @@
                   <p>
                     As a Manufacture/supplier, you must be registered and
                     certified to manufacture products for use in the
-                    construction value chain. Complete the form as a
-                    prerequisite for registration with accurate and valid
-                    details
-                    <a href="https://nshp.ng/manufacturers">here</a>
+                    construction value chain. Complete
+                    <a href="https://nshp.ng/manufacturers" target="_blank"
+                      >this form</a
+                    >
+                    with your valid details as a pre-requisite for registration.
                   </p>
                 </div>
               </el-collapse-item>
