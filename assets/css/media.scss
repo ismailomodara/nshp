@@ -53,25 +53,6 @@
     height: 40vh !important;
   }
 
-  .ms-header--ctas {
-    .ms-header--cta {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 15px;
-
-      svg {
-        margin-right: 0 !important;
-        margin-bottom: 10px;
-        height: 36px;
-      }
-
-      div {
-        text-align: center;
-      }
-    }
-  }
-
   .ms-about .ms-about--image img {
     height: 200px;
   }
