@@ -2,7 +2,10 @@
   <div>
     <header class="ms-header--other">
       <div class="ms-header--other__bg">
-        <img :src="getImage('home/slider/slide-2.jpg')" alt="About NSHP" />
+        <img
+          :src="getImage('home/slider/shikini_money_for_beta_house.jpg')"
+          alt="About NSHP"
+        />
       </div>
       <el-container>
         <div class="ms-header--other__content">
@@ -158,8 +161,8 @@
                 <div>
                   <p>
                     There is no fixed time. NSHP is committed to giving you an
-                    allocation as soon as you save at least 25% of the cost of
-                    your house.
+                    allocation as soon as the preferred home option is available
+                    and you have saved at least 25%
                   </p>
                   <p>
                     This means that if the current price of your home is
@@ -176,7 +179,7 @@
               >
                 <div>
                   <p>
-                    The NSHP commit to protecting all Nigerians against fraud
+                    The NSHP commits to protecting all Nigerians against fraud
                     hence all registered and verified participants’
                     subscriptions are managed by a regulated financial
                     institution. In addition, the following measures have also
@@ -190,7 +193,7 @@
                     <li>
                       All disbursements from the account will go towards actual
                       construction of the housing units and can only be
-                      authorized by approved persons
+                      authorized by approved persons.
                     </li>
                     <li>
                       Your conditional sales agreement is a binding commitment
@@ -239,10 +242,11 @@
                   <p>
                     As a Manufacture/supplier, you must be registered and
                     certified to manufacture products for use in the
-                    construction value chain. Complete the form as a
-                    prerequisite for registration with accurate and valid
-                    details
-                    <a href="{{form_base_url}}/manufacturers">here</a>
+                    construction value chain. Complete
+                    <a href="https://nshp.ng/manufacturers" target="_blank"
+                      >this form</a
+                    >
+                    with your valid details as a pre-requisite for registration.
                   </p>
                 </div>
               </el-collapse-item>
@@ -250,6 +254,11 @@
           </el-col>
         </el-row>
       </el-container>
+      <div class="is-flex is-justify-center mt-4">
+        <a href="National_Housing_Social_Programme_FAQ.pdf" download>
+          <el-button type="primary">Download FAQ</el-button>
+        </a>
+      </div>
     </div>
   </div>
 </template>

@@ -95,8 +95,16 @@ p>a {
 }
 
 p>a:hover {
-  color: #00923F;
+  color: #58bb8c;
   transition: color 0.3s ease-out;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-justify-center {
+  justify-content: center;
 }
 
 .text-primary {

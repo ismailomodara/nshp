@@ -9,7 +9,7 @@
       </div>
       <el-container>
         <div class="ms-header--other__content">
-          <h1>Home for Nigerians, by Nigerians</h1>
+          <h1>Homes for Nigerians, by Nigerians</h1>
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>
@@ -162,6 +162,16 @@ export default {
         font-size: 1.1rem;
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-partners .ms-partner--type {
+    padding: 0 12px;
+
+    img.icon {
+      height: 40px;
     }
   }
 }
