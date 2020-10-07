@@ -63,7 +63,7 @@
               </svg>
               <div>
                 <h4>Individuals</h4>
-                <p>Own a house</p>
+                <p>For all Nigerians seeking to own a home.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -85,7 +85,7 @@
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>Own group homes</p>
+                <p>For all cooperatives and their members.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -107,7 +107,10 @@
               </svg>
               <div>
                 <h4>Partnerships</h4>
-                <p>Build with us</p>
+                <p>
+                  For all Nigerian developers , producers, suppliers and
+                  professionals.
+                </p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -130,11 +133,17 @@
           <el-col :sm="24" :md="14" :lg="12">
             <div class="ms-about--content">
               <p>
-                Becoming a homeowner in any part of Nigeria just became easier!
-                The National Social Housing Programme (NSHP) allows you to
-                become an instant homeowner with as low as
-                <span class="strong">₦2,000,000 only</span> -
-                <span class="italic">Beta house, beta life for everybody!</span>
+                The National Social Housing Programme (NSHP) is the housing
+                component of the President Muhammadu Buhari Economic
+                Sustainability Plan to deliver affordable housing and millions
+                of jobs for Nigerians.
+              </p>
+              <p>
+                The National Social Housing Programme (NSHP) will allow you own
+                a home, as an individual or part of a cooperative with as low as
+                <span class="strong">₦2,000,000 only</span>. With NSHP, You can
+                become a homeowner in any part of Nigeria easily! Beta house,
+                beta life for everybody!
               </p>
               <el-button type="primary" @click="$router.push('/about-us')"
                 >Learn More</el-button
@@ -151,7 +160,7 @@
     </div>
     <div class="ms-home--options ms-section">
       <div class="ms-section--heading">
-        <h3>Home options you can buy</h3>
+        <h3>Available Home Options</h3>
       </div>
       <el-container>
         <el-row
@@ -357,16 +366,33 @@
         <el-row type="flex" :gutter="20" align="middle" class="flex-wrap">
           <el-col :sm="12" :lg="12">
             <div class="contact-via">
-              <img :src="getImage('home/whatsapp.svg')" alt="Home" />
+              <img :src="getImage('contact/social.svg')" alt="Home" />
               <div>
-                <p>
-                  Message via
-                  <span><img :src="getImage('home/whatsapp-icon.svg')" /></span>
-                  WhatsApp
-                </p>
-                <a href="https://linktr.ee/nshp.ng" target="_blank"
-                  ><el-button type="primary">Message</el-button></a
-                >
+                <p>Follow us on via</p>
+
+                <div>
+                  <a
+                    href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/facebook.svg')" alt=""
+                  /></a>
+                  <a
+                    href="https://mobile.twitter.com/nshp_ng"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/twitter.svg')" alt=""
+                  /></a>
+                  <!--                  <a href="#" class="ms-social"-->
+                  <!--                    ><img src="assets/img/contact/youtube.svg" alt=""-->
+                  <!--                  /></a>-->
+                  <a
+                    href="https://www.instagram.com/nshp_ng/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/instagram.svg')" alt=""
+                  /></a>
+                </div>
               </div>
             </div>
           </el-col>
@@ -409,31 +435,32 @@ export default {
     return {
       slides: [
         {
-          text: 'Homes by Nigerians<br> for Nigerians',
+          text: ' 300,000 Homes<br> for Nigerians by Nigerians.',
           slide: 'homes_for_nigerians_by_nigerians',
         },
         {
-          text: 'Own a home for<br> as low as ₦2million',
+          text: 'Own your home for<br> as low as N2 million.',
           slide: 'own_a_home',
         },
         {
-          text: 'Shikini money for<br> beta house',
+          text:
+            '1 bedroom houses from N2 million,<br> 2 bedroom houses from N2.75 million.',
           slide: 'shikini_money_for_beta_house',
         },
         {
-          text: 'Owó Kekeré fun<br>ilé tò dàrá',
+          text: 'Pay small small,<br> evri month, for your house.',
           slide: 'owokekere_fun_ile_to_dara',
         },
         {
-          text: 'Biyan kuɗi kaɗan<br> don gida mai kyau',
+          text: 'Homes for<br> Individuals & Cooperatives.',
           slide: 'biyan_kudi_kadan',
         },
         {
-          text: 'Kwụ ụgwọ obere ego<br> maka ezigbo ụlọ',
+          text: '1,800,000 Jobs<br>for Nigerians.',
           slide: 'kwu_ugwo_obere_ego',
         },
         {
-          text: 'Beta work. Beta house.<br> Beta life for evribodi',
+          text: 'Beta Work, Beta House,<br> Beta Life for evribody.',
           slide: 'beta_work_beta_house',
         },
       ],
@@ -690,8 +717,8 @@ export default {
     width: 100%;
 
     img {
-      height: 80%;
-      width: 80%;
+      height: 400px;
+      width: auto;
       object-fit: cover;
       margin-bottom: 20px;
       border-radius: 8px;
@@ -829,8 +856,8 @@ export default {
       height: auto;
     }
 
-    div {
-      margin-left: 20px;
+    > div {
+      margin-left: 30px;
       text-align: left;
 
       p {
@@ -968,7 +995,7 @@ export default {
   }
 
   .ms-home--options__image img {
-    width: 300px !important;
+    height: 250px !important;
   }
 
   .el-radio-button__inner {

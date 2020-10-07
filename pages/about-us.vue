@@ -80,8 +80,8 @@
                   income earners.
                 </li>
                 <li>
-                  Create up to 1.8 million jobs in Construction Value Chain for
-                  Nigerians
+                  Create up to 1.8 million jobs in the Construction Value Chain
+                  for Nigerians.
                 </li>
                 <li>
                   Increase domestic production of construction materials through

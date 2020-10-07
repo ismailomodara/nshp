@@ -67,13 +67,13 @@ export default {
           bg: 'delivery-partner.jpg',
           url: 'https://nshp.ng/delivery-partners',
           image: 'partner-w',
-          title: 'Delivery Partner',
+          title: 'SME Delivery Partner',
         },
         {
           bg: 'consultant.jpg',
           url: 'https://nshp.ng/management-consultants',
           image: 'consultant-w',
-          title: 'Management Consultant',
+          title: 'Independent Project Manager',
         },
         {
           bg: 'contractor.jpg',
