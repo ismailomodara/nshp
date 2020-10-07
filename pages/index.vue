@@ -230,8 +230,8 @@
               </div>
               <div class="step-content">
                 <p>
-                  Complete your profile by submitting your personal details and
-                  required documents.
+                  You will be able to register and submit your application to
+                  the NSHP in a simple and transparent manner.
                 </p>
               </div>
             </div>
@@ -248,8 +248,8 @@
               </div>
               <div class="step-content">
                 <p>
-                  A unique identification number will be assigned to you for the
-                  house allocation.
+                  All applicants will be subject to a competitive qualification
+                  process that will be fair and transparent.
                 </p>
               </div>
             </div>
@@ -266,8 +266,9 @@
               </div>
               <div class="step-content">
                 <p>
-                  Houses will be distributed to applicants as soon as
-                  construction begins.
+                  Qualified Homeowners, will make a contribution towards their
+                  selected Home and await delivery of their home in the agreed
+                  time.
                 </p>
               </div>
             </div>
