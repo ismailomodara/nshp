@@ -42,7 +42,7 @@
                     href="https://www.instagram.com/nshp_ng/"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/instagram.svg')" alt=""
+                    ><img :src="getImage('contact/instagram-c.svg')" alt=""
                   /></a>
                 </div>
               </div>

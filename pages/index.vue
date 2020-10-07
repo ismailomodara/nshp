@@ -98,6 +98,7 @@
                 width="51.648"
                 height="31"
                 viewBox="0 0 51.648 31"
+                class="partnership"
               >
                 <path
                   d="M35.08,4.5H28.148a2.581,2.581,0,0,0-1.743.678l-7.933,7.263c-.008.008-.016.024-.024.032a3.21,3.21,0,0,0-.169,4.519,3.366,3.366,0,0,0,4.527.218c.008-.008.024-.008.032-.016l6.448-5.907a1.291,1.291,0,0,1,1.743,1.9L28.923,15.12l11.75,9.539a5.814,5.814,0,0,1,.638.621V9.665L36.9,5.259A2.564,2.564,0,0,0,35.08,4.5ZM43.9,9.681V27.75a2.58,2.58,0,0,0,2.582,2.582h5.165V9.681ZM47.774,27.75a1.291,1.291,0,1,1,1.291-1.291A1.295,1.295,0,0,1,47.774,27.75ZM0,30.324H5.165a2.58,2.58,0,0,0,2.582-2.582V9.681H0Zm3.874-5.157a1.291,1.291,0,1,1-1.291,1.291A1.295,1.295,0,0,1,3.874,25.167Zm35.177,1.5L27,16.887l-2.421,2.219a5.809,5.809,0,0,1-7.852-8.562L23.33,4.5H16.568a2.578,2.578,0,0,0-1.824.759L10.33,9.665V27.733h1.477l7.3,6.609a5.164,5.164,0,0,0,7.263-.751l.016-.016,1.445,1.251a3,3,0,0,0,4.221-.436l2.534-3.115.436.355a2.578,2.578,0,0,0,3.631-.379l.767-.944a2.587,2.587,0,0,0-.371-3.64Z"
@@ -107,10 +108,7 @@
               </svg>
               <div>
                 <h4>Partnerships</h4>
-                <p>
-                  For all Nigerian developers , producers, suppliers and
-                  professionals.
-                </p>
+                <p>For all Nigerian Professionals.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -233,6 +231,7 @@
                   You will be able to register and submit your application to
                   the NSHP in a simple and transparent manner.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -251,6 +250,7 @@
                   All applicants will be subject to a competitive qualification
                   process that will be fair and transparent.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -270,6 +270,7 @@
                   selected Home and await delivery of their home in the agreed
                   time.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -391,7 +392,7 @@
                     href="https://www.instagram.com/nshp_ng/"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/instagram.svg')" alt=""
+                    ><img :src="getImage('contact/instagram-c.svg')" alt=""
                   /></a>
                 </div>
               </div>
@@ -436,16 +437,15 @@ export default {
     return {
       slides: [
         {
-          text: ' 300,000 Homes<br> for Nigerians by Nigerians.',
+          text: '300,000 Homes<br> for Nigerians by Nigerians.',
           slide: 'homes_for_nigerians_by_nigerians',
         },
         {
-          text: 'Own your home for<br> as low as N2 million.',
+          text: 'Own your home for<br> as low as ₦2 million.',
           slide: 'own_a_home',
         },
         {
-          text:
-            '1 bedroom houses from N2 million,<br> 2 bedroom houses from N2.75 million.',
+          text: 'Homes are available<br>from ₦2 million.',
           slide: 'shikini_money_for_beta_house',
         },
         {
@@ -623,6 +623,12 @@ export default {
 
     svg {
       margin-right: 20px;
+      height: 55px;
+      width: auto;
+
+      &.partnership {
+        height: 45px;
+      }
 
       path {
         fill: #58bb8c !important;
@@ -632,13 +638,13 @@ export default {
     h4 {
       color: #58bb8c;
       margin-bottom: 5px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       letter-spacing: 1.5px;
       text-transform: uppercase;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.875rem;
       color: #000;
     }
 
@@ -682,7 +688,7 @@ export default {
     align-items: center;
 
     img {
-      height: 280px;
+      height: 320px;
       width: auto;
     }
   }
@@ -736,7 +742,7 @@ export default {
     position: relative;
     text-align: center;
 
-    span {
+    > span {
       height: 32px;
       width: 32px;
       border-radius: 100px;
@@ -787,7 +793,7 @@ export default {
     }
 
     &.inverse {
-      span {
+      > span {
         background: #fcb320;
       }
 
@@ -879,6 +885,43 @@ export default {
   }
 }
 
+@media (max-width: 1024px) {
+  .ms-header--ctas {
+    .ms-header--cta {
+      padding: 40px 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      svg {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        height: 32px;
+
+        &.partnership {
+          height: 30px;
+        }
+      }
+
+      div {
+        text-align: center;
+      }
+    }
+  }
+
+  .ms-about .ms-about--image {
+    img {
+      height: 280px !important;
+      margin-top: 0px;
+    }
+  }
+
+  .ms-home--options .ms-home--options__image img {
+    height: 300px;
+  }
+}
+
 @media (max-width: 992px) {
   .ms-header {
     height: 70vh !important;
@@ -891,22 +934,24 @@ export default {
       height: 70vh !important;
     }
   }
-  .ms-header--cta {
-    flex-direction: row !important;
-    justify-content: flex-start;
+  .ms-header--ctas {
+    .ms-header--cta {
+      flex-direction: row !important;
+      justify-content: flex-start;
 
-    svg {
-      height: 42px !important;
-      margin-right: 30px !important;
-      margin-bottom: 0 !important;
-    }
+      svg {
+        height: 42px !important;
+        margin-right: 30px !important;
+        margin-bottom: 0 !important;
+      }
 
-    &.individual svg {
-      margin-right: 50px !important;
-    }
+      &.individual svg {
+        margin-right: 50px !important;
+      }
 
-    div {
-      text-align: left !important;
+      div {
+        text-align: left !important;
+      }
     }
   }
 
@@ -989,8 +1034,12 @@ export default {
       }
 
       svg {
-        height: 28px !important;
+        height: 36px !important;
         margin-right: 20px !important;
+
+        &.partnership {
+          height: 30px !important;
+        }
       }
     }
   }
