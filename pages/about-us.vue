@@ -119,7 +119,7 @@
           </el-col>
           <el-col :sm="12" :lg="12">
             <div class="ms-section--heading">
-              <h3>Progress</h3>
+              <h3>Progress dashboard</h3>
             </div>
             <div class="ms-coming--soon">
               <img :src="getImage('progress.svg')" alt="Home" />
