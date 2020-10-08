@@ -2,10 +2,7 @@
   <div>
     <header class="ms-header--other">
       <div class="ms-header--other__bg">
-        <img
-          :src="getImage('home/slider/homes_for_nigerians_by_nigerians.jpg')"
-          alt="About NSHP"
-        />
+        <img :src="getImage('home/slider/own_a_home.jpg')" alt="About NSHP" />
       </div>
       <el-container>
         <div class="ms-header--other__content">
@@ -35,7 +32,7 @@
               <img :src="getImage(`vision/${vision.image}.svg`)" alt="Home" />
               <div>
                 <h3>{{ vision.title }}</h3>
-                <p>{{ vision.tagline }}</p>
+                <p v-html="vision.tagline"></p>
               </div>
             </div>
           </el-col>
@@ -166,7 +163,7 @@ export default {
         {
           image: 'consultants',
           title: '600',
-          tagline: 'Independent Project Managers',
+          tagline: 'Independent<br> Project Managers',
         },
         {
           image: 'contractors',
@@ -219,6 +216,7 @@ export default {
       h3 {
         font-weight: 600;
         font-size: 1.8rem;
+        line-height: 1.6;
       }
 
       p {
