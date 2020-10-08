@@ -17,22 +17,7 @@
       </div>
       <el-container>
         <el-row type="flex" :gutter="20">
-          <el-col :xs="24" :sm="12" :md="8" :lg="8">
-            <div class="contact-via">
-              <img :src="getImage('home/whatsapp.svg')" alt="Home" />
-              <div>
-                <p>
-                  Message via
-                  <span><img :src="getImage('home/whatsapp-icon.svg')" /></span>
-                  WhatsApp
-                </p>
-                <a href="https://linktr.ee/nshp.ng" target="_blank"
-                  ><el-button type="primary">Message</el-button></a
-                >
-              </div>
-            </div>
-          </el-col>
-          <el-col :xs="24" :sm="12" :md="8" :lg="8">
+          <el-col :xs="24" :sm="12" :md="12" :lg="12">
             <div class="contact-via">
               <img :src="getImage('contact/social.svg')" alt="Home" />
               <div>
@@ -57,13 +42,13 @@
                     href="https://www.instagram.com/nshp_ng/"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/instagram.svg')" alt=""
+                    ><img :src="getImage('contact/instagram-c.svg')" alt=""
                   /></a>
                 </div>
               </div>
             </div>
           </el-col>
-          <el-col :xs="24" :sm="12" :md="8" :lg="8">
+          <el-col :xs="24" :sm="12" :md="12" :lg="12">
             <div class="contact-via">
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>

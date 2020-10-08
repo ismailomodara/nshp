@@ -94,6 +94,7 @@ export default {
         'partners/federal-housing.png',
         'partners/works-and-housing.png',
         'partners/state_government.png',
+        'partners/bank_of_industry.png',
       ],
     }
   },

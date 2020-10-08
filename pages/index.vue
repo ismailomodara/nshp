@@ -63,7 +63,7 @@
               </svg>
               <div>
                 <h4>Individuals</h4>
-                <p>Own a house</p>
+                <p>For all Nigerians seeking to own a home.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -85,7 +85,7 @@
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>Own group homes</p>
+                <p>For all cooperatives and their members.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -98,6 +98,7 @@
                 width="51.648"
                 height="31"
                 viewBox="0 0 51.648 31"
+                class="partnership"
               >
                 <path
                   d="M35.08,4.5H28.148a2.581,2.581,0,0,0-1.743.678l-7.933,7.263c-.008.008-.016.024-.024.032a3.21,3.21,0,0,0-.169,4.519,3.366,3.366,0,0,0,4.527.218c.008-.008.024-.008.032-.016l6.448-5.907a1.291,1.291,0,0,1,1.743,1.9L28.923,15.12l11.75,9.539a5.814,5.814,0,0,1,.638.621V9.665L36.9,5.259A2.564,2.564,0,0,0,35.08,4.5ZM43.9,9.681V27.75a2.58,2.58,0,0,0,2.582,2.582h5.165V9.681ZM47.774,27.75a1.291,1.291,0,1,1,1.291-1.291A1.295,1.295,0,0,1,47.774,27.75ZM0,30.324H5.165a2.58,2.58,0,0,0,2.582-2.582V9.681H0Zm3.874-5.157a1.291,1.291,0,1,1-1.291,1.291A1.295,1.295,0,0,1,3.874,25.167Zm35.177,1.5L27,16.887l-2.421,2.219a5.809,5.809,0,0,1-7.852-8.562L23.33,4.5H16.568a2.578,2.578,0,0,0-1.824.759L10.33,9.665V27.733h1.477l7.3,6.609a5.164,5.164,0,0,0,7.263-.751l.016-.016,1.445,1.251a3,3,0,0,0,4.221-.436l2.534-3.115.436.355a2.578,2.578,0,0,0,3.631-.379l.767-.944a2.587,2.587,0,0,0-.371-3.64Z"
@@ -107,7 +108,7 @@
               </svg>
               <div>
                 <h4>Partnerships</h4>
-                <p>Build with us</p>
+                <p>For all Nigerian Professionals.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -130,11 +131,17 @@
           <el-col :sm="24" :md="14" :lg="12">
             <div class="ms-about--content">
               <p>
-                Becoming a homeowner in any part of Nigeria just became easier!
-                The National Social Housing Programme (NSHP) allows you to
-                become an instant homeowner with as low as
-                <span class="strong">₦2,000,000 only</span> -
-                <span class="italic">Beta house, beta life for everybody!</span>
+                The National Social Housing Programme (NSHP) is the housing
+                component of the President Muhammadu Buhari Economic
+                Sustainability Plan to deliver affordable housing and millions
+                of jobs for Nigerians.
+              </p>
+              <p>
+                The National Social Housing Programme (NSHP) will allow you own
+                a home, as an individual or part of a cooperative with as low as
+                <span class="strong">₦2,000,000 only</span>. With NSHP, You can
+                become a homeowner in any part of Nigeria easily! Beta house,
+                beta life for everybody!
               </p>
               <el-button type="primary" @click="$router.push('/about-us')"
                 >Learn More</el-button
@@ -151,7 +158,7 @@
     </div>
     <div class="ms-home--options ms-section">
       <div class="ms-section--heading">
-        <h3>Home options you can buy</h3>
+        <h3>Available Home Options</h3>
       </div>
       <el-container>
         <el-row
@@ -221,9 +228,10 @@
               </div>
               <div class="step-content">
                 <p>
-                  Complete your profile by submitting your personal details and
-                  required documents.
+                  You will be able to register and submit your application to
+                  the NSHP in a simple and transparent manner.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -239,9 +247,10 @@
               </div>
               <div class="step-content">
                 <p>
-                  A unique identification number will be assigned to you for the
-                  house allocation.
+                  All applicants will be subject to a competitive qualification
+                  process that will be fair and transparent.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -257,9 +266,9 @@
               </div>
               <div class="step-content">
                 <p>
-                  Houses will be distributed to applicants as soon as
-                  construction begins.
+                  Qualified homeowners will make contributions towards their homes while awaiting delivery.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -357,16 +366,33 @@
         <el-row type="flex" :gutter="20" align="middle" class="flex-wrap">
           <el-col :sm="12" :lg="12">
             <div class="contact-via">
-              <img :src="getImage('home/whatsapp.svg')" alt="Home" />
+              <img :src="getImage('contact/social.svg')" alt="Home" />
               <div>
-                <p>
-                  Message via
-                  <span><img :src="getImage('home/whatsapp-icon.svg')" /></span>
-                  WhatsApp
-                </p>
-                <a href="https://linktr.ee/nshp.ng" target="_blank"
-                  ><el-button type="primary">Message</el-button></a
-                >
+                <p>Follow us on via</p>
+
+                <div>
+                  <a
+                    href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/facebook.svg')" alt=""
+                  /></a>
+                  <a
+                    href="https://mobile.twitter.com/nshp_ng"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/twitter.svg')" alt=""
+                  /></a>
+                  <!--                  <a href="#" class="ms-social"-->
+                  <!--                    ><img src="assets/img/contact/youtube.svg" alt=""-->
+                  <!--                  /></a>-->
+                  <a
+                    href="https://www.instagram.com/nshp_ng/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/instagram-c.svg')" alt=""
+                  /></a>
+                </div>
               </div>
             </div>
           </el-col>
@@ -409,31 +435,31 @@ export default {
     return {
       slides: [
         {
-          text: 'Homes by Nigerians<br> for Nigerians',
+          text: '300,000 Homes<br> for Nigerians by Nigerians.',
           slide: 'homes_for_nigerians_by_nigerians',
         },
         {
-          text: 'Own a home for<br> as low as ₦2million',
+          text: 'Own your home for<br> as low as ₦2 million.',
           slide: 'own_a_home',
         },
         {
-          text: 'Shikini money for<br> beta house',
+          text: 'Homes are available<br>from ₦2 million.',
           slide: 'shikini_money_for_beta_house',
         },
         {
-          text: 'Owó Kekeré fun<br>ilé tò dàrá',
+          text: 'Pay small small,<br> evri month, for your house.',
           slide: 'owokekere_fun_ile_to_dara',
         },
         {
-          text: 'Biyan kuɗi kaɗan<br> don gida mai kyau',
+          text: 'Homes for<br> Individuals & Cooperatives.',
           slide: 'biyan_kudi_kadan',
         },
         {
-          text: 'Kwụ ụgwọ obere ego<br> maka ezigbo ụlọ',
+          text: '1,800,000 Jobs<br>for Nigerians.',
           slide: 'kwu_ugwo_obere_ego',
         },
         {
-          text: 'Beta work. Beta house.<br> Beta life for evribodi',
+          text: 'Beta Work, Beta House,<br> Beta Life for evribody.',
           slide: 'beta_work_beta_house',
         },
       ],
@@ -595,6 +621,12 @@ export default {
 
     svg {
       margin-right: 20px;
+      height: 55px;
+      width: auto;
+
+      &.partnership {
+        height: 45px;
+      }
 
       path {
         fill: #58bb8c !important;
@@ -604,13 +636,13 @@ export default {
     h4 {
       color: #58bb8c;
       margin-bottom: 5px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       letter-spacing: 1.5px;
       text-transform: uppercase;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.875rem;
       color: #000;
     }
 
@@ -654,7 +686,7 @@ export default {
     align-items: center;
 
     img {
-      height: 280px;
+      height: 320px;
       width: auto;
     }
   }
@@ -690,8 +722,8 @@ export default {
     width: 100%;
 
     img {
-      height: 80%;
-      width: 80%;
+      height: 400px;
+      width: auto;
       object-fit: cover;
       margin-bottom: 20px;
       border-radius: 8px;
@@ -708,7 +740,7 @@ export default {
     position: relative;
     text-align: center;
 
-    span {
+    > span {
       height: 32px;
       width: 32px;
       border-radius: 100px;
@@ -759,7 +791,7 @@ export default {
     }
 
     &.inverse {
-      span {
+      > span {
         background: #fcb320;
       }
 
@@ -829,8 +861,8 @@ export default {
       height: auto;
     }
 
-    div {
-      margin-left: 20px;
+    > div {
+      margin-left: 30px;
       text-align: left;
 
       p {
@@ -851,6 +883,43 @@ export default {
   }
 }
 
+@media (max-width: 1024px) {
+  .ms-header--ctas {
+    .ms-header--cta {
+      padding: 40px 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      svg {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        height: 32px;
+
+        &.partnership {
+          height: 30px;
+        }
+      }
+
+      div {
+        text-align: center;
+      }
+    }
+  }
+
+  .ms-about .ms-about--image {
+    img {
+      height: 280px !important;
+      margin-top: 0px;
+    }
+  }
+
+  .ms-home--options .ms-home--options__image img {
+    height: 300px;
+  }
+}
+
 @media (max-width: 992px) {
   .ms-header {
     height: 70vh !important;
@@ -863,22 +932,24 @@ export default {
       height: 70vh !important;
     }
   }
-  .ms-header--cta {
-    flex-direction: row !important;
-    justify-content: flex-start;
+  .ms-header--ctas {
+    .ms-header--cta {
+      flex-direction: row !important;
+      justify-content: flex-start;
 
-    svg {
-      height: 42px !important;
-      margin-right: 30px !important;
-      margin-bottom: 0 !important;
-    }
+      svg {
+        height: 42px !important;
+        margin-right: 30px !important;
+        margin-bottom: 0 !important;
+      }
 
-    &.individual svg {
-      margin-right: 50px !important;
-    }
+      &.individual svg {
+        margin-right: 50px !important;
+      }
 
-    div {
-      text-align: left !important;
+      div {
+        text-align: left !important;
+      }
     }
   }
 
@@ -961,14 +1032,18 @@ export default {
       }
 
       svg {
-        height: 28px !important;
+        height: 36px !important;
         margin-right: 20px !important;
+
+        &.partnership {
+          height: 30px !important;
+        }
       }
     }
   }
 
   .ms-home--options__image img {
-    width: 300px !important;
+    height: 250px !important;
   }
 
   .el-radio-button__inner {

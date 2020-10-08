@@ -328,6 +328,7 @@ a:hover {
   /* =================== Video Player ========================= */
 .el-dialog {
   background: transparent;
+  box-shadow: none;
   height: 70vh;
   margin-top: 0 !important;
   top: 50%;
@@ -343,10 +344,15 @@ a:hover {
   }
 
   .el-dialog__header {
-    padding: 0 !important;
+    background: transparent;
+    box-shadow: none;
 
     .el-dialog__headerbtn {
-      display: none;
+      .el-dialog__close {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
     }
   }
 }

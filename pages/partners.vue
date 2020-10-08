@@ -67,13 +67,13 @@ export default {
           bg: 'delivery-partner.jpg',
           url: '{{form_base_url}}/delivery-partners',
           image: 'partner-w',
-          title: 'Delivery Partner',
+          title: 'SME Delivery Partner',
         },
         {
           bg: 'consultant.jpg',
           url: '{{form_base_url}}/management-consultants',
           image: 'consultant-w',
-          title: 'Management Consultant',
+          title: 'Independent Project Manager',
         },
         {
           bg: 'contractor.jpg',
