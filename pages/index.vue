@@ -266,7 +266,8 @@
               </div>
               <div class="step-content">
                 <p>
-                  Qualified homeowners will make contributions towards their homes while awaiting delivery.
+                  Qualified homeowners will make contributions towards their
+                  homes while awaiting delivery.
                 </p>
                 <el-tag>Coming Soon</el-tag>
               </div>
@@ -1055,7 +1056,7 @@ export default {
       text-align: center;
       flex-direction: column !important;
 
-      span {
+      > span {
         border: 5px solid #fff;
         position: absolute;
         left: 50% !important;
@@ -1090,7 +1091,7 @@ export default {
       }
 
       &.inverse {
-        span {
+        > span {
           background: #fcb320;
         }
 
