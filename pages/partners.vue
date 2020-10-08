@@ -91,7 +91,7 @@ export default {
         },
         {
           bg: 'supplier.jpg',
-          url: '{{form_base_url}}/suppliers',
+          url: '{{form_base_url}}/supplier',
           image: 'supplier-w',
           title: 'Supplier',
           titleMobile: 'Supplier',
