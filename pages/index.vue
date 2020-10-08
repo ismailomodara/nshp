@@ -1056,7 +1056,7 @@ export default {
       text-align: center;
       flex-direction: column !important;
 
-      span {
+      > span {
         border: 5px solid #fff;
         position: absolute;
         left: 50% !important;
@@ -1091,7 +1091,7 @@ export default {
       }
 
       &.inverse {
-        span {
+        > span {
           background: #fcb320;
         }
 
