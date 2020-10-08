@@ -66,7 +66,7 @@ export default {
       partnersType: [
         {
           bg: 'delivery-partner.jpg',
-          url: 'https://nshp.ng/delivery-partners',
+          url: '{{form_base_url}}/delivery-partners',
           image: 'partner-w',
           title: 'SME Delivery Partner',
         },
