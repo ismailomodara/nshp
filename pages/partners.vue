@@ -44,7 +44,8 @@
               />
               <div class="overlay"></div>
               <div class="content">
-                <h4>{{ type.title }}</h4>
+                <h4 class="web">{{ type.title }}</h4>
+                <h4 class="mobile" v-html="type.titleMobile"></h4>
               </div>
             </div>
           </el-col>
@@ -64,28 +65,39 @@ export default {
     return {
       partnersType: [
         {
-          bg: 'delivery-partner.jpg',
+          bg: 'sme-delivery-partner.jpg',
           url: 'https://nshp.ng/delivery-partners',
           image: 'partner-w',
           title: 'SME Delivery Partner',
+          titleMobile: 'SME Delivery Partner',
         },
         {
           bg: 'consultant.jpg',
           url: 'https://nshp.ng/management-consultants',
           image: 'consultant-w',
           title: 'Independent Project Manager',
+          titleMobile: 'Independent<br>Project Manager',
         },
         {
           bg: 'contractor.jpg',
           url: 'https://nshp.ng/management-contractors',
           image: 'contractor-w',
           title: 'Management Contractor',
+          titleMobile: 'Management Contractor',
         },
         {
           bg: 'manufacturer.jpg',
           url: 'https://nshp.ng/manufacturers',
           image: 'supplier-w',
-          title: 'Manufacturer/Supplier',
+          title: 'Manufacturer',
+          titleMobile: 'Manufacturer',
+        },
+        {
+          bg: 'supplier.jpg',
+          url: 'https://nshp.ng/manufacturers',
+          image: 'supplier-w',
+          title: 'Supplier',
+          titleMobile: 'Supplier',
         },
       ],
     }
@@ -156,6 +168,10 @@ export default {
         font-weight: 600;
         font-size: 1.1rem;
         color: #fff;
+
+        &.mobile {
+          display: none;
+        }
       }
 
       p {
@@ -170,6 +186,15 @@ export default {
   .ms-partners .ms-partner--type {
     padding: 0 12px;
 
+    h4 {
+      &.web {
+        display: none !important;
+      }
+
+      &.mobile {
+        display: block !important;
+      }
+    }
     img.icon {
       height: 40px;
     }
