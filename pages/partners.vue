@@ -94,7 +94,7 @@ export default {
         },
         {
           bg: 'supplier.jpg',
-          url: 'https://nshp.ng/manufacturers',
+          url: 'https://nshp.ng/suppliers',
           image: 'supplier-w',
           title: 'Supplier',
           titleMobile: 'Supplier',
