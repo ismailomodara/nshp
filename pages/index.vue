@@ -266,7 +266,8 @@
               </div>
               <div class="step-content">
                 <p>
-                  Qualified homeowners will make contributions towards their homes while awaiting delivery.
+                  Qualified homeowners will make contributions towards their
+                  homes while awaiting delivery.
                 </p>
                 <el-tag>Coming Soon</el-tag>
               </div>
