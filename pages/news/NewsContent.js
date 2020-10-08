@@ -1,6 +1,6 @@
 const newsContent = [
   {
-    image: 'low-income-earners-set-to-become-happy-homeowners.jpg',
+    image: 'low_income_earners_set_to_become_happy_homeowners.jpg',
     title: 'Low Income Earners Set to Become Happy Homeowners',
     slug: 'low-income-earners-set-to-become-happy-homeowners',
     date: '5th Oct, 2020.',
