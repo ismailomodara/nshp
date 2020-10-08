@@ -65,7 +65,7 @@ export default {
     return {
       partnersType: [
         {
-          bg: 'delivery-partner.jpg',
+          bg: 'sme-delivery-partner.jpg',
           url: '{{form_base_url}}/delivery-partners',
           image: 'partner-w',
           title: 'SME Delivery Partner',
