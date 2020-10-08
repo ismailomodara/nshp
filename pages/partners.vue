@@ -91,7 +91,7 @@ export default {
         },
         {
           bg: 'supplier.jpg',
-          url: '{{form_base_url}}/suppliers',
+          url: '{{form_base_url}}/supplier',
           image: 'supplier-w',
           title: 'Supplier',
           titleMobile: 'Supplier',
@@ -165,6 +165,10 @@ export default {
         font-weight: 600;
         font-size: 1.1rem;
         color: #fff;
+
+        &.mobile {
+          display: none;
+        }
       }
 
       p {
@@ -178,6 +182,16 @@ export default {
 @media (max-width: 600px) {
   .ms-partners .ms-partner--type {
     padding: 0 12px;
+
+    h4 {
+      &.web {
+        display: none !important;
+      }
+
+      &.mobile {
+        display: block !important;
+      }
+    }
 
     img.icon {
       height: 40px;
