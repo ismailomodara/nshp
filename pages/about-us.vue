@@ -165,12 +165,12 @@ export default {
         },
         {
           image: 'consultants',
-          title: '1,000',
-          tagline: 'Management Consultants',
+          title: '600',
+          tagline: 'Independent Project Managers',
         },
         {
           image: 'contractors',
-          title: '37',
+          title: '600',
           tagline: 'Management Contractors',
         },
         {
