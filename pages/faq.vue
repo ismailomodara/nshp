@@ -240,10 +240,10 @@
               >
                 <div>
                   <p>
-                    As a Manufacture/supplier, you must be registered and
+                    As a Supplier, you must be registered and
                     certified to manufacture products for use in the
                     construction value chain. Complete
-                    <a href="https://nshp.ng/manufacturers" target="_blank"
+                    <a href="{{form_base_url}}/supplier" target="_blank"
                       >this form</a
                     >
                     with your valid details as a pre-requisite for registration.
