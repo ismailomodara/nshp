@@ -44,7 +44,8 @@
               />
               <div class="overlay"></div>
               <div class="content">
-                <h4>{{ type.title }}</h4>
+                <h4 class="web">{{ type.title }}</h4>
+                <h4 class="mobile" v-html="type.titleMobile"></h4>
               </div>
             </div>
           </el-col>
@@ -65,7 +66,7 @@ export default {
       partnersType: [
         {
           bg: 'delivery-partner.jpg',
-          url: '{{form_base_url}}/delivery-partners',
+          url: 'https://nshp.ng/delivery-partners',
           image: 'partner-w',
           title: 'SME Delivery Partner',
         },
@@ -85,7 +86,15 @@ export default {
           bg: 'manufacturer.jpg',
           url: '{{form_base_url}}/manufacturers',
           image: 'supplier-w',
-          title: 'Manufacturer/Supplier',
+          title: 'Manufacturer',
+          titleMobile: 'Manufacturer',
+        },
+        {
+          bg: 'supplier.jpg',
+          url: '{{form_base_url}}/suppliers',
+          image: 'supplier-w',
+          title: 'Supplier',
+          titleMobile: 'Supplier',
         },
       ],
     }
