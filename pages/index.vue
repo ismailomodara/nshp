@@ -85,7 +85,7 @@
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>For all Groups/ Cooperatives and their members.</p>
+                <p>For Groups/ Cooperatives and their members.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -610,7 +610,7 @@ export default {
 
   .ms-header--cta {
     position: relative;
-    padding: 40px;
+    padding: 40px 30px;
     display: flex;
     align-items: center;
     background: #fff;
