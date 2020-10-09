@@ -240,10 +240,12 @@
               >
                 <div>
                   <p>
-                    As a Supplier, you must be registered and
-                    certified to manufacture products for use in the
-                    construction value chain. Complete
-                    <a href="https://assessment.nshp.ng/supplier" target="_blank"
+                    As a Supplier, you must be registered and certified to
+                    manufacture products for use in the construction value
+                    chain. Complete
+                    <a
+                      href="https://assessment.nshp.ng/supplier"
+                      target="_blank"
                       >this form</a
                     >
                     with your valid details as a pre-requisite for registration.

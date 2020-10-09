@@ -20,9 +20,9 @@
         <p>
           Our dynamic approach to ‘Reach All’ is based on partnerships with
           multiple stakeholders to build affordable homes and create jobs for
-          Nigerians. To build 300,000 homes in 12 months, we require the
-          brightest minds and strongest convictions to help us achieve our goal.
-          If you share our vision, join us to build affordable homes.
+          Nigerians. To build 300,000 homes, we require the brightest minds and
+          strongest convictions to help us achieve our goal. If you share our
+          vision, join us to build affordable homes.
         </p>
       </div>
       <el-container>

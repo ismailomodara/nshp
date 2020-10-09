@@ -85,7 +85,7 @@
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>For all cooperatives and their members.</p>
+                <p>For all Groups/ Cooperatives and their members.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -176,10 +176,13 @@
               </p>
               <el-timeline>
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>1 Bedroom for ₦2,000,000</h6></el-timeline-item
+                  ><h6>1 Room for ₦2,000,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>2 Bedroom for ₦2,750,000</h6></el-timeline-item
+                  ><h6>2 Rooms for ₦2,750,000</h6></el-timeline-item
+                >
+                <el-timeline-item type="primary" color="#58bb8c" size="large"
+                  ><h6>3 Rooms for ₦3,500,000</h6></el-timeline-item
                 >
               </el-timeline>
               <p>
@@ -201,9 +204,15 @@
                 :src="getImage('home/two-bedroom.jpg')"
                 alt="Map"
               />
+              <img
+                v-else-if="homeOption === 'three'"
+                :src="getImage('home/one-bedroom.jpg')"
+                alt="Map"
+              />
               <el-radio-group v-model="homeOption">
-                <el-radio-button label="one">1 Bedroom House</el-radio-button>
-                <el-radio-button label="two">2 Bedroom House</el-radio-button>
+                <el-radio-button label="one">1 Room House</el-radio-button>
+                <el-radio-button label="two">2 Rooms House</el-radio-button>
+                <el-radio-button label="three">3 Rooms House</el-radio-button>
               </el-radio-group>
             </div>
           </el-col>
@@ -229,7 +238,7 @@
               <div class="step-content">
                 <p>
                   You will be able to register and submit your application to
-                  the NSHP in a simple and transparent manner.
+                  the NSHP in a simple manner.
                 </p>
                 <el-tag>Coming Soon</el-tag>
               </div>
@@ -452,7 +461,7 @@ export default {
           slide: 'owokekere_fun_ile_to_dara',
         },
         {
-          text: 'Homes for<br> Individuals & Cooperatives.',
+          text: 'Homes for Individuals,<br>Cooperatives & Groups',
           slide: 'biyan_kudi_kadan',
         },
         {

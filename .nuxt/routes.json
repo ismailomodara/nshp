@@ -35,6 +35,20 @@
     "_name": "_1241f3ee"
   },
   {
+    "name": "privacy-policy",
+    "path": "/privacy-policy",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/privacy-policy.vue",
+    "chunkName": "pages/privacy-policy",
+    "_name": "_6a1ff81a"
+  },
+  {
+    "name": "terms-of-use",
+    "path": "/terms-of-use",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/terms-of-use.vue",
+    "chunkName": "pages/terms-of-use",
+    "_name": "_6f4b035a"
+  },
+  {
     "name": "news-NewsContent",
     "path": "/news/NewsContent",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/news/NewsContent.js",

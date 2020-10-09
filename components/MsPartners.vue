@@ -1,54 +1,17 @@
 <template>
   <div class="ms-our--partner ms-section">
     <div class="ms-section--heading">
-      <h3>Partners</h3>
+      <h3>Powered by:</h3>
     </div>
     <el-container>
       <el-row type="flex" :gutter="40" class="flex-wrap mt-4">
-        <el-col :sm="12" :md="5" :lg="5" class="mb-1">
-          <div class="ms-partner--type inverse">
-            <span></span>
-            <h6>Implementer</h6>
-          </div>
-          <carousel ref="slider">
-            <slide>
-              <div class="partner-logo">
-                <img
-                  :src="getImage('partners/family-home-funds.png')"
-                  alt="FHF"
-                />
-              </div>
-            </slide>
-          </carousel>
-        </el-col>
-        <el-col :sm="12" :md="8" :lg="8">
-          <div class="ms-partner--type">
-            <span></span>
-            <h6>Financial Partners</h6>
-          </div>
-          <carousel ref="slider" :per-page="2">
-            <slide
-              v-for="(partner, index) in financial_partners"
-              :key="index"
-              :data-index="index"
-            >
-              <div class="partner-logo">
-                <img :src="getImage(partner)" alt="NSHP" />
-              </div>
-            </slide>
-          </carousel>
-        </el-col>
-        <el-col :sm="24" :md="11" :lg="11">
-          <div class="ms-partner--type inverse">
-            <span></span>
-            <h6>Strategic Partners</h6>
-          </div>
+        <el-col :span="24">
           <carousel
             ref="slider"
             :per-page-custom="[
               [0, 2],
-              [600, 3],
-              [1366, 3],
+              [600, 5],
+              [1366, 6],
             ]"
             :loop="true"
             :autoplay="true"
@@ -60,12 +23,12 @@
             pagination-active-color="#FCB320"
           >
             <slide
-              v-for="(partner, index) in strategic_partners"
+              v-for="(partner, index) in partners"
               :key="index"
               :data-index="index"
             >
               <div class="partner-logo">
-                <img :src="getImage(partner)" alt="NSHP" />
+                <img :src="getImage(`partners/${partner}.png`)" alt="NSHP" />
               </div>
             </slide>
           </carousel>
@@ -88,13 +51,16 @@ export default {
   mixins: [image],
   data() {
     return {
-      financial_partners: ['partners/finance.png', 'partners/central_bank.png'],
-      strategic_partners: [
-        'partners/federal-mortage.png',
-        'partners/federal-housing.png',
-        'partners/works-and-housing.png',
-        'partners/state_government.png',
-        'partners/bank_of_industry.png',
+      partners: [
+        'nesp',
+        'family-home-funds',
+        'finance',
+        'central_bank',
+        'federal-mortgage',
+        'federal-housing',
+        'works-and-housing',
+        'state_government',
+        'bank_of_industry',
       ],
     }
   },

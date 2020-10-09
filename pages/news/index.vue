@@ -9,7 +9,7 @@
       </div>
       <el-container>
         <div class="ms-header--other__content">
-          <h1>Stay informed</h1>
+          <h1>Beta Life!</h1>
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>
