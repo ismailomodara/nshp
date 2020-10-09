@@ -69,18 +69,21 @@ export default {
           url: '{{form_base_url}}/delivery-partners',
           image: 'partner-w',
           title: 'SME Delivery Partner',
+          titleMobile: 'SME Delivery Partner',
         },
         {
           bg: 'consultant.jpg',
           url: '{{form_base_url}}/management-consultants',
           image: 'consultant-w',
           title: 'Independent Project Manager',
+          titleMobile: 'Independent<br> Project Manager',
         },
         {
           bg: 'contractor.jpg',
           url: '{{form_base_url}}/management-contractors',
           image: 'contractor-w',
           title: 'Management Contractor',
+          titleMobile: 'Management Contractor',
         },
         {
           bg: 'manufacturer.jpg',
