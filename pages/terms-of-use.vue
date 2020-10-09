@@ -132,7 +132,7 @@
                 <li>
                   Using this Website in any way that is or may be damaging to this
                   Website;
-                </li>g
+                </li>
                 <li>
                   Using this Website in any way that impacts user access to this
                   Website;
