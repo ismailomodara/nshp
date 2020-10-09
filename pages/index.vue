@@ -176,13 +176,13 @@
               </p>
               <el-timeline>
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>1 Room for ₦2,000,000</h6></el-timeline-item
+                  ><h6>1-Room for ₦2,000,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>2 Rooms for ₦2,750,000</h6></el-timeline-item
+                  ><h6>2-Room for ₦2,750,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>3 Rooms for ₦3,500,000</h6></el-timeline-item
+                  ><h6>3-Room for ₦3,500,000</h6></el-timeline-item
                 >
               </el-timeline>
               <p>
@@ -206,13 +206,13 @@
               />
               <img
                 v-else-if="homeOption === 'three'"
-                :src="getImage('home/one-bedroom.jpg')"
+                :src="getImage('home/three-bedroom.jpeg')"
                 alt="Map"
               />
               <el-radio-group v-model="homeOption">
-                <el-radio-button label="one">1 Room House</el-radio-button>
-                <el-radio-button label="two">2 Rooms House</el-radio-button>
-                <el-radio-button label="three">3 Rooms House</el-radio-button>
+                <el-radio-button label="one">1-Room House</el-radio-button>
+                <el-radio-button label="two">2-Room House</el-radio-button>
+                <el-radio-button label="three">3-Room House</el-radio-button>
               </el-radio-group>
             </div>
           </el-col>
@@ -733,7 +733,7 @@ export default {
 
     img {
       height: 400px;
-      width: auto;
+      width: 100%;
       object-fit: cover;
       margin-bottom: 20px;
       border-radius: 8px;
