@@ -123,22 +123,22 @@
               <h5>Restrictions</h5>
               <p>You are specifically restricted from all of the following:</p>
               <ul>
-                <li>publishing any Website material in any other media;</li>
+                <li>Publishing any Website material in any other media;</li>
                 <li>
-                  sublicensing and/or otherwise commercializing any Website
+                  Selling, sublicensing and/or otherwise commercializing any Website
                   material;
                 </li>
-                <li>performing and/or showing any Website material;</li>
+                <li>Publicly performing and/or showing any Website material;</li>
                 <li>
-                  this Website in any way that is or may be damaging to this
+                  Using this Website in any way that is or may be damaging to this
+                  Website;
+                </li>g
+                <li>
+                  Using this Website in any way that impacts user access to this
                   Website;
                 </li>
                 <li>
-                  this Website in any way that impacts user access to this
-                  Website;
-                </li>
-                <li>
-                  this Website contrary to applicable laws and regulations, or
+                  Using this Website contrary to applicable laws and regulations, or
                   in any way may cause harm to the Website, or to any person or
                   business entity;
                 </li>
