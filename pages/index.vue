@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div ref="home">
+    <Navigation @scroll="scrollToSection" />
     <header class="ms-header">
       <div class="carousel-container">
         <span class="prev" @click="prevSlide">
@@ -45,22 +46,10 @@
     </header>
     <div class="ms-header--ctas ms-section">
       <el-container>
-        <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
+        <el-row type="flex" :gutter="40" class="flex-wrap">
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta individual">
-              <a href="https://assessment.nshp.ng/individual"></a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="27"
-                height="31.5"
-                viewBox="0 0 27 31.5"
-              >
-                <path
-                  d="M13.5,18a7.875,7.875,0,1,0-7.875-7.875A7.871,7.871,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35A8.1,8.1,0,0,0,18.9,20.25Z"
-                  transform="translate(0 -2.25)"
-                  fill="#58bb8c"
-                />
-              </svg>
+              <a href="https://forms.gle/z1EFjHgu8ixfuLMJ9" target="_blank"></a>
               <div>
                 <h4>Individuals</h4>
                 <p>For all Nigerians seeking to own a home.</p>
@@ -70,19 +59,7 @@
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <a href="https://assessment.nshp.ng/co-operatives"></a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="45"
-                height="31.5"
-                viewBox="0 0 45 31.5"
-              >
-                <path
-                  d="M13.5,18a7.871,7.871,0,1,0-5.57-2.305A7.875,7.875,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35a8.1,8.1,0,0,0-8.1-8.1ZM33.75,18A6.75,6.75,0,1,0,27,11.25,6.75,6.75,0,0,0,33.75,18Zm3.375,2.25h-.267a8.867,8.867,0,0,1-6.216,0h-.267a7.81,7.81,0,0,0-3.916,1.083A10.29,10.29,0,0,1,29.25,28.35v2.7c0,.155-.035.3-.042.45H41.625A3.376,3.376,0,0,0,45,28.125a7.871,7.871,0,0,0-7.875-7.875Z"
-                  transform="translate(0 -2.25)"
-                  fill="#58bb8c"
-                />
-              </svg>
+              <a href="https://forms.gle/PeR67odgT8ymMA3x7" target="_blank"></a>
               <div>
                 <h4>Cooperatives</h4>
                 <p>For Groups/ Cooperatives and their members.</p>
@@ -92,20 +69,7 @@
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <router-link to="/partners"></router-link>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="51.648"
-                height="31"
-                viewBox="0 0 51.648 31"
-                class="partnership"
-              >
-                <path
-                  d="M35.08,4.5H28.148a2.581,2.581,0,0,0-1.743.678l-7.933,7.263c-.008.008-.016.024-.024.032a3.21,3.21,0,0,0-.169,4.519,3.366,3.366,0,0,0,4.527.218c.008-.008.024-.008.032-.016l6.448-5.907a1.291,1.291,0,0,1,1.743,1.9L28.923,15.12l11.75,9.539a5.814,5.814,0,0,1,.638.621V9.665L36.9,5.259A2.564,2.564,0,0,0,35.08,4.5ZM43.9,9.681V27.75a2.58,2.58,0,0,0,2.582,2.582h5.165V9.681ZM47.774,27.75a1.291,1.291,0,1,1,1.291-1.291A1.295,1.295,0,0,1,47.774,27.75ZM0,30.324H5.165a2.58,2.58,0,0,0,2.582-2.582V9.681H0Zm3.874-5.157a1.291,1.291,0,1,1-1.291,1.291A1.295,1.295,0,0,1,3.874,25.167Zm35.177,1.5L27,16.887l-2.421,2.219a5.809,5.809,0,0,1-7.852-8.562L23.33,4.5H16.568a2.578,2.578,0,0,0-1.824.759L10.33,9.665V27.733h1.477l7.3,6.609a5.164,5.164,0,0,0,7.263-.751l.016-.016,1.445,1.251a3,3,0,0,0,4.221-.436l2.534-3.115.436.355a2.578,2.578,0,0,0,3.631-.379l.767-.944a2.587,2.587,0,0,0-.371-3.64Z"
-                  transform="translate(0 -4.5)"
-                  fill="#58bb8c"
-                />
-              </svg>
+              <a href="https://forms.gle/drnoRnYTpGWjpgLD7" target="_blank"></a>
               <div>
                 <h4>Partnerships</h4>
                 <p>For all Nigerian Professionals.</p>
@@ -113,10 +77,50 @@
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
+          <el-col :sm="24" :md="8" :lg="8">
+            <div class="ms-header--cta">
+              <a href="https://forms.gle/tXpTZ8VqQUYWkGFS9" target="_blank"></a>
+              <div>
+                <h4>Contractor</h4>
+                <p>Develop for us</p>
+              </div>
+              <img :src="getImage('arrow-right.svg')" alt=">" />
+            </div>
+          </el-col>
+          <el-col :sm="24" :md="8" :lg="8">
+            <div class="ms-header--cta">
+              <a href="https://forms.gle/3w2sMuKyrBPQSs3b7" target="_blank"></a>
+              <div>
+                <h4>Consultants</h4>
+                <p>Manage for us</p>
+              </div>
+              <img :src="getImage('arrow-right.svg')" alt=">" />
+            </div>
+          </el-col>
+          <el-col :sm="24" :md="8" :lg="8">
+            <div class="ms-header--cta">
+              <a href="https://forms.gle/Ez4ZHhSkSEpRnTJM8" target="_blank"></a>
+              <div>
+                <h4>Manufacturers</h4>
+                <p>Provide for us</p>
+              </div>
+              <img :src="getImage('arrow-right.svg')" alt=">" />
+            </div>
+          </el-col>
+          <el-col :sm="24" :md="8" :lg="8">
+            <div class="ms-header--cta">
+              <a href="https://forms.gle/diZqKuMjxv5RaiBEA" target="_blank"></a>
+              <div>
+                <h4>Suppliers</h4>
+                <p>Provide for us</p>
+              </div>
+              <img :src="getImage('arrow-right.svg')" alt=">" />
+            </div>
+          </el-col>
         </el-row>
       </el-container>
     </div>
-    <div class="ms-about ms-section">
+    <div ref="about-us" class="ms-about ms-section">
       <div class="ms-section--heading">
         <h3>The NSHP</h3>
       </div>
@@ -143,9 +147,6 @@
                 become a homeowner in any part of Nigeria easily! Beta house,
                 beta life for everybody!
               </p>
-              <el-button type="primary" @click="$router.push('/about-us')"
-                >Learn More</el-button
-              >
             </div>
           </el-col>
           <el-col :sm="24" :md="10" :lg="12">
@@ -285,7 +286,7 @@
         </el-row>
       </el-container>
     </div>
-    <div class="ms-find-out--more ms-section">
+    <div ref="faq" class="ms-find-out--more ms-section">
       <div class="ms-section--heading">
         <h3>Find out more</h3>
       </div>
@@ -368,7 +369,7 @@
         </el-row>
       </el-container>
     </div>
-    <div class="ms-contact--via ms-section">
+    <div ref="contact" class="ms-contact--via ms-section">
       <div class="ms-section--heading">
         <h3>Contact us</h3>
       </div>
@@ -422,22 +423,52 @@
         </el-row>
       </el-container>
     </div>
+    <div ref="partners">
+      <MsPartners />
+    </div>
+    <div ref="news" class="ms-all--news ms-section">
+      <div class="ms-section--heading">
+        <h3>News</h3>
+      </div>
+      <el-container>
+        <el-row type="flex" class="flex-wrap" :gutter="40">
+          <el-col
+            v-for="(news, i) in allNews"
+            :key="i"
+            :sm="24"
+            :md="12"
+            :lg="12"
+          >
+            <news-card :news="news" />
+          </el-col>
+        </el-row>
+      </el-container>
+    </div>
+    <Footer @scroll="scrollToSection" />
     <video-player :show.sync="showVideoPlayer" />
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
-
+import Navigation from '../components/Navigation'
+import MsPartners from '../components/MsPartners'
+import NewsCard from '../components/NewsCard'
+import Footer from '../components/Footer'
 import VideoPlayer from '../components/VideoPlayer'
 
 import image from '../mixin/image'
+import newsContent from './news/NewsContent'
 
 export default {
   name: 'Home',
   components: {
     Carousel,
     Slide,
+    Navigation,
+    MsPartners,
+    NewsCard,
+    Footer,
     VideoPlayer,
   },
   mixins: [image],
@@ -478,6 +509,11 @@ export default {
       activeName: '',
     }
   },
+  computed: {
+    allNews() {
+      return newsContent
+    },
+  },
   mounted() {
     document
       .querySelectorAll('.VueCarousel-slide')[0]
@@ -491,6 +527,9 @@ export default {
     })
   },
   methods: {
+    scrollToSection(section) {
+      this.$refs[section].scrollIntoView({ behavior: 'smooth', alignTo: true })
+    },
     nextSlide() {
       this.$refs.slider.goToPage(this.$refs.slider.getNextPage())
     },
@@ -609,6 +648,7 @@ export default {
   }
 
   .ms-header--cta {
+    margin-bottom: 30px;
     position: relative;
     padding: 40px 30px;
     display: flex;
@@ -1126,5 +1166,9 @@ export default {
   .ms-find-out--more .el-row {
     width: unset;
   }
+}
+
+.ms-news {
+  padding-bottom: 80px;
 }
 </style>

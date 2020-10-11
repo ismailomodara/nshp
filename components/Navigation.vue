@@ -477,6 +477,10 @@ export default {
   .ms-navbar {
     padding: 0 0 20px;
   }
+
+  .ms-navbar > .el-container {
+    top: -15px !important;
+  }
 }
 
 @media (max-width: 992px) {

@@ -304,7 +304,7 @@ export default {
 
 <style lang="scss" scoped>
 .ms-section--heading p {
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 .ms-policy--section {

@@ -125,22 +125,24 @@
               <ul>
                 <li>Publishing any Website material in any other media;</li>
                 <li>
-                  Selling, sublicensing and/or otherwise commercializing any Website
-                  material;
+                  Selling, sublicensing and/or otherwise commercializing any
+                  Website material;
                 </li>
-                <li>Publicly performing and/or showing any Website material;</li>
                 <li>
-                  Using this Website in any way that is or may be damaging to this
-                  Website;
+                  Publicly performing and/or showing any Website material;
+                </li>
+                <li>
+                  Using this Website in any way that is or may be damaging to
+                  this Website;
                 </li>
                 <li>
                   Using this Website in any way that impacts user access to this
                   Website;
                 </li>
                 <li>
-                  Using this Website contrary to applicable laws and regulations, or
-                  in any way may cause harm to the Website, or to any person or
-                  business entity;
+                  Using this Website contrary to applicable laws and
+                  regulations, or in any way may cause harm to the Website, or
+                  to any person or business entity;
                 </li>
                 <li>
                   Engaging in any data mining, data harvesting, data extracting
@@ -307,7 +309,7 @@ export default {
 
 <style lang="scss" scoped>
 .ms-section--heading p {
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 .ms-terms--section {
