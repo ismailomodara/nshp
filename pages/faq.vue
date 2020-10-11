@@ -34,19 +34,9 @@
               >
                 <div>
                   <p>
-                    National Social Housing Programme (NSHP) is a bold response
-                    by the Buhari-led administration to tackle the adverse
-                    economic and health challenges faced by Nigerians due to the
-                    global COVID-19 pandemic. The Family Homes Funds has been
-                    commissioned to implement the Social Housing Program tagged
-                    ‘Jobs Through Homes’ as an integral part of The Federal
-                    Government’s Economic Sustainability Plan.
-                  </p>
-                  <p>
-                    The NSHP introduces a new and dynamic approach that brings
-                    together experience and expertise from multiple stakeholders
-                    to develop a sustainable and impactful solution to housing
-                    and unemployment in Nigeria.
+                    National Social Housing Programme (NSHP) is a bold response by the Buhari-led administration to tackle the adverse economic and health challenges faced by Nigerians due to the global COVID-19 pandemic.<br>
+                    The Family Homes Funds has been commissioned to implement the Social Housing Program as an integral part of The Federal Government’s Economic Sustainability Plan.<br>
+                    The NSHP introduces a new and dynamic approach that brings together experience and expertise from multiple stakeholders to develop a sustainable and impactful solution to housing and unemployment in Nigeria.
                   </p>
                 </div>
               </el-collapse-item>
@@ -80,10 +70,7 @@
                 name="3"
               >
                 <div>
-                  <p>
-                    To be eligible to own a home, you must fulfil the following
-                    criteria:
-                  </p>
+                  <p>To be eligible to own a home, you must fulfil the following criteria when the applications are open:</p>
                   <ul>
                     <li>Be a Nigerian citizen.</li>
                     <li>Be over 18 years of age.</li>
@@ -93,6 +80,7 @@
                       personal details, housing preferences (the type of house
                       you are applying for).
                     </li>
+                    <li>Show a reliable income stream/affordability</li>
                   </ul>
                 </div>
               </el-collapse-item>
@@ -102,28 +90,14 @@
                 class="inverse"
               >
                 <div>
-                  <p>
-                    Our objective is to ensure that Nigerians with low or medium
-                    income especially in the informal sector have access to
-                    homes they can afford.
+                  <p>Our objective is to ensure that Nigerians with low or medium income especially in the informal sector have access to homes they can afford.
                   </p>
-                  <p>
-                    To meet this objective, we have designed an extendible
-                    1-bedroom self-contained apartment with a living/dining
-                    room, kitchen store, bedroom and two toilets. These
-                    apartments are detached and sits on at least 250sqm and can
-                    be extended to 2/3 bedrooms at minimal costs.
-                  </p>
+                  <p>To meet this objective, we have designed an extendible 1-bedroom self-contained apartment with a living/dining room, kitchen store, bedroom and two toilets. These apartments are detached and sits on at least 250sqm and can be extended to 2/3 bedrooms at minimal costs.</p>
                 </div>
               </el-collapse-item>
               <el-collapse-item title="Where are these homes built?" name="5">
                 <div>
-                  <p>
-                    The houses will be built in all states in Nigeria including
-                    the FCT. To reach the grassroot, members of the public will
-                    be informed as new projects are built. This is also to allow
-                    you choose your preferred location.
-                  </p>
+                  <p>The houses will be built in all states in Nigeria including the FCT. To reach the grassroot, members of the public will be informed as new projects are built. This is also to allow you choose your preferred location. </p>
                 </div>
               </el-collapse-item>
               <el-collapse-item
@@ -132,12 +106,7 @@
                 class="inverse"
               >
                 <div>
-                  <p>
-                    The NSHP is set to provide low cost housing for Nigerians
-                    within the low- and medium-income range spectrum and as
-                    such, allocation of houses will be free and fair. A person
-                    will not be allocated more than one house at a time.
-                  </p>
+                  <p>The NSHP is set to provide low cost housing for Nigerians within the low income range and as such, allocation of houses will be free and fair. A person will not be allocated more than one house at a time.</p>
                 </div>
               </el-collapse-item>
               <el-collapse-item
@@ -145,12 +114,7 @@
                 name="7"
               >
                 <div>
-                  <p>
-                    Two or more people can jointly pay for a home depending on
-                    the agreement made. This means that cooperatives or small
-                    groups can register their members for the National Social
-                    Housing Programme.
-                  </p>
+                  <p>Two or more people can jointly pay for a home depending on the agreement made. This means that cooperatives or small groups can register their members for the National Social Housing Programme.</p>
                 </div>
               </el-collapse-item>
               <el-collapse-item
@@ -160,47 +124,16 @@
               >
                 <div>
                   <p>
-                    There is no fixed time. NSHP is committed to giving you an
-                    allocation as soon as the preferred home option is available
-                    and you have saved at least 25%
-                  </p>
-                  <p>
-                    This means that if the current price of your home is
-                    ₦3,000,000, you will be required to have saved a minimum of
-                    ₦ 750,000 before you are allocated a house. The quicker the
-                    minimum savings is reached, the quicker the allocation.
+                    Once the land/location as well as the list of beneficiaries for the specific location have been finalised, arrangements for allocation in that location can begin.
                   </p>
                 </div>
               </el-collapse-item>
               <el-collapse-item
-                title="How can I know that my money is safe, and I will get as house as
-                                            promised?"
+                title="How can I know that my money is safe, and I will get as house as promised?"
                 name="9"
               >
                 <div>
-                  <p>
-                    The NSHP commits to protecting all Nigerians against fraud
-                    hence all registered and verified participants’
-                    subscriptions are managed by a regulated financial
-                    institution. In addition, the following measures have also
-                    been put in place:
-                  </p>
-                  <ul>
-                    <li>
-                      You will get monthly statements of balance on your account
-                      which you can cross check with your own records.
-                    </li>
-                    <li>
-                      All disbursements from the account will go towards actual
-                      construction of the housing units and can only be
-                      authorized by approved persons.
-                    </li>
-                    <li>
-                      Your conditional sales agreement is a binding commitment
-                      from the NSHP. Once you achieve a minimum 25% savings on
-                      your account, we are obliged to make an allocation.
-                    </li>
-                  </ul>
+                  <p>The program is managed by the FHFL owned by the Federal Ministry of Finance, Budget and National Planning and the Nigerian Sovereign Investment Authority. The mortgages/affordability will be enhanced by the CBN and FMBN for loans that will span appropriate periods suitable and affordable by beneficiaries.</p>
                 </div>
               </el-collapse-item>
               <el-collapse-item
@@ -209,27 +142,15 @@
                 class="inverse"
               >
                 <div>
-                  <p>
-                    As soon as your application is verified, you will be
-                    allocated an adviser who you can speak to whenever the need
-                    arises including issues regarding rescheduling of your
-                    payment plan if you are unable to meet up due to temporary
-                    constraints.
-                  </p>
+                  <p>As soon as your application is verified, you will have access to the Housing Portal for necessary information as well as the Call Centre which is being set up at the moment.</p>
                 </div>
               </el-collapse-item>
               <el-collapse-item
-                title="What if I am no longer interested in the National Social Housing
-                                            Programme"
+                title="What if I am no longer interested in the National Social Housing Programme"
                 name="11"
               >
                 <div>
-                  <p>
-                    We strongly advise you stay committed once your application
-                    has been submitted and verified. However, we recognize that
-                    some circumstances are beyond control; saved funds will be
-                    refunded to you less 15% of administrative cost 30 days
-                    after notification.
+                  <p>We strongly advise you stay committed once your application has been submitted and verified. However, we recognize that some circumstances are beyond your control; the government is committed to seeing that the project is successfully implemented.
                   </p>
                 </div>
               </el-collapse-item>
@@ -240,9 +161,7 @@
               >
                 <div>
                   <p>
-                    As a Supplier, you must be registered and certified to
-                    manufacture products for use in the construction value
-                    chain. Complete
+                    As supplier, you must be registered to distribute or certified to manufacture products for use in the construction value chain. Complete
                     <a
                       href="https://assessment.nshp.ng/supplier"
                       target="_blank"

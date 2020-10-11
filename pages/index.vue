@@ -182,7 +182,7 @@
                   ><h6>3-Room for ₦2,750,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>4-Room for ₦3,000,000</h6></el-timeline-item
+                  ><h6>4-Room for ₦3,500,000</h6></el-timeline-item
                 >
               </el-timeline>
               <p>
