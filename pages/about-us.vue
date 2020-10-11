@@ -73,8 +73,7 @@
               <p>NSHP is set to achieve the following objectives:</p>
               <ul>
                 <li>
-                  Construct 300,000 homes across Nigeria in 12 months for low
-                  income earners.
+                  Construct 300,000 homes across Nigeria for low income earners.
                 </li>
                 <li>
                   Create up to 1.8 million jobs in the Construction Value Chain
@@ -85,11 +84,10 @@
                   economies of scale.
                 </li>
                 <li>
-                  Increase access to home ownership for low income Nigerians
-                  through reduced housing costs and low interest mortgages.
+                  Increase access to home ownership for low income earners
+                  through reduced housing cost & alternative financing options.
                 </li>
               </ul>
-              <p>Amazing Offers Await You!</p>
             </div>
           </el-col>
           <el-col :sm="24" :md="10" :lg="12">

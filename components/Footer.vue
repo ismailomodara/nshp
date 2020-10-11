@@ -8,8 +8,8 @@
             <img :src="getImage('footer-logo-new.svg')" alt="" />
           </div>
           <p>
-            NSHP will provide low cost homes either on a rent-to-own basis or as
-            affordable mortgages in all states in Nigeria and the FCT.
+            NSHP will provide low cost homes through alternative financing
+            options in all states in Nigeria and the FCT.
           </p>
         </el-col>
         <el-col :sm="24" :md="12" :lg="12">
@@ -20,6 +20,10 @@
               <li><nuxt-link to="/partners"> Partnerships </nuxt-link></li>
               <li><nuxt-link to="/news">News</nuxt-link></li>
               <li><nuxt-link to="/faq">FAQs</nuxt-link></li>
+              <li>
+                <nuxt-link to="/privacy-policy">Privacy policy</nuxt-link>
+              </li>
+              <li><nuxt-link to="/terms-of-use">Terms of Use</nuxt-link></li>
               <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
             </ul>
           </div>
@@ -272,9 +276,10 @@ export default {
     list-style: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     li {
-      padding: 0 20px;
+      padding: 0 40px 20px 0;
 
       &:first-child {
         padding-left: 0;
