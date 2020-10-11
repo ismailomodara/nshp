@@ -176,13 +176,13 @@
               </p>
               <el-timeline>
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>1-Room for ₦2,000,000</h6></el-timeline-item
+                  ><h6>2-Room for ₦2,000,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>2-Room for ₦2,750,000</h6></el-timeline-item
+                  ><h6>3-Room for ₦2,750,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>3-Room for ₦3,500,000</h6></el-timeline-item
+                  ><h6>4-Room for ₦3,000,000</h6></el-timeline-item
                 >
               </el-timeline>
               <p>
@@ -195,24 +195,24 @@
           <el-col :sm="24" :md="12" :lg="12">
             <div class="ms-home--options__image">
               <img
-                v-if="homeOption === 'one'"
-                :src="getImage('home/one-bedroom.jpg')"
-                alt="Map"
-              />
-              <img
-                v-else-if="homeOption === 'two'"
-                :src="getImage('home/two-bedroom.jpg')"
+                v-if="homeOption === 'two'"
+                :src="getImage('home/two.jpg')"
                 alt="Map"
               />
               <img
                 v-else-if="homeOption === 'three'"
-                :src="getImage('home/three-bedroom.jpeg')"
+                :src="getImage('home/three.jpg')"
+                alt="Map"
+              />
+              <img
+                v-else-if="homeOption === 'four'"
+                :src="getImage('home/four.jpeg')"
                 alt="Map"
               />
               <el-radio-group v-model="homeOption">
-                <el-radio-button label="one">1-Room House</el-radio-button>
                 <el-radio-button label="two">2-Room House</el-radio-button>
                 <el-radio-button label="three">3-Room House</el-radio-button>
+                <el-radio-button label="four">4-Room House</el-radio-button>
               </el-radio-group>
             </div>
           </el-col>
