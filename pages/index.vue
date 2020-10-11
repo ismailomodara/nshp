@@ -474,7 +474,7 @@ export default {
         },
       ],
       showVideoPlayer: false,
-      homeOption: 'one',
+      homeOption: 'two',
       activeName: '',
     }
   },
