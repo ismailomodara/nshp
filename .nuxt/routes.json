@@ -30,6 +30,18 @@
     "chunkName": "pages/partners"
   },
   {
+    "name": "privacy-policy",
+    "path": "/privacy-policy",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/privacy-policy.vue",
+    "chunkName": "pages/privacy-policy"
+  },
+  {
+    "name": "terms-of-use",
+    "path": "/terms-of-use",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/terms-of-use.vue",
+    "chunkName": "pages/terms-of-use"
+  },
+  {
     "name": "news-NewsContent",
     "path": "/news/NewsContent",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/nshp/pages/news/NewsContent.js",

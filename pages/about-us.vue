@@ -2,7 +2,7 @@
   <div>
     <header class="ms-header--other">
       <div class="ms-header--other__bg">
-        <img :src="getImage('home/slider/slide-1.jpg')" alt="About NSHP" />
+        <img :src="getImage('home/slider/own_a_home.jpg')" alt="About NSHP" />
       </div>
       <el-container>
         <div class="ms-header--other__content">
@@ -16,7 +16,7 @@
         <h3>The Vision</h3>
         <p>
           Here are some of the impacts the programme as a whole would be making
-          in the Nigeria Economy.
+          in the Nigerian Economy.
         </p>
       </div>
       <el-container>
@@ -32,7 +32,7 @@
               <img :src="getImage(`vision/${vision.image}.svg`)" alt="Home" />
               <div>
                 <h3>{{ vision.title }}</h3>
-                <p>{{ vision.tagline }}</p>
+                <p v-html="vision.tagline"></p>
               </div>
             </div>
           </el-col>
@@ -51,7 +51,7 @@
                 Imagine becoming the latest homeowner in any part of Nigeria,
                 amazing right? The National Social Housing Programme (NSHP)
                 allows you to become an instant landlord with as low as
-                <span class="strong">₦2,000,000 only</span>
+                <span class="strong">₦2,000,000 only.</span>
               </p>
               <p>
                 The initiative is a bold response by the Buhari-led
@@ -73,33 +73,54 @@
               <p>NSHP is set to achieve the following objectives:</p>
               <ul>
                 <li>
-                  Construct 300,000 homes across Nigeria in 12 months for low
-                  income earners.
+                  Construct 300,000 homes across Nigeria for low income earners.
                 </li>
                 <li>
-                  Create up to 1.8m jobs in the value chain of the construction
+                  Create up to 1.8 million jobs in the Construction Value Chain
                   for Nigerians.
                 </li>
                 <li>
                   Increase domestic production of construction materials through
-                  the economies of scale.
+                  economies of scale.
                 </li>
                 <li>
-                  Increase access to home ownership for low income Nigerians
-                  through reduced housing costs and low interest mortgages.
+                  Increase access to home ownership for low income earners
+                  through reduced housing cost & alternative financing options.
                 </li>
               </ul>
-              <p>
-                There amazing offers waiting for you
-                <a href="https://nshp.ng/individual" target="_blank"
-                  >I'm interested</a
-                >
-              </p>
             </div>
           </el-col>
           <el-col :sm="24" :md="10" :lg="12">
             <div class="ms-about--image">
               <img :src="getImage('map.svg')" alt="Map" />
+            </div>
+          </el-col>
+        </el-row>
+      </el-container>
+    </div>
+    <div class="ms-coming--soon__section ms-section">
+      <el-container>
+        <el-row type="flex" :gutter="20" align="middle" class="flex-wrap">
+          <el-col :sm="12" :lg="12" class="mb-1">
+            <div class="ms-section--heading">
+              <h3>Projects</h3>
+            </div>
+            <div class="ms-coming--soon">
+              <img :src="getImage('projects.svg')" alt="Home" />
+              <div>
+                <el-tag>Coming Soon</el-tag>
+              </div>
+            </div>
+          </el-col>
+          <el-col :sm="12" :lg="12">
+            <div class="ms-section--heading">
+              <h3>Progress dashboard</h3>
+            </div>
+            <div class="ms-coming--soon">
+              <img :src="getImage('progress.svg')" alt="Home" />
+              <div>
+                <el-tag>Coming Soon</el-tag>
+              </div>
             </div>
           </el-col>
         </el-row>
@@ -125,7 +146,7 @@ export default {
         {
           image: 'estates',
           title: '1,000',
-          tagline: 'Estates per year',
+          tagline: 'Estates to be delivered',
         },
         {
           image: 'states',
@@ -134,17 +155,17 @@ export default {
         },
         {
           image: 'partners',
-          title: '6,000',
+          title: '9,000',
           tagline: 'Partnerships (SMEs)',
         },
         {
           image: 'consultants',
-          title: '1,000',
-          tagline: 'Management Consultants',
+          title: '600',
+          tagline: 'Independent<br> Project Managers',
         },
         {
           image: 'contractors',
-          title: '37',
+          title: '600',
           tagline: 'Management Contractors',
         },
         {
@@ -154,18 +175,8 @@ export default {
         },
         {
           image: 'jobs',
-          title: '13,000,000',
+          title: '1,800,000',
           tagline: 'Jobs for Nigerians',
-        },
-        {
-          image: 'enterprises',
-          title: '300,000',
-          tagline: 'Micro Enterprises',
-        },
-        {
-          image: 'women',
-          title: '4,000,000',
-          tagline: 'Jobs for Women',
         },
       ],
     }
@@ -203,6 +214,7 @@ export default {
       h3 {
         font-weight: 600;
         font-size: 1.8rem;
+        line-height: 1.6;
       }
 
       p {
@@ -239,6 +251,49 @@ export default {
       font-size: 1rem;
       opacity: 0.8;
       line-height: 1.8;
+    }
+  }
+}
+
+.ms-coming--soon__section {
+  .el-row {
+    width: 100%;
+  }
+
+  .ms-coming--soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+
+    > img {
+      height: 160px;
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    div {
+      margin-left: 20px;
+      text-align: left;
+
+      p {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+          img {
+            margin: 0 5px;
+            height: 22px;
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
     }
   }
 }

@@ -1,6 +1,32 @@
 const newsContent = [
   {
-    image: 'low-income-earners-set-to-become-happy-homeowners.jpg',
+    image:
+      'social_housing_workshop_in_partnership_with_cooperative _federation_of_nigeria.jpg',
+    title:
+      'Social Housing Workshop In Partnership With Cooperative Federation Of Nigeria',
+    slug:
+      'social-housing-workshop-in-partnership-with-cooperative-federation-of-nigeria',
+    date: '29th Sep, 2020.',
+    desc:
+      'In a bid to extend its affordable social housing program across Nigeria, Family Homes Fund Limited has revealed that it is already in partnership with cooperatives in Nigeria to provide affordable housing to Nigerians through the National social housing programme of the Federal Government.',
+    content:
+      '<p>In a bid to extend its affordable  social housing program across Nigeria, Family Homes Fund Limited has revealed that it is already in partnership with cooperatives in Nigeria to provide affordable housing to Nigerians through the National social housing programme of the Federal Government.</p>' +
+      '<p>The social housing program is about providing homes for people on low income. It is one of the key element of the Economic Sustainability Plan of the Federal Government of Nigeria as one of the key measures to alleviate the consequences of the Covid-19 pandemic which has rendered many low-income earners jobless and homeless.</p>' +
+      '<p>The key objective of the social housing program is to create jobs at scale, especially for low income earners whom may have lost their jobs because of the pandemic.</p>' +
+      '<p>The second objective is to revitalize the local economy by using local content for housing development. In realising that, about 1,500,000 million doors, 1,800,000 windows, 7,800,000 door hinges and other building materials will be manufactured locally for the social housing program, giving a new lease of life to local industries.</p>' +
+      '<p>The third objective is to create affordable and sustainable homes for the low-income earners. Standard house types have been designed for the program to be affordable and super-efficient. On average the prices for a one bedroom will range between ₦1,800,000 to ₦2,000,000 while the two bedrooms will be for about ₦2,700,500.</p>' +
+      '<p>Speaking at the workshop organized in conjunction with the Cooperative Federation of Nigeria, the Managing Director of Family Homes Funds, Mr Femi Adewole said “in designing the National Social Housing Program, we are very clear that addressing the demand side is a very critical factor for success. And one of the ways to achieve that was to work with housing cooperatives”,</p>' +
+      '<p>He also said ‘’For us, there is no better way to achieve what we want than working with the very many cooperatives that we have in Nigeria. So, our immediate step was to strike a partnership with the cooperative federation of Nigeria; basically, to facilitate access to the over 100,000 cooperatives that we have in Nigeria, and working through them to mobilize demand to feed the program.</p>' +
+      '<p>Speaking further, he said part of the essence of the workshop is to finalize on the acceptable criteria for engagement and for the provision of these affordable houses for those who need them most.<br>‘’We already have our own ideas about the criteria for selecting them. Some of those include strong corporate governance. We want cooperatives that are well organized and well run. We want a very even spread across the nation. We also want cooperatives that are socially inclusive and not discriminatory against gender, tribe, religion or age.</p>' +
+      '<p>Having said that, The Managing Director reiterated the fact that perhaps one item that is non-negotiable is the issue of affordability and rightful beneficiaries – low income earners.<br>He also alluded to the recent CBN announcement of ₦200billion initial funding for the social housing program. To achieve the intended results, he said the cooperatives must work together with FHF.<br>' +
+      '“The fund comes to FHF through the ministry of finance, then we loan it out at a concessionary price to cooperatives to be able to provide houses for their co-operators once they meet the criteria for the loans.<br>' +
+      '“The financing will be single digit of 8 to 9% per annum. You will be getting a land subsidy. The land will be provided by public sources like state governments and public services.”<br>' +
+      '“When the houses are completed, individual members of cooperatives will buy the houses through a CBN facility, directly or through your cooperative mortgage banks that allow you to pay gradually for the houses.”<br>' +
+      '“Cooperatives are significant partners in delivering the social housing program because you can help us to deliver the real needs.”<br>' +
+      'He also mentioned that a housing portal will be established where the beneficiaries will access whatever information they need and also provide the information required from them.</p>',
+  },
+  {
+    image: 'low_income_earners_set_to_become_happy_homeowners.jpg',
     title: 'Low Income Earners Set to Become Happy Homeowners',
     slug: 'low-income-earners-set-to-become-happy-homeowners',
     date: '5th Oct, 2020.',

@@ -8,6 +8,8 @@ const _3cd4f9a6 = () => interopDefault(import('../pages/contact.vue' /* webpackC
 const _d7cbfcba = () => interopDefault(import('../pages/faq.vue' /* webpackChunkName: "pages/faq" */))
 const _2d678cce = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
 const _1241f3ee = () => interopDefault(import('../pages/partners.vue' /* webpackChunkName: "pages/partners" */))
+const _6a1ff81a = () => interopDefault(import('../pages/privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
+const _6f4b035a = () => interopDefault(import('../pages/terms-of-use.vue' /* webpackChunkName: "pages/terms-of-use" */))
 const _75b61c62 = () => interopDefault(import('../pages/news/NewsContent.js' /* webpackChunkName: "pages/news/NewsContent" */))
 const _30d4cf5e = () => interopDefault(import('../pages/news/_slug.vue' /* webpackChunkName: "pages/news/_slug" */))
 const _b1fb0fc2 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -48,6 +50,14 @@ export const routerOptions = {
     path: "/partners",
     component: _1241f3ee,
     name: "partners"
+  }, {
+    path: "/privacy-policy",
+    component: _6a1ff81a,
+    name: "privacy-policy"
+  }, {
+    path: "/terms-of-use",
+    component: _6f4b035a,
+    name: "terms-of-use"
   }, {
     path: "/news/NewsContent",
     component: _75b61c62,

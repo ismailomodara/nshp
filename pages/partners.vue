@@ -9,7 +9,7 @@
       </div>
       <el-container>
         <div class="ms-header--other__content">
-          <h1>Home for Nigerians, by Nigerians</h1>
+          <h1>Homes for Nigerians, by Nigerians</h1>
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>
@@ -20,9 +20,9 @@
         <p>
           Our dynamic approach to ‘Reach All’ is based on partnerships with
           multiple stakeholders to build affordable homes and create jobs for
-          Nigerians. To build 300,000 homes in 12 months, we require the
-          brightest minds and strongest convictions to help us achieve our goal.
-          If you share our vision, join us to build affordable homes.
+          Nigerians. To build 300,000 homes, we require the brightest minds and
+          strongest convictions to help us achieve our goal. If you share our
+          vision, join us to build affordable homes.
         </p>
       </div>
       <el-container>
@@ -44,7 +44,8 @@
               />
               <div class="overlay"></div>
               <div class="content">
-                <h4>{{ type.title }}</h4>
+                <h4 class="web">{{ type.title }}</h4>
+                <h4 class="mobile" v-html="type.titleMobile"></h4>
               </div>
             </div>
           </el-col>
@@ -64,28 +65,39 @@ export default {
     return {
       partnersType: [
         {
-          bg: 'delivery-partner.jpg',
-          url: 'https://nshp.ng/delivery-partners',
+          bg: 'sme-delivery-partner.jpg',
+          url: 'https://assessment.nshp.ng/delivery-partners',
           image: 'partner-w',
-          title: 'Delivery Partner',
+          title: 'SME Delivery Partner',
+          titleMobile: 'SME Delivery Partner',
         },
         {
           bg: 'consultant.jpg',
-          url: 'https://nshp.ng/management-consultants',
+          url: 'https://assessment.nshp.ng/management-consultants',
           image: 'consultant-w',
-          title: 'Management Consultant',
+          title: 'Independent Project Manager',
+          titleMobile: 'Independent<br> Project Manager',
         },
         {
           bg: 'contractor.jpg',
-          url: 'https://nshp.ng/management-contractors',
+          url: 'https://assessment.nshp.ng/management-contractors',
           image: 'contractor-w',
           title: 'Management Contractor',
+          titleMobile: 'Management Contractor',
         },
         {
           bg: 'manufacturer.jpg',
-          url: 'https://nshp.ng/manufacturers',
+          url: 'https://assessment.nshp.ng/manufacturers',
           image: 'supplier-w',
-          title: 'Manufacturer/Supplier',
+          title: 'Manufacturer',
+          titleMobile: 'Manufacturer',
+        },
+        {
+          bg: 'supplier.jpg',
+          url: 'https://assessment.nshp.ng/supplier',
+          image: 'supplier-w',
+          title: 'Supplier',
+          titleMobile: 'Supplier',
         },
       ],
     }
@@ -156,6 +168,10 @@ export default {
         font-weight: 600;
         font-size: 1.1rem;
         color: #fff;
+
+        &.mobile {
+          display: none;
+        }
       }
 
       p {
@@ -169,6 +185,16 @@ export default {
 @media (max-width: 600px) {
   .ms-partners .ms-partner--type {
     padding: 0 12px;
+
+    h4 {
+      &.web {
+        display: none !important;
+      }
+
+      &.mobile {
+        display: block !important;
+      }
+    }
 
     img.icon {
       height: 40px;

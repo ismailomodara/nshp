@@ -1,6 +1,5 @@
 <template>
-  <div ref="home">
-    <Navigation @scroll="scrollToSection" />
+  <div>
     <header class="ms-header">
       <div class="carousel-container">
         <span class="prev" @click="prevSlide">
@@ -25,7 +24,7 @@
             >
               <div class="slide-image">
                 <img
-                  :src="getImage(`home/slider/slide-${slide.slide}.jpg`)"
+                  :src="getImage(`home/slider/${slide.slide}.jpg`)"
                   alt="NSHP"
                 />
                 <div class="overlay header-gradient"></div>
@@ -49,60 +48,67 @@
         <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta individual">
-              <a href="https://forms.gle/z1EFjHgu8ixfuLMJ9" target="_blank"></a>
+              <a href="https://assessment.nshp.ng/individual"></a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                height="31.5"
+                viewBox="0 0 27 31.5"
+              >
+                <path
+                  d="M13.5,18a7.875,7.875,0,1,0-7.875-7.875A7.871,7.871,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35A8.1,8.1,0,0,0,18.9,20.25Z"
+                  transform="translate(0 -2.25)"
+                  fill="#58bb8c"
+                />
+              </svg>
               <div>
                 <h4>Individuals</h4>
-                <p>Own a house</p>
+                <p>For all Nigerians seeking to own a home.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <a href="https://forms.gle/PeR67odgT8ymMA3x7" target="_blank"></a>
+              <a href="https://assessment.nshp.ng/co-operatives"></a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="31.5"
+                viewBox="0 0 45 31.5"
+              >
+                <path
+                  d="M13.5,18a7.871,7.871,0,1,0-5.57-2.305A7.875,7.875,0,0,0,13.5,18Zm5.4,2.25h-.584a10.873,10.873,0,0,1-9.633,0H8.1A8.1,8.1,0,0,0,0,28.35v2.025A3.376,3.376,0,0,0,3.375,33.75h20.25A3.376,3.376,0,0,0,27,30.375V28.35a8.1,8.1,0,0,0-8.1-8.1ZM33.75,18A6.75,6.75,0,1,0,27,11.25,6.75,6.75,0,0,0,33.75,18Zm3.375,2.25h-.267a8.867,8.867,0,0,1-6.216,0h-.267a7.81,7.81,0,0,0-3.916,1.083A10.29,10.29,0,0,1,29.25,28.35v2.7c0,.155-.035.3-.042.45H41.625A3.376,3.376,0,0,0,45,28.125a7.871,7.871,0,0,0-7.875-7.875Z"
+                  transform="translate(0 -2.25)"
+                  fill="#58bb8c"
+                />
+              </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>Own group homes</p>
+                <p>For Groups/ Cooperatives and their members.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <a href="https://forms.gle/drnoRnYTpGWjpgLD7" target="_blank"></a>
+              <router-link to="/partners"></router-link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="51.648"
+                height="31"
+                viewBox="0 0 51.648 31"
+                class="partnership"
+              >
+                <path
+                  d="M35.08,4.5H28.148a2.581,2.581,0,0,0-1.743.678l-7.933,7.263c-.008.008-.016.024-.024.032a3.21,3.21,0,0,0-.169,4.519,3.366,3.366,0,0,0,4.527.218c.008-.008.024-.008.032-.016l6.448-5.907a1.291,1.291,0,0,1,1.743,1.9L28.923,15.12l11.75,9.539a5.814,5.814,0,0,1,.638.621V9.665L36.9,5.259A2.564,2.564,0,0,0,35.08,4.5ZM43.9,9.681V27.75a2.58,2.58,0,0,0,2.582,2.582h5.165V9.681ZM47.774,27.75a1.291,1.291,0,1,1,1.291-1.291A1.295,1.295,0,0,1,47.774,27.75ZM0,30.324H5.165a2.58,2.58,0,0,0,2.582-2.582V9.681H0Zm3.874-5.157a1.291,1.291,0,1,1-1.291,1.291A1.295,1.295,0,0,1,3.874,25.167Zm35.177,1.5L27,16.887l-2.421,2.219a5.809,5.809,0,0,1-7.852-8.562L23.33,4.5H16.568a2.578,2.578,0,0,0-1.824.759L10.33,9.665V27.733h1.477l7.3,6.609a5.164,5.164,0,0,0,7.263-.751l.016-.016,1.445,1.251a3,3,0,0,0,4.221-.436l2.534-3.115.436.355a2.578,2.578,0,0,0,3.631-.379l.767-.944a2.587,2.587,0,0,0-.371-3.64Z"
+                  transform="translate(0 -4.5)"
+                  fill="#58bb8c"
+                />
+              </svg>
               <div>
-                <h4>Partners</h4>
-                <p>Build with us</p>
-              </div>
-              <img :src="getImage('arrow-right.svg')" alt=">" />
-            </div>
-          </el-col>
-          <el-col :sm="24" :md="8" :lg="8">
-            <div class="ms-header--cta">
-              <a href="https://forms.gle/tXpTZ8VqQUYWkGFS9" target="_blank"></a>
-              <div>
-                <h4>Contractor</h4>
-                <p>Develop for us</p>
-              </div>
-              <img :src="getImage('arrow-right.svg')" alt=">" />
-            </div>
-          </el-col>
-          <el-col :sm="24" :md="8" :lg="8">
-            <div class="ms-header--cta">
-              <a href="https://forms.gle/3w2sMuKyrBPQSs3b7" target="_blank"></a>
-              <div>
-                <h4>Consultants</h4>
-                <p>Manage for us</p>
-              </div>
-              <img :src="getImage('arrow-right.svg')" alt=">" />
-            </div>
-          </el-col>
-          <el-col :sm="24" :md="8" :lg="8">
-            <div class="ms-header--cta">
-              <a href="https://forms.gle/Ez4ZHhSkSEpRnTJM8" target="_blank"></a>
-              <div>
-                <h4>Manufacturers</h4>
-                <p>Provide for us</p>
+                <h4>Partnerships</h4>
+                <p>For all Nigerian Professionals.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -110,7 +116,7 @@
         </el-row>
       </el-container>
     </div>
-    <div ref="about-us" class="ms-about ms-section">
+    <div class="ms-about ms-section">
       <div class="ms-section--heading">
         <h3>The NSHP</h3>
       </div>
@@ -125,12 +131,21 @@
           <el-col :sm="24" :md="14" :lg="12">
             <div class="ms-about--content">
               <p>
-                Becoming a homeowner in any part of Nigeria just became easier!
-                The National Social Housing Programme (NSHP) allows you to
-                become an instant homeowner with as low as
-                <span class="strong">₦2,000,000 only</span> -
-                <span class="italic">Beta house, beta life for everybody!</span>
+                The National Social Housing Programme (NSHP) is the housing
+                component of the President Muhammadu Buhari Economic
+                Sustainability Plan to deliver affordable housing and millions
+                of jobs for Nigerians.
               </p>
+              <p>
+                The National Social Housing Programme (NSHP) will allow you own
+                a home, as an individual or part of a cooperative with as low as
+                <span class="strong">₦2,000,000 only</span>. With NSHP, You can
+                become a homeowner in any part of Nigeria easily! Beta house,
+                beta life for everybody!
+              </p>
+              <el-button type="primary" @click="$router.push('/about-us')"
+                >Learn More</el-button
+              >
             </div>
           </el-col>
           <el-col :sm="24" :md="10" :lg="12">
@@ -143,7 +158,7 @@
     </div>
     <div class="ms-home--options ms-section">
       <div class="ms-section--heading">
-        <h3>Home options you can buy</h3>
+        <h3>Available Home Options</h3>
       </div>
       <el-container>
         <el-row
@@ -161,10 +176,13 @@
               </p>
               <el-timeline>
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>1 Bedroom for ₦2,000,000</h6></el-timeline-item
+                  ><h6>1-Room for ₦2,000,000</h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>2 Bedroom for ₦2,750,000</h6></el-timeline-item
+                  ><h6>2-Room for ₦2,750,000</h6></el-timeline-item
+                >
+                <el-timeline-item type="primary" color="#58bb8c" size="large"
+                  ><h6>3-Room for ₦3,500,000</h6></el-timeline-item
                 >
               </el-timeline>
               <p>
@@ -186,9 +204,15 @@
                 :src="getImage('home/two-bedroom.jpg')"
                 alt="Map"
               />
+              <img
+                v-else-if="homeOption === 'three'"
+                :src="getImage('home/three-bedroom.jpeg')"
+                alt="Map"
+              />
               <el-radio-group v-model="homeOption">
-                <el-radio-button label="one">1 Bedroom House</el-radio-button>
-                <el-radio-button label="two">2 Bedroom House</el-radio-button>
+                <el-radio-button label="one">1-Room House</el-radio-button>
+                <el-radio-button label="two">2-Room House</el-radio-button>
+                <el-radio-button label="three">3-Room House</el-radio-button>
               </el-radio-group>
             </div>
           </el-col>
@@ -213,9 +237,10 @@
               </div>
               <div class="step-content">
                 <p>
-                  Complete your profile by submitting your personal details and
-                  required documents.
+                  You will be able to register and submit your application to
+                  the NSHP in a simple manner.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -231,9 +256,10 @@
               </div>
               <div class="step-content">
                 <p>
-                  A unique identification number will be assigned to you for the
-                  house allocation.
+                  All applicants will be subject to a competitive qualification
+                  process that will be fair and transparent.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
@@ -249,16 +275,17 @@
               </div>
               <div class="step-content">
                 <p>
-                  Houses will be distributed to applicants as soon as
-                  construction begins
+                  Qualified homeowners will make contributions towards their
+                  homes while awaiting delivery.
                 </p>
+                <el-tag>Coming Soon</el-tag>
               </div>
             </div>
           </el-col>
         </el-row>
       </el-container>
     </div>
-    <div ref="faq" class="ms-find-out--more ms-section">
+    <div class="ms-find-out--more ms-section">
       <div class="ms-section--heading">
         <h3>Find out more</h3>
       </div>
@@ -341,7 +368,7 @@
         </el-row>
       </el-container>
     </div>
-    <div ref="contact" class="ms-contact--via ms-section">
+    <div class="ms-contact--via ms-section">
       <div class="ms-section--heading">
         <h3>Contact us</h3>
       </div>
@@ -349,16 +376,33 @@
         <el-row type="flex" :gutter="20" align="middle" class="flex-wrap">
           <el-col :sm="12" :lg="12">
             <div class="contact-via">
-              <img :src="getImage('home/whatsapp.svg')" alt="Home" />
+              <img :src="getImage('contact/social.svg')" alt="Home" />
               <div>
-                <p>
-                  Message via
-                  <span><img :src="getImage('home/whatsapp-icon.svg')" /></span>
-                  WhatsApp
-                </p>
-                <a href="https://linktr.ee/nshp.ng" target="_blank"
-                  ><el-button type="primary">Message</el-button></a
-                >
+                <p>Follow us on via</p>
+
+                <div>
+                  <a
+                    href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/facebook.svg')" alt=""
+                  /></a>
+                  <a
+                    href="https://mobile.twitter.com/nshp_ng"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/twitter.svg')" alt=""
+                  /></a>
+                  <!--                  <a href="#" class="ms-social"-->
+                  <!--                    ><img src="assets/img/contact/youtube.svg" alt=""-->
+                  <!--                  /></a>-->
+                  <a
+                    href="https://www.instagram.com/nshp_ng/"
+                    class="ms-social"
+                    target="_blank"
+                    ><img :src="getImage('contact/instagram-c.svg')" alt=""
+                  /></a>
+                </div>
               </div>
             </div>
           </el-col>
@@ -378,105 +422,61 @@
         </el-row>
       </el-container>
     </div>
-    <div ref="partners">
-      <MsPartners />
-    </div>
-    <div ref="news" class="ms-all--news ms-section">
-      <div class="ms-section--heading">
-        <h3>News</h3>
-      </div>
-      <el-container>
-        <el-row type="flex" class="flex-wrap" :gutter="40">
-          <el-col
-            v-for="(news, i) in allNews"
-            :key="i"
-            :sm="24"
-            :md="24"
-            :lg="i % 3 === 0 ? 24 : 12"
-          >
-            <news-card
-              :news="news"
-              :orientation="`${i % 3 === 0 ? 'horizontal' : 'vertical'}`"
-            />
-          </el-col>
-          <!--          <el-col :sm="12" :md="12" :lg="12">-->
-          <!--            <news-card orientation="vertical" />-->
-          <!--          </el-col>-->
-          <!--          <el-col :sm="12" :md="12" :lg="12">-->
-          <!--                        <news-card orientation="vertical" />-->
-          <!--          </el-col>-->
-        </el-row>
-      </el-container>
-    </div>
-    <Footer @scroll="scrollToSection" />
     <video-player :show.sync="showVideoPlayer" />
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
-import Navigation from '../components/Navigation'
-import MsPartners from '../components/MsPartners'
-import NewsCard from '../components/NewsCard'
-import Footer from '../components/Footer'
+
 import VideoPlayer from '../components/VideoPlayer'
 
 import image from '../mixin/image'
-import newsContent from './news/NewsContent'
 
 export default {
   name: 'Home',
   components: {
-    Navigation,
     Carousel,
     Slide,
     VideoPlayer,
-    MsPartners,
-    NewsCard,
-    Footer,
   },
   mixins: [image],
   data() {
     return {
       slides: [
         {
-          text: 'Homes by Nigerians<br> for Nigerians',
-          slide: '1',
+          text: '300,000 Homes<br> for Nigerians by Nigerians.',
+          slide: 'homes_for_nigerians_by_nigerians',
         },
         {
-          text: 'Own a home for<br> as low as ₦2million',
-          slide: '2',
+          text: 'Own your home for<br> as low as ₦2 million.',
+          slide: 'own_a_home',
         },
         {
-          text: 'Shikini money for<br> beta house',
-          slide: '3',
+          text: 'Homes are available<br>from ₦2 million.',
+          slide: 'shikini_money_for_beta_house',
         },
         {
-          text: 'Owó Kekeré fun<br>ilé tò dàrá',
-          slide: '4',
+          text: 'Pay small small,<br> evri month, for your house.',
+          slide: 'owokekere_fun_ile_to_dara',
         },
         {
-          text: 'Biyan kuɗi kaɗan<br> don gida mai kyau',
-          slide: '5',
+          text: 'Homes for Individuals,<br>Cooperatives & Groups',
+          slide: 'biyan_kudi_kadan',
         },
         {
-          text: 'Kwụ ụgwọ obere ego<br> maka ezigbo ụlọ',
-          slide: '6',
+          text: '1,800,000 Jobs<br>for Nigerians.',
+          slide: 'kwu_ugwo_obere_ego',
         },
         {
-          text: 'Beta work. Beta house.<br> Beta life for evribodi',
-          slide: '7',
+          text: 'Beta Work, Beta House,<br> Beta Life for evribody.',
+          slide: 'beta_work_beta_house',
         },
       ],
       showVideoPlayer: false,
       homeOption: 'one',
       activeName: '',
     }
-  },
-  computed: {
-    allNews() {
-      return newsContent
-    },
   },
   mounted() {
     document
@@ -491,14 +491,14 @@ export default {
     })
   },
   methods: {
-    scrollToSection(section) {
-      this.$refs[section].scrollIntoView({ behavior: 'smooth', alignTo: true })
-    },
     nextSlide() {
       this.$refs.slider.goToPage(this.$refs.slider.getNextPage())
     },
     prevSlide() {
       this.$refs.slider.goToPage(this.$refs.slider.getPreviousPage())
+    },
+    url(image) {
+      return require(`../assets/img/home/slider/slide-${image}.jpg`)
     },
   },
 }
@@ -610,7 +610,7 @@ export default {
 
   .ms-header--cta {
     position: relative;
-    padding: 40px;
+    padding: 40px 30px;
     display: flex;
     align-items: center;
     background: #fff;
@@ -619,7 +619,6 @@ export default {
     transition: all 0.2s ease-in;
     border: 1px solid #0b120707;
     box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.06);
-    margin-bottom: 20px;
 
     a {
       position: absolute;
@@ -632,6 +631,12 @@ export default {
 
     svg {
       margin-right: 20px;
+      height: 55px;
+      width: auto;
+
+      &.partnership {
+        height: 45px;
+      }
 
       path {
         fill: #58bb8c !important;
@@ -641,13 +646,13 @@ export default {
     h4 {
       color: #58bb8c;
       margin-bottom: 5px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       letter-spacing: 1.5px;
       text-transform: uppercase;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.875rem;
       color: #000;
     }
 
@@ -691,7 +696,7 @@ export default {
     align-items: center;
 
     img {
-      height: 280px;
+      height: 320px;
       width: auto;
     }
   }
@@ -727,8 +732,8 @@ export default {
     width: 100%;
 
     img {
-      height: 80%;
-      width: 80%;
+      height: 400px;
+      width: 100%;
       object-fit: cover;
       margin-bottom: 20px;
       border-radius: 8px;
@@ -745,7 +750,7 @@ export default {
     position: relative;
     text-align: center;
 
-    span {
+    > span {
       height: 32px;
       width: 32px;
       border-radius: 100px;
@@ -796,7 +801,7 @@ export default {
     }
 
     &.inverse {
-      span {
+      > span {
         background: #fcb320;
       }
 
@@ -866,8 +871,8 @@ export default {
       height: auto;
     }
 
-    div {
-      margin-left: 20px;
+    > div {
+      margin-left: 30px;
       text-align: left;
 
       p {
@@ -888,22 +893,40 @@ export default {
   }
 }
 
-.ms-all--news {
-  background: #f4faf7;
-  padding-bottom: 100px;
-}
+@media (max-width: 1024px) {
+  .ms-header--ctas {
+    .ms-header--cta {
+      padding: 40px 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
 
-@media (min-width: 1440px) {
-  .ms-all--news {
-    padding-bottom: 80px;
-  }
-}
+      svg {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        height: 32px;
 
-@media (max-width: 992px) {
-  .ms-all--news {
-    > .el-container {
-      max-width: 90% !important;
+        &.partnership {
+          height: 30px;
+        }
+      }
+
+      div {
+        text-align: center;
+      }
     }
+  }
+
+  .ms-about .ms-about--image {
+    img {
+      height: 280px !important;
+      margin-top: 0px;
+    }
+  }
+
+  .ms-home--options .ms-home--options__image img {
+    height: 300px;
   }
 }
 
@@ -919,22 +942,24 @@ export default {
       height: 70vh !important;
     }
   }
-  .ms-header--cta {
-    flex-direction: row !important;
-    justify-content: flex-start;
+  .ms-header--ctas {
+    .ms-header--cta {
+      flex-direction: row !important;
+      justify-content: flex-start;
 
-    svg {
-      height: 42px !important;
-      margin-right: 30px !important;
-      margin-bottom: 0 !important;
-    }
+      svg {
+        height: 42px !important;
+        margin-right: 30px !important;
+        margin-bottom: 0 !important;
+      }
 
-    &.individual svg {
-      margin-right: 50px !important;
-    }
+      &.individual svg {
+        margin-right: 50px !important;
+      }
 
-    div {
-      text-align: left !important;
+      div {
+        text-align: left !important;
+      }
     }
   }
 
@@ -1017,14 +1042,18 @@ export default {
       }
 
       svg {
-        height: 28px !important;
+        height: 36px !important;
         margin-right: 20px !important;
+
+        &.partnership {
+          height: 30px !important;
+        }
       }
     }
   }
 
   .ms-home--options__image img {
-    width: 300px !important;
+    height: 250px !important;
   }
 
   .el-radio-button__inner {
@@ -1036,7 +1065,7 @@ export default {
       text-align: center;
       flex-direction: column !important;
 
-      span {
+      > span {
         border: 5px solid #fff;
         position: absolute;
         left: 50% !important;
@@ -1071,7 +1100,7 @@ export default {
       }
 
       &.inverse {
-        span {
+        > span {
           background: #fcb320;
         }
 
