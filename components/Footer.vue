@@ -444,10 +444,8 @@ export default {
     }
 
     .ms-footer-links {
-      justify-content: space-between;
-
       li {
-        padding: 0;
+        padding: 10px 30px 10px 0;
       }
     }
   }
