@@ -80,7 +80,7 @@ export default {
         },
         {
           bg: 'contractor.jpg',
-          url: 'https://assessment.nshp.ng/management-contractors',
+          url: ' https://assessment.nshp.ng/management-contractors',
           image: 'contractor-w',
           title: 'Management Contractor',
           titleMobile: 'Management Contractor',

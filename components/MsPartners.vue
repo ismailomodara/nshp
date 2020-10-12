@@ -60,7 +60,7 @@ export default {
         'federal-housing',
         'works-and-housing',
         'state_government',
-        'bank_of_industry',
+        'cfn',
       ],
     }
   },
