@@ -208,21 +208,18 @@
                 </div>
               </el-collapse-item>
               <el-collapse-item
-                title="How do I become a supplier?"
+                title="How do I become a Partner?"
                 name="12"
                 class="inverse"
               >
                 <div>
                   <p>
-                    As supplier, you must be registered to distribute or
-                    certified to manufacture products for use in the
-                    construction value chain. Complete
-                    <a
-                      href="https://assessment.nshp.ng/supplier"
-                      target="_blank"
-                      >this form</a
-                    >
-                    with your valid details as a pre-requisite for registration.
+                    You can partner as a supplier, manufacturer, SME delivery
+                    partner, Independent Project Manager or Management
+                    Contractor. You must start by
+                    <nuxt-link to="/partners">expressing interest</nuxt-link>
+                    to provide certified goods or services for the construction
+                    value chain.
                   </p>
                 </div>
               </el-collapse-item>
