@@ -218,7 +218,7 @@
                     certified to manufacture products for use in the
                     construction value chain. Complete
                     <a
-                      href="https://assessment.nshp.ng/supplier"
+                      href="{{form_base_url}}/supplier"
                       target="_blank"
                       >this form</a
                     >
