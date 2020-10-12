@@ -217,9 +217,7 @@
                     As supplier, you must be registered to distribute or
                     certified to manufacture products for use in the
                     construction value chain. Complete
-                    <a
-                      href="{{form_base_url}}/supplier"
-                      target="_blank"
+                    <a href="{{form_base_url}}/supplier" target="_blank"
                       >this form</a
                     >
                     with your valid details as a pre-requisite for registration.
