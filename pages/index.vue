@@ -48,7 +48,7 @@
         <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta individual">
-              <a href="https://assessment.nshp.ng/individual"></a>
+              <a href="{{form_base_url}}/individual"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -70,7 +70,7 @@
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <a href="https://assessment.nshp.ng/co-operatives"></a>
+              <a href="{{form_base_url}}/co-operatives"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -176,13 +176,19 @@
               </p>
               <el-timeline>
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>2-Room for ₦2,000,000</h6></el-timeline-item
+                  ><h6>
+                    2-Rooms (1 Bedroom House) for ₦2,000,000
+                  </h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>3-Room for ₦2,750,000</h6></el-timeline-item
+                  ><h6>
+                    3-Rooms (2 Bedroom House) for ₦2,750,000
+                  </h6></el-timeline-item
                 >
                 <el-timeline-item type="primary" color="#58bb8c" size="large"
-                  ><h6>4-Room for ₦3,500,000</h6></el-timeline-item
+                  ><h6>
+                    4-Rooms (3 Bedroom House) for ₦3,500,000
+                  </h6></el-timeline-item
                 >
               </el-timeline>
               <p>
@@ -210,9 +216,9 @@
                 alt="Map"
               />
               <el-radio-group v-model="homeOption">
-                <el-radio-button label="two">2-Room House</el-radio-button>
-                <el-radio-button label="three">3-Room House</el-radio-button>
-                <el-radio-button label="four">4-Room House</el-radio-button>
+                <el-radio-button label="two">2-Rooms</el-radio-button>
+                <el-radio-button label="three">3-Rooms</el-radio-button>
+                <el-radio-button label="four">4-Rooms</el-radio-button>
               </el-radio-group>
             </div>
           </el-col>
