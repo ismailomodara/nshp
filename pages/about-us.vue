@@ -145,13 +145,13 @@ export default {
         },
         {
           image: 'estates',
-          title: '1,000',
+          title: '600',
           tagline: 'Estates to be delivered',
         },
         {
           image: 'states',
-          title: '36',
-          tagline: 'States + FCT (774 LGAs)',
+          title: '37 Locations:',
+          tagline: '36 states and the FCT',
         },
         {
           image: 'partners',
@@ -160,7 +160,7 @@ export default {
         },
         {
           image: 'consultants',
-          title: '600',
+          title: '37',
           tagline: 'Independent<br> Project Managers',
         },
         {
