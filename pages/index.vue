@@ -321,8 +321,11 @@
                     <li>Selection</li>
                     <li>Own</li>
                   </ul>
-                  <el-button type="primary" size="small"
-                    >Find out more</el-button
+                  <el-button
+                    type="primary"
+                    size="small"
+                    @click="$router.push('/about-us')"
+                    >Find out details</el-button
                   >
                 </div>
               </el-collapse-item>
@@ -334,7 +337,7 @@
                 <div>
                   <p>
                     To be eligible to own a home, you must fulfil the following
-                    criteria:
+                    criteria when the applications are open:
                   </p>
                   <ul>
                     <li>Be a Nigerian citizen.</li>
@@ -345,6 +348,7 @@
                       personal details, housing preferences (the type of house
                       you are applying for).
                     </li>
+                    <li>Show a reliable income</li>
                   </ul>
                 </div>
               </el-collapse-item>
@@ -354,18 +358,9 @@
               >
                 <div>
                   <p>
-                    There is no fixed time. NSHP is committed to giving you an
-                    allocation as soon as you save at least 25% of the cost of
-                    your house.
-                  </p>
-                  <p>
-                    This means that if the current price of your home is
-                    ₦3,000,000, you will be required to have saved a minimum of
-                    ₦750,000 before you are allocated a house.
-                  </p>
-                  <p>
-                    The quicker the minimum savings is reached, the quicker the
-                    allocation.
+                    Once the land/location as well as the list of beneficiaries
+                    for the specific location have been finalised, arrangements
+                    for allocation in that location can begin.
                   </p>
                 </div>
               </el-collapse-item>

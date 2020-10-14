@@ -11,7 +11,7 @@
             :per-page-custom="[
               [0, 2],
               [600, 5],
-              [1366, 6],
+              [1366, 5],
             ]"
             :loop="true"
             :autoplay="true"
@@ -56,11 +56,7 @@ export default {
         'family-home-funds',
         'finance',
         'central_bank',
-        'federal-mortgage',
-        'federal-housing',
-        'works-and-housing',
         'state_government',
-        'cfn',
       ],
     }
   },

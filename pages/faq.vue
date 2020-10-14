@@ -54,23 +54,21 @@
                 name="2"
               >
                 <div>
-                  <div>
-                    <p>
-                      We have put in place a seamless process in three simple
-                      steps
-                    </p>
-                    <ul>
-                      <li>Show Interest</li>
-                      <li>Selection</li>
-                      <li>Own</li>
-                    </ul>
-                    <el-button
-                      type="primary"
-                      size="small"
-                      @click="$router.push('/about-us')"
-                      >Find out details</el-button
-                    >
-                  </div>
+                  <p>
+                    We have put in place a seamless process in three simple
+                    steps
+                  </p>
+                  <ul>
+                    <li>Show Interest</li>
+                    <li>Selection</li>
+                    <li>Own</li>
+                  </ul>
+                  <el-button
+                    type="primary"
+                    size="small"
+                    @click="$router.push('/about-us')"
+                    >Find out details</el-button
+                  >
                 </div>
               </el-collapse-item>
               <el-collapse-item
@@ -91,7 +89,7 @@
                       personal details, housing preferences (the type of house
                       you are applying for).
                     </li>
-                    <li>Show a reliable income stream/affordability</li>
+                    <li>Show a reliable income</li>
                   </ul>
                 </div>
               </el-collapse-item>
@@ -171,12 +169,12 @@
               >
                 <div>
                   <p>
-                    The program is managed by the FHFL owned by the Federal
-                    Ministry of Finance, Budget and National Planning and the
-                    Nigerian Sovereign Investment Authority. The
-                    mortgages/affordability will be enhanced by the CBN and FMBN
-                    for loans that will span appropriate periods suitable and
-                    affordable by beneficiaries.
+                    The program is managed by the Federal Ministry of Finance,
+                    Budget and National Planning and the Nigerian Sovereign
+                    Investment Authority. The mortgages/affordability will be
+                    enhanced by the CBN and FMBN for loans that will span
+                    appropriate periods suitable and affordable by
+                    beneficiaries.
                   </p>
                 </div>
               </el-collapse-item>
