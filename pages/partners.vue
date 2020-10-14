@@ -73,7 +73,7 @@ export default {
         },
         {
           bg: 'sme-delivery-partner-groups.jpg',
-          url: 'https://assessment.nshp.ng/delivery-partners',
+          url: 'https://assessment.nshp.ng/delivery-partners-group',
           image: 'partner-w',
           title: 'SME Delivery Partner (Groups)',
           titleMobile: 'SME Delivery Partner<br>(Groups)',
