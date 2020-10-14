@@ -37,7 +37,7 @@
                     National Social Housing Programme (NSHP) is a bold response
                     by the Buhari-led administration to tackle the adverse
                     economic and health challenges faced by Nigerians due to the
-                    global COVID-19 pandemic.<br />
+                    global pandemic.<br />
                     The Family Homes Funds has been commissioned to implement
                     the Social Housing Program as an integral part of The
                     Federal Government’s Economic Sustainability Plan.<br />
@@ -54,23 +54,21 @@
                 name="2"
               >
                 <div>
-                  <div>
-                    <p>
-                      We have put in place a seamless process in three simple
-                      steps
-                    </p>
-                    <ul>
-                      <li>Show Interest</li>
-                      <li>Selection</li>
-                      <li>Own</li>
-                    </ul>
-                    <el-button
-                      type="primary"
-                      size="small"
-                      @click="$router.push('/about-us')"
-                      >Find out details</el-button
-                    >
-                  </div>
+                  <p>
+                    We have put in place a seamless process in three simple
+                    steps
+                  </p>
+                  <ul>
+                    <li>Apply</li>
+                    <li>Qualify</li>
+                    <li>Own</li>
+                  </ul>
+                  <el-button
+                    type="primary"
+                    size="small"
+                    @click="$router.push('/about-us')"
+                    >Find out details</el-button
+                  >
                 </div>
               </el-collapse-item>
               <el-collapse-item
@@ -91,7 +89,7 @@
                       personal details, housing preferences (the type of house
                       you are applying for).
                     </li>
-                    <li>Show a reliable income stream/affordability</li>
+                    <li>Show a reliable income</li>
                   </ul>
                 </div>
               </el-collapse-item>
@@ -171,12 +169,12 @@
               >
                 <div>
                   <p>
-                    The program is managed by the FHFL owned by the Federal
-                    Ministry of Finance, Budget and National Planning and the
-                    Nigerian Sovereign Investment Authority. The
-                    mortgages/affordability will be enhanced by the CBN and FMBN
-                    for loans that will span appropriate periods suitable and
-                    affordable by beneficiaries.
+                    The program is managed by the Federal Ministry of Finance,
+                    Budget and National Planning and the Nigerian Sovereign
+                    Investment Authority. The mortgages/affordability will be
+                    enhanced by the CBN and FMBN for loans that will span
+                    appropriate periods suitable and affordable by
+                    beneficiaries.
                   </p>
                 </div>
               </el-collapse-item>
