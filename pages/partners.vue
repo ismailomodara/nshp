@@ -65,8 +65,13 @@ export default {
     return {
       partnersType: [
         {
+<<<<<<< .merge_file_hLPD4V
           bg: 'sme-delivery-partner-individuals.jpg',
           url: 'https://assessment.nshp.ng/delivery-partners',
+=======
+          bg: 'sme-delivery-partner.jpg',
+          url: '{{form_base_url}}/delivery-partners',
+>>>>>>> .merge_file_toSJGO
           image: 'partner-w',
           title: 'SME Delivery Partner (Individuals)',
           titleMobile: 'SME Delivery Partner <br>(Individuals)',
@@ -80,28 +85,28 @@ export default {
         },
         {
           bg: 'consultant.jpg',
-          url: 'https://assessment.nshp.ng/management-consultants',
+          url: '{{form_base_url}}/management-consultants',
           image: 'consultant-w',
           title: 'Independent Project Manager',
           titleMobile: 'Independent<br> Project Manager',
         },
         {
           bg: 'contractor.jpg',
-          url: ' https://assessment.nshp.ng/management-contractors',
+          url: ' {{form_base_url}}/management-contractors',
           image: 'contractor-w',
           title: 'Management Contractor',
           titleMobile: 'Management Contractor',
         },
         {
           bg: 'manufacturer.jpg',
-          url: 'https://assessment.nshp.ng/manufacturers',
+          url: '{{form_base_url}}/manufacturers',
           image: 'supplier-w',
           title: 'Manufacturer',
           titleMobile: 'Manufacturer',
         },
         {
           bg: 'supplier.jpg',
-          url: 'https://assessment.nshp.ng/supplier',
+          url: '{{form_base_url}}/supplier',
           image: 'supplier-w',
           title: 'Supplier',
           titleMobile: 'Supplier',
