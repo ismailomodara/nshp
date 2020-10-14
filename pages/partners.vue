@@ -65,20 +65,15 @@ export default {
     return {
       partnersType: [
         {
-<<<<<<< .merge_file_hLPD4V
           bg: 'sme-delivery-partner-individuals.jpg',
-          url: 'https://assessment.nshp.ng/delivery-partners',
-=======
-          bg: 'sme-delivery-partner.jpg',
           url: '{{form_base_url}}/delivery-partners',
->>>>>>> .merge_file_toSJGO
           image: 'partner-w',
           title: 'SME Delivery Partner (Individuals)',
           titleMobile: 'SME Delivery Partner <br>(Individuals)',
         },
         {
           bg: 'sme-delivery-partner-groups.jpg',
-          url: 'https://assessment.nshp.ng/delivery-partners',
+          url: '{{form_base_url}}/delivery-partners',
           image: 'partner-w',
           title: 'SME Delivery Partner (Groups)',
           titleMobile: 'SME Delivery Partner<br>(Groups)',
