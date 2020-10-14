@@ -59,8 +59,8 @@
                     steps
                   </p>
                   <ul>
-                    <li>Show Interest</li>
-                    <li>Selection</li>
+                    <li>Apply</li>
+                    <li>Qualify</li>
                     <li>Own</li>
                   </ul>
                   <el-button
