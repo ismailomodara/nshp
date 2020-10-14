@@ -37,7 +37,7 @@
                     National Social Housing Programme (NSHP) is a bold response
                     by the Buhari-led administration to tackle the adverse
                     economic and health challenges faced by Nigerians due to the
-                    global COVID-19 pandemic.<br />
+                    global pandemic.<br />
                     The Family Homes Funds has been commissioned to implement
                     the Social Housing Program as an integral part of The
                     Federal Government’s Economic Sustainability Plan.<br />
