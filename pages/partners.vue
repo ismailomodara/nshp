@@ -65,11 +65,18 @@ export default {
     return {
       partnersType: [
         {
-          bg: 'sme-delivery-partner.jpg',
+          bg: 'sme-delivery-partner-individuals.jpg',
           url: '{{form_base_url}}/delivery-partners',
           image: 'partner-w',
-          title: 'SME Delivery Partner',
-          titleMobile: 'SME Delivery Partner',
+          title: 'SME Delivery Partner (Individuals)',
+          titleMobile: 'SME Delivery Partner <br>(Individuals)',
+        },
+        {
+          bg: 'sme-delivery-partner-groups.jpg',
+          url: '{{form_base_url}}/delivery-partners-group',
+          image: 'partner-w',
+          title: 'SME Delivery Partner (Groups)',
+          titleMobile: 'SME Delivery Partner<br>(Groups)',
         },
         {
           bg: 'consultant.jpg',
@@ -182,11 +189,10 @@ export default {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .ms-partners .ms-partner--type {
-    padding: 0 12px;
-
     h4 {
+      line-height: 1.8;
       &.web {
         display: none !important;
       }
@@ -199,6 +205,12 @@ export default {
     img.icon {
       height: 40px;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-partners .ms-partner--type {
+    padding: 0 12px;
   }
 }
 </style>

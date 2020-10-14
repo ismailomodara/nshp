@@ -56,11 +56,11 @@
               <p>
                 The initiative is a bold response by the Buhari-led
                 administration to tackle the adverse economic and health
-                challenges faced by Nigerians due to the global COVID19
-                pandemic. It introduces a new and dynamic approach that brings
-                together experience and expertise from multiple stakeholders to
-                develop a sustainable and impactful solution to housing and
-                unemployment in Nigeria.
+                challenges faced by Nigerians due to the global pandemic. It
+                introduces a new and dynamic approach that brings together
+                experience and expertise from multiple stakeholders to develop a
+                sustainable and impactful solution to housing and unemployment
+                in Nigeria.
               </p>
             </div>
           </el-col>
