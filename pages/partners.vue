@@ -73,7 +73,7 @@ export default {
         },
         {
           bg: 'sme-delivery-partner-groups.jpg',
-          url: '{{form_base_url}}/delivery-partners',
+          url: '{{form_base_url}}/delivery-partners-group',
           image: 'partner-w',
           title: 'SME Delivery Partner (Groups)',
           titleMobile: 'SME Delivery Partner<br>(Groups)',
