@@ -12,10 +12,17 @@ if [ -z "$branch" ]; then
     branch=master
 fi
 
-git checkout .
+git checkout -- pages/about-us.vue
+git checkout -- pages/faq.vue
+git checkout -- pages/index.vue
+git checkout -- pages/partners.vue
+
 git pull origin $branch
 
-sed -i "s|https://nshp.ng|$form_base_url|g" pages/about-us.vue
-sed -i "s|https://nshp.ng|$form_base_url|g" pages/faq.vue
-sed -i "s|https://nshp.ng|$form_base_url|g" pages/index.vue
-sed -i "s|https://nshp.ng|$form_base_url|g" pages/partners.vue
+sed -i "s|{{form_base_url}}|$form_base_url|g" pages/about-us.vue
+sed -i "s|{{form_base_url}}|$form_base_url|g" pages/faq.vue
+sed -i "s|{{form_base_url}}|$form_base_url|g" pages/index.vue
+sed -i "s|{{form_base_url}}|$form_base_url|g" pages/partners.vue
+
+npm install
+yarn generate
