@@ -150,7 +150,7 @@ export default {
         },
         {
           image: 'states',
-          title: '37 Locations:',
+          title: '37 Locations',
           tagline: '36 states and the FCT',
         },
         {
@@ -160,8 +160,8 @@ export default {
         },
         {
           image: 'consultants',
-          title: '37',
-          tagline: 'Independent<br> Project Managers',
+          title: '600',
+          tagline: 'Independent Project<br> Management Consultants',
         },
         {
           image: 'contractors',

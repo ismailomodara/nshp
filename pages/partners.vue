@@ -82,8 +82,8 @@ export default {
           bg: 'consultant.jpg',
           url: 'https://assessment.nshp.ng/management-consultants',
           image: 'consultant-w',
-          title: 'Independent Project Manager',
-          titleMobile: 'Independent<br> Project Manager',
+          title: 'Independent Project Management Consultant',
+          titleMobile: 'Independent Project<br> Management Consultant',
         },
         {
           bg: 'contractor.jpg',
@@ -175,6 +175,7 @@ export default {
         font-weight: 600;
         font-size: 1.1rem;
         color: #fff;
+        line-height: 1.6;
 
         &.mobile {
           display: none;
