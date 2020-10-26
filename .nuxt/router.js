@@ -3,16 +3,16 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _65a29abe = () => interopDefault(import('../pages/about-us.vue' /* webpackChunkName: "pages/about-us" */))
-const _3cd4f9a6 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
-const _d7cbfcba = () => interopDefault(import('../pages/faq.vue' /* webpackChunkName: "pages/faq" */))
-const _2d678cce = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
-const _1241f3ee = () => interopDefault(import('../pages/partners.vue' /* webpackChunkName: "pages/partners" */))
-const _6a1ff81a = () => interopDefault(import('../pages/privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
-const _6f4b035a = () => interopDefault(import('../pages/terms-of-use.vue' /* webpackChunkName: "pages/terms-of-use" */))
-const _75b61c62 = () => interopDefault(import('../pages/news/NewsContent.js' /* webpackChunkName: "pages/news/NewsContent" */))
-const _30d4cf5e = () => interopDefault(import('../pages/news/_slug.vue' /* webpackChunkName: "pages/news/_slug" */))
-const _b1fb0fc2 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _4f3146e3 = () => interopDefault(import('../pages/about-us.vue' /* webpackChunkName: "pages/about-us" */))
+const _faa342aa = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _7a784c21 = () => interopDefault(import('../pages/faq.vue' /* webpackChunkName: "pages/faq" */))
+const _160a754a = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
+const _d776efa0 = () => interopDefault(import('../pages/partners.vue' /* webpackChunkName: "pages/partners" */))
+const _bf825a48 = () => interopDefault(import('../pages/privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
+const _4985a69c = () => interopDefault(import('../pages/terms-of-use.vue' /* webpackChunkName: "pages/terms-of-use" */))
+const _037299e0 = () => interopDefault(import('../pages/news/NewsContent.js' /* webpackChunkName: "pages/news/NewsContent" */))
+const _1977b7da = () => interopDefault(import('../pages/news/_slug.vue' /* webpackChunkName: "pages/news/_slug" */))
+const _6ef81b1d = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -32,43 +32,43 @@ export const routerOptions = {
 
   routes: [{
     path: "/about-us",
-    component: _65a29abe,
+    component: _4f3146e3,
     name: "about-us"
   }, {
     path: "/contact",
-    component: _3cd4f9a6,
+    component: _faa342aa,
     name: "contact"
   }, {
     path: "/faq",
-    component: _d7cbfcba,
+    component: _7a784c21,
     name: "faq"
   }, {
     path: "/news",
-    component: _2d678cce,
+    component: _160a754a,
     name: "news"
   }, {
     path: "/partners",
-    component: _1241f3ee,
+    component: _d776efa0,
     name: "partners"
   }, {
     path: "/privacy-policy",
-    component: _6a1ff81a,
+    component: _bf825a48,
     name: "privacy-policy"
   }, {
     path: "/terms-of-use",
-    component: _6f4b035a,
+    component: _4985a69c,
     name: "terms-of-use"
   }, {
     path: "/news/NewsContent",
-    component: _75b61c62,
+    component: _037299e0,
     name: "news-NewsContent"
   }, {
     path: "/news/:slug",
-    component: _30d4cf5e,
+    component: _1977b7da,
     name: "news-slug"
   }, {
     path: "/",
-    component: _b1fb0fc2,
+    component: _6ef81b1d,
     name: "index"
   }],
 
