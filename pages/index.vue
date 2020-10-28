@@ -31,9 +31,22 @@
               </div>
               <div class="slide-content">
                 <h1 v-html="slide.text"></h1>
-                <el-button type="primary" @click="showVideoPlayer = true"
-                  >Learn more <i class="el-icon-video-play"></i
-                ></el-button>
+                <div>
+                  <el-button
+                    type="primary"
+                    @click="
+                      initVideoPlayer('https://youtube.com/embed/3V-vjN_lZUA')
+                    "
+                    >Learn more <i class="el-icon-video-play"></i
+                  ></el-button>
+                  <el-button
+                    plain
+                    @click="
+                      initVideoPlayer('https://youtube.com/embed/_YDobK1Jq44')
+                    "
+                    >See Tori <i class="el-icon-video-play"></i
+                  ></el-button>
+                </div>
               </div>
             </slide>
           </carousel>
@@ -423,7 +436,7 @@
         </el-row>
       </el-container>
     </div>
-    <video-player :show.sync="showVideoPlayer" />
+    <video-player :show.sync="showVideoPlayer" :url="videoUrl" />
   </div>
 </template>
 
@@ -474,6 +487,7 @@ export default {
           slide: 'beta_work_beta_house',
         },
       ],
+      videoUrl: '',
       showVideoPlayer: false,
       homeOption: 'two',
       activeName: '',
@@ -492,6 +506,10 @@ export default {
     })
   },
   methods: {
+    initVideoPlayer(url) {
+      this.videoUrl = url
+      this.showVideoPlayer = true
+    },
     nextSlide() {
       this.$refs.slider.goToPage(this.$refs.slider.getNextPage())
     },

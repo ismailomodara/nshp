@@ -161,7 +161,7 @@ export default {
         {
           image: 'consultants',
           title: '600',
-          tagline: 'Independent Project<br> Management Consultants',
+          tagline: 'Independent<br> Project Manager',
         },
         {
           image: 'contractors',

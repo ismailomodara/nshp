@@ -207,4 +207,13 @@
   .el-dialog {
     width: 100% !important;
   }
+
+  .slide-content {
+    width: 100% !important;
+
+    .el-button {
+      padding: 15px 20px;
+      font-size: 16px;
+    }
+  }
 }
