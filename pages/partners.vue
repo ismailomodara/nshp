@@ -82,8 +82,8 @@ export default {
           bg: 'consultant.jpg',
           url: '{{form_base_url}}/management-consultants',
           image: 'consultant-w',
-          title: 'Independent Project Management Consultant',
-          titleMobile: 'Independent Project<br> Management Consultant',
+          title: 'Independent Project Manager',
+          titleMobile: 'Independent<br> Project Manager',
         },
         {
           bg: 'contractor.jpg',
