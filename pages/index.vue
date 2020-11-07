@@ -98,14 +98,14 @@
               </svg>
               <div>
                 <h4>Cooperatives</h4>
-                <p>For Groups/ Cooperatives and their members.</p>
+                <p>For Cooperatives, Groups and their members.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
           <el-col :sm="24" :md="8" :lg="8">
             <div class="ms-header--cta">
-              <router-link to="/partners"></router-link>
+              <router-link to="/partnerships"></router-link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="51.648"
@@ -121,7 +121,7 @@
               </svg>
               <div>
                 <h4>Partnerships</h4>
-                <p>For all Nigerian Professionals.</p>
+                <p>For Nigerian developers and producers.</p>
               </div>
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
@@ -152,11 +152,11 @@
               <p>
                 The National Social Housing Programme (NSHP) will allow you own
                 a home, as an individual or part of a cooperative with as low as
-                <span class="strong">₦2,000,000 only</span>. With NSHP, You can
-                become a homeowner in any part of Nigeria easily! Beta house,
-                beta life for everybody!
+                <span class="strong">₦2,000,000 only</span>. With the NSHP, you
+                can become a homeowner in any part of Nigeria easily! Beta
+                house, beta life for everybody!
               </p>
-              <el-button type="primary" @click="$router.push('/about-us')"
+              <el-button type="primary" @click="$router.push('/about-nshp')"
                 >Learn More</el-button
               >
             </div>
@@ -205,7 +205,7 @@
                 >
               </el-timeline>
               <p>
-                Flexible Mortgage Repayment with the
+                Easy payment options with the
                 <span class="text-primary strong">LOWEST INTEREST</span> rates
                 nationwide.
               </p>
@@ -337,7 +337,7 @@
                   <el-button
                     type="primary"
                     size="small"
-                    @click="$router.push('/about-us')"
+                    @click="$router.push('/about-nshp')"
                     >Find out details</el-button
                   >
                 </div>
@@ -359,7 +359,7 @@
                     <li>
                       You must then complete your profile by submitting your
                       personal details, housing preferences (the type of house
-                      you are applying for).
+                      you are applying for), etc.
                     </li>
                     <li>Show a reliable income</li>
                   </ul>
@@ -425,7 +425,7 @@
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>
                 <p>Send us an email today</p>
-                <a href="mailto:hello@nshp.ng" target="_blank"
+                <a href="mailto:hello@nshp.gov.ng" target="_blank"
                   ><el-button type="primary" class="el-button--secondary"
                     >Send</el-button
                   ></a

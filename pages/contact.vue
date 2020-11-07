@@ -53,7 +53,9 @@
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>
                 <p>Send us a mail via</p>
-                <a href="mailto:hello@nshp.ng" target="_blank">hello@nshp.ng</a>
+                <a href="mailto:hello@nshp.gov.ng" target="_blank"
+                  >hello@nshp.gov.ng</a
+                >
               </div>
             </div>
           </el-col>

@@ -1,10 +1,10 @@
 [
   {
-    "name": "about-us",
-    "path": "/about-us",
-    "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/about-us.vue",
-    "chunkName": "pages/about-us",
-    "_name": "_4f3146e3"
+    "name": "about-nshp",
+    "path": "/about-nshp",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/about-nshp.vue",
+    "chunkName": "pages/about-nshp",
+    "_name": "_595121dc"
   },
   {
     "name": "contact",
@@ -28,11 +28,11 @@
     "_name": "_160a754a"
   },
   {
-    "name": "partners",
-    "path": "/partners",
-    "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/partners.vue",
-    "chunkName": "pages/partners",
-    "_name": "_d776efa0"
+    "name": "partnerships",
+    "path": "/partnerships",
+    "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/partnerships.vue",
+    "chunkName": "pages/partnerships",
+    "_name": "_230bd8f4"
   },
   {
     "name": "privacy-policy",

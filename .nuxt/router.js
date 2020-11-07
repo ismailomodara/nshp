@@ -3,11 +3,11 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _4f3146e3 = () => interopDefault(import('../pages/about-us.vue' /* webpackChunkName: "pages/about-us" */))
+const _595121dc = () => interopDefault(import('../pages/about-nshp.vue' /* webpackChunkName: "pages/about-nshp" */))
 const _faa342aa = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _7a784c21 = () => interopDefault(import('../pages/faq.vue' /* webpackChunkName: "pages/faq" */))
 const _160a754a = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
-const _d776efa0 = () => interopDefault(import('../pages/partners.vue' /* webpackChunkName: "pages/partners" */))
+const _230bd8f4 = () => interopDefault(import('../pages/partnerships.vue' /* webpackChunkName: "pages/partnerships" */))
 const _bf825a48 = () => interopDefault(import('../pages/privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
 const _4985a69c = () => interopDefault(import('../pages/terms-of-use.vue' /* webpackChunkName: "pages/terms-of-use" */))
 const _037299e0 = () => interopDefault(import('../pages/news/NewsContent.js' /* webpackChunkName: "pages/news/NewsContent" */))
@@ -31,9 +31,9 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/about-us",
-    component: _4f3146e3,
-    name: "about-us"
+    path: "/about-nshp",
+    component: _595121dc,
+    name: "about-nshp"
   }, {
     path: "/contact",
     component: _faa342aa,
@@ -47,9 +47,9 @@ export const routerOptions = {
     component: _160a754a,
     name: "news"
   }, {
-    path: "/partners",
-    component: _d776efa0,
-    name: "partners"
+    path: "/partnerships",
+    component: _230bd8f4,
+    name: "partnerships"
   }, {
     path: "/privacy-policy",
     component: _bf825a48,
