@@ -7,6 +7,7 @@
       <el-container>
         <div class="ms-header--other__content">
           <h1>Contact Us</h1>
+          <video-cta />
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>

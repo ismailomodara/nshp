@@ -11,6 +11,7 @@
         ></el-button>
       </div>
       <Navigation />
+      <VideoPlayer />
       <nuxt />
       <MsPartners />
       <Footer />
@@ -31,10 +32,12 @@ import Loader from '../components/Loader'
 import Navigation from '../components/Navigation'
 import MsPartners from '../components/MsPartners'
 import Footer from '../components/Footer'
+import VideoPlayer from '../components/VideoPlayer'
 
 export default {
   name: 'DefaultLayout',
   components: {
+    VideoPlayer,
     Loader,
     Navigation,
     MsPartners,

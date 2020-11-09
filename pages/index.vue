@@ -31,22 +31,7 @@
               </div>
               <div class="slide-content">
                 <h1 v-html="slide.text"></h1>
-                <div>
-                  <el-button
-                    type="primary"
-                    @click="
-                      initVideoPlayer('https://youtube.com/embed/3V-vjN_lZUA')
-                    "
-                    >Learn more <i class="el-icon-video-play"></i
-                  ></el-button>
-                  <el-button
-                    plain
-                    @click="
-                      initVideoPlayer('https://youtube.com/embed/_YDobK1Jq44')
-                    "
-                    >See Tori <i class="el-icon-video-play"></i
-                  ></el-button>
-                </div>
+                <video-cta />
               </div>
             </slide>
           </carousel>
@@ -436,23 +421,21 @@
         </el-row>
       </el-container>
     </div>
-    <video-player :show.sync="showVideoPlayer" :url="videoUrl" />
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
 
-import VideoPlayer from '../components/VideoPlayer'
-
 import image from '../mixin/image'
+import VideoCta from '../components/VideoCta'
 
 export default {
   name: 'Home',
   components: {
+    VideoCta,
     Carousel,
     Slide,
-    VideoPlayer,
   },
   mixins: [image],
   data() {
@@ -487,8 +470,6 @@ export default {
           slide: 'beta_work_beta_house',
         },
       ],
-      videoUrl: '',
-      showVideoPlayer: false,
       homeOption: 'two',
       activeName: '',
     }
@@ -506,10 +487,6 @@ export default {
     })
   },
   methods: {
-    initVideoPlayer(url) {
-      this.videoUrl = url
-      this.showVideoPlayer = true
-    },
     nextSlide() {
       this.$refs.slider.goToPage(this.$refs.slider.getNextPage())
     },
