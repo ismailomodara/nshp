@@ -4,7 +4,7 @@
       <div class="ms-navbar--strip">
         <el-container>
           <div>
-            <a href="mailto:hello@nshp.ng" target="_blank"
+            <a href="mailto:hello@nshp.gov.ng" target="_blank"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -20,7 +20,7 @@
                   d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
                 ></path>
                 <polyline points="22,6 12,13 2,6"></polyline></svg
-              ><span>hello@nshp.ng</span></a
+              ><span>hello@nshp.gov.ng</span></a
             >
           </div>
         </el-container>
@@ -88,7 +88,7 @@ export default {
         },
         {
           label: 'About NSHP',
-          url: '/about-us',
+          url: '/about-nshp',
         },
         {
           label: 'News',

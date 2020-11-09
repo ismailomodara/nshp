@@ -7,6 +7,7 @@
       <el-container>
         <div class="ms-header--other__content">
           <h1>Jobs for Nigerians <br />through Homes</h1>
+          <video-cta />
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>
@@ -58,7 +59,7 @@
                 administration to tackle the adverse economic and health
                 challenges faced by Nigerians due to the global pandemic. It
                 introduces a new and dynamic approach that brings together
-                experience and expertise from multiple stakeholders to develop a
+                experience and expertise from multiple stakeholders to deliver a
                 sustainable and impactful solution to housing and unemployment
                 in Nigeria.
               </p>
@@ -161,7 +162,7 @@ export default {
         {
           image: 'consultants',
           title: '600',
-          tagline: 'Independent<br> Project Manager',
+          tagline: 'Independent<br> Project Managers',
         },
         {
           image: 'contractors',
