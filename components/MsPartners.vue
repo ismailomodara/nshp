@@ -52,7 +52,6 @@ export default {
   data() {
     return {
       partners: [
-        'nesp',
         'family-home-funds',
         'finance',
         'central_bank',

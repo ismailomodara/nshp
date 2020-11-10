@@ -22,12 +22,9 @@
             :key="i"
             :sm="24"
             :md="24"
-            :lg="i % 3 === 0 ? 24 : 12"
+            :lg="12"
           >
-            <news-card
-              :news="news"
-              :orientation="`${i % 3 === 0 ? 'horizontal' : 'vertical'}`"
-            />
+            <news-card :news="news" />
           </el-col>
           <!--          <el-col :sm="12" :md="12" :lg="12">-->
           <!--            <news-card orientation="vertical" />-->

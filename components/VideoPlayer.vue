@@ -1,7 +1,7 @@
 <template>
   <el-dialog
     title=""
-    :visible.sync="shouldShow"
+    :visible.sync="show"
     :close-on-click-modal="false"
     width="80%"
     center
@@ -11,7 +11,7 @@
       ref="iframe"
       width="420"
       height="315"
-      :src="`${url}?${iframeAttr}`"
+      :src="`${videoLang}?${iframeAttr}`"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
@@ -21,26 +21,25 @@
 <script>
 export default {
   name: 'VideoPlayer',
-  props: {
-    show: Boolean,
-    url: {
-      type: String,
-      default: 'https://youtube.com/embed/3V-vjN_lZUA',
-    },
-  },
   data() {
     return {
       iframeAttr: '',
     }
   },
   computed: {
-    shouldShow: {
+    show: {
       get() {
-        return this.show
+        return this.$store.getters.video.play
       },
       set(value) {
-        this.$emit('update:show', value)
+        return this.$emit('update:show', value)
       },
+    },
+    videoLang() {
+      const video = this.$store.getters.video
+      return video.lang === 'english'
+        ? 'https://youtube.com/embed/3V-vjN_lZUA'
+        : 'https://youtube.com/embed/_YDobK1Jq44'
     },
   },
   watch: {
@@ -53,7 +52,7 @@ export default {
   methods: {
     closeEvent() {
       this.iframeAttr = 'autoplay=0&mute=1'
-      this.shouldShow = false
+      this.$store.dispatch('VIDEO', { play: false, lang: 'english' })
     },
   },
 }
