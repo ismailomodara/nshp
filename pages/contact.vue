@@ -7,6 +7,7 @@
       <el-container>
         <div class="ms-header--other__content">
           <h1>Contact Us</h1>
+          <video-cta />
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>
@@ -53,7 +54,9 @@
               <img :src="getImage('home/email.svg')" alt="Home" />
               <div>
                 <p>Send us a mail via</p>
-                <a href="mailto:hello@nshp.ng" target="_blank">hello@nshp.ng</a>
+                <a href="mailto:hello@nshp.gov.ng" target="_blank"
+                  >hello@nshp.gov.ng</a
+                >
               </div>
             </div>
           </el-col>

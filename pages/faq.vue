@@ -10,6 +10,7 @@
       <el-container>
         <div class="ms-header--other__content">
           <h1>Frequently Asked Questions</h1>
+          <video-cta />
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>
@@ -66,7 +67,7 @@
                   <el-button
                     type="primary"
                     size="small"
-                    @click="$router.push('/about-us')"
+                    @click="$router.push('/about-nshp')"
                     >Find out details</el-button
                   >
                 </div>
@@ -87,7 +88,7 @@
                     <li>
                       You must then complete your profile by submitting your
                       personal details, housing preferences (the type of house
-                      you are applying for).
+                      you are applying for), etc.
                     </li>
                     <li>Show a reliable income</li>
                   </ul>
@@ -100,16 +101,10 @@
               >
                 <div>
                   <p>
-                    Our objective is to ensure that Nigerians with low or medium
-                    income especially in the informal sector have access to
-                    homes they can afford.
-                  </p>
-                  <p>
-                    To meet this objective, we have designed an extendible
-                    1-bedroom self-contained apartment with a living/dining
-                    room, kitchen store, bedroom and two toilets. These
-                    apartments are detached and sits on at least 250sqm and can
-                    be extended to 2/3 bedrooms at minimal costs.
+                    The NSHP homes are built with good quality materials, with
+                    adequate spacing and the necessary facilities for decent
+                    living. These apartments are detached and sit on at least
+                    250sqm, which can be extended at minimal cost
                   </p>
                 </div>
               </el-collapse-item>
@@ -117,9 +112,9 @@
                 <div>
                   <p>
                     The houses will be built in all states in Nigeria including
-                    the FCT. To reach the grassroot, members of the public will
-                    be informed as new projects are built. This is also to allow
-                    you choose your preferred location.
+                    the FCT. To reach the grassroot, low-income members of the
+                    public will be informed as new projects are built. This is
+                    also to allow you choose your preferred location.
                   </p>
                 </div>
               </el-collapse-item>
@@ -131,22 +126,10 @@
                 <div>
                   <p>
                     The NSHP is set to provide low cost housing for Nigerians
-                    within the low income range and as such, allocation of
-                    houses will be free and fair. A person will not be allocated
-                    more than one house at a time.
-                  </p>
-                </div>
-              </el-collapse-item>
-              <el-collapse-item
-                title="Can two or more people buy a house together?"
-                name="7"
-              >
-                <div>
-                  <p>
-                    Two or more people can jointly pay for a home depending on
-                    the agreement made. This means that cooperatives or small
-                    groups can register their members for the National Social
-                    Housing Programme.
+                    within the low income range and as such, allocation will be
+                    through a transparent process which will ensure that those
+                    who qualify receive their due allocation. A person will not
+                    be allocated more than one house at a time
                   </p>
                 </div>
               </el-collapse-item>
@@ -164,35 +147,20 @@
                 </div>
               </el-collapse-item>
               <el-collapse-item
-                title="How can I know that my money is safe, and I will get as house as promised?"
-                name="9"
-              >
-                <div>
-                  <p>
-                    The program is managed by the Federal Ministry of Finance,
-                    Budget and National Planning and the Nigerian Sovereign
-                    Investment Authority. The mortgages/affordability will be
-                    enhanced by the CBN and FMBN for loans that will span
-                    appropriate periods suitable and affordable by
-                    beneficiaries.
-                  </p>
-                </div>
-              </el-collapse-item>
-              <el-collapse-item
                 title="Who do I talk to if I have a problem?"
                 name="10"
                 class="inverse"
               >
                 <div>
                   <p>
-                    As soon as your application is verified, you will have
-                    access to the Housing Portal for necessary information as
-                    well as the Call Centre which is being set up at the moment.
+                    The portal provides an easy-to-access platform which allows
+                    you monitor the status of your application at every stage.
+                    Additional support is also provided through the help centre.
                   </p>
                 </div>
               </el-collapse-item>
               <el-collapse-item
-                title="What if I am no longer interested in the National Social Housing Programme"
+                title="What if I am no longer interested in the National Social Housing Programme (NSHP)?"
                 name="11"
               >
                 <div>
@@ -215,7 +183,9 @@
                     You can partner as a supplier, manufacturer, SME delivery
                     partner, Independent Project Manager or Management
                     Contractor. You must start by
-                    <nuxt-link to="/partners">expressing interest</nuxt-link>
+                    <nuxt-link to="/partnerships"
+                      >expressing interest</nuxt-link
+                    >
                     to provide certified goods or services for the construction
                     value chain.
                   </p>

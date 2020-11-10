@@ -241,22 +241,6 @@ a:hover {
   animation: fadeInDown 2s ease-in infinite;
 }
 
-.slide-content .el-button {
-  span {
-    display: flex;
-    align-items: center;
-  }
-
-  margin-left: 10px;
-
-  i {
-    font-weight: 600;
-    font-size: 1.2rem;
-    animation: pulsate 2s ease-in infinite;
-    margin-left: 7px;
-  }
-}
-
 .ms-back-to-top .el-button i {
   font-weight: 600;
   font-size: 1.2rem;
@@ -450,6 +434,7 @@ a:hover {
     h1 {
       color: #fff;
       text-align: left;
+      margin-bottom: 15px;
     }
   }
 }

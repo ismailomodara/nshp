@@ -35,6 +35,12 @@
   "LazyNewsCard": {
     "description": "Auto imported from components/NewsCard.vue"
   },
+  "VideoCta": {
+    "description": "Auto imported from components/VideoCta.vue"
+  },
+  "LazyVideoCta": {
+    "description": "Auto imported from components/VideoCta.vue"
+  },
   "VideoPlayer": {
     "description": "Auto imported from components/VideoPlayer.vue"
   },

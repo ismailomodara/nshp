@@ -5,7 +5,8 @@
       <el-row type="flex" :gutter="10" class="flex-wrap">
         <el-col :sm="24" :md="12" :lg="12">
           <div class="footer-logo">
-            <img :src="getImage('footer-logo-new.svg')" alt="" />
+            <img :src="getImage('partners/nesp.png')" alt="" />
+            <img :src="getImage('nshp-logo.svg')" alt="" />
           </div>
           <p>
             NSHP will provide low cost homes through alternative financing
@@ -16,8 +17,8 @@
           <div class="ms-footer--actions">
             <h5>Quick Links</h5>
             <ul class="ms-footer-links">
-              <li><nuxt-link to="/about-us">About NSHP</nuxt-link></li>
-              <li><nuxt-link to="/partners"> Partnerships </nuxt-link></li>
+              <li><nuxt-link to="/about-nshp">About NSHP</nuxt-link></li>
+              <li><nuxt-link to="/partnerships"> Partnerships </nuxt-link></li>
               <li><nuxt-link to="/news">News</nuxt-link></li>
               <li><nuxt-link to="/faq">FAQs</nuxt-link></li>
               <li>
@@ -247,9 +248,11 @@ export default {
   .footer-logo {
     margin-bottom: 15px;
     opacity: 0.74;
+    display: flex;
 
     img {
       height: 80px;
+      margin-right: 20px;
     }
 
     + p {
