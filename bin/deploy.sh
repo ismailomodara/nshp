@@ -15,7 +15,7 @@ fi
 git checkout -- pages/about-us.vue
 git checkout -- pages/faq.vue
 git checkout -- pages/index.vue
-git checkout -- pages/partners.vue
+git checkout -- pages/partnerships.vue
 
 git pull origin $branch
 
