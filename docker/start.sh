@@ -7,7 +7,7 @@ cd "${ROOT}"
 
 envsubst '$SERVER_NAME' < docker/nginx.conf > /etc/nginx/sites-available/default
 
-sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/about-us.vue
+sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/about-nshp.vue
 sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/faq.vue
 sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/index.vue
 sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/partnerships.vue
