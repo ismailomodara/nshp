@@ -12,14 +12,14 @@ if [ -z "$branch" ]; then
     branch=master
 fi
 
-git checkout -- pages/about-us.vue
+git checkout -- pages/about-nshp.vue
 git checkout -- pages/faq.vue
 git checkout -- pages/index.vue
 git checkout -- pages/partnerships.vue
 
 git pull origin $branch
 
-sed -i "s|{{form_base_url}}|$form_base_url|g" pages/about-us.vue
+sed -i "s|{{form_base_url}}|$form_base_url|g" pages/about-nshp.vue
 sed -i "s|{{form_base_url}}|$form_base_url|g" pages/faq.vue
 sed -i "s|{{form_base_url}}|$form_base_url|g" pages/index.vue
 sed -i "s|{{form_base_url}}|$form_base_url|g" pages/partnerships.vue
