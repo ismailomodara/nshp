@@ -38,13 +38,13 @@ pipelines:
           - dist/**
   branches:
     "{piping, staging}":
-    - step:
-        name: build
-        image: node:12.18.3
-        script:
-          - bash build.sh
-        artifacts:
-          - dist/**       
+    # - step:
+    #     name: build
+    #     image: node:12.18.3
+    #     script:
+    #       - bash build.sh
+    #     artifacts:
+    #       - dist/**    
     - step:
         name: build_image
         image: google/cloud-sdk
