@@ -8,10 +8,11 @@ build_push () {
   gcloud --quiet config set project $PROJECT_ID
   gcloud --quiet config set compute/zone $GOOGLE_COMPUTE_ZONE
   docker build -t $PROJECT_NAME .
-  docker tag $PROJECT_NAME:latest eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest
-  gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://eu.gcr.io
-  echo pushing image .......
-  docker push eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest
+  echo ############################
+  echo "docker tag $PROJECT_NAME:latest eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest"
+  # gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://eu.gcr.io
+  # echo pushing image .......
+  # docker push eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest
 }
 
 if [ $BITBUCKET_BRANCH = "piping" ] ; then
