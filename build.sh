@@ -26,7 +26,6 @@ sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/index.vue
 sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/partnerships.vue
 
 npm install
-yarn generate
 
 #EOF
 
