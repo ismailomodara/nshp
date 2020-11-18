@@ -58,9 +58,11 @@
 
 <script>
 import image from '../mixin/image'
+import VideoCta from '../components/VideoCta'
 
 export default {
   name: 'Partners',
+  components: { VideoCta },
   mixins: [image],
   data() {
     return {
@@ -97,15 +99,15 @@ export default {
           bg: 'manufacturer.jpg',
           url: 'https://assessment.nshp.ng/manufacturers',
           image: 'supplier-w',
-          title: 'Manufacturer',
-          titleMobile: 'Manufacturer',
+          title: 'Manufacturers',
+          titleMobile: 'Manufacturers',
         },
         {
           bg: 'supplier.jpg',
           url: 'https://assessment.nshp.ng/supplier',
           image: 'supplier-w',
-          title: 'Supplier',
-          titleMobile: 'Supplier',
+          title: 'Suppliers',
+          titleMobile: 'Suppliers',
         },
       ],
     }
