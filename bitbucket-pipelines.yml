@@ -45,17 +45,17 @@ pipelines:
     #       - bash build.sh
     #     artifacts:
     #       - dist/**    
-    - step:
-        name: build_image
-        image: google/cloud-sdk
-        script:
-          - bash build_image.sh
-        services:
-          - docker
     # - step:
-    #     name: deploy
-    #     image: kiwigrid/gcloud-kubectl-helm
+    #     name: build_image
+    #     image: google/cloud-sdk
     #     script:
-    #       - bash deploy.sh
+    #       - bash build_image.sh
     #     services:
     #       - docker
+    - step:
+        name: deploy
+        image: kiwigrid/gcloud-kubectl-helm
+        script:
+          - bash deploy.sh
+        services:
+          - docker
