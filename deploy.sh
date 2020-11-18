@@ -17,9 +17,9 @@ echo $GCP_KEY > helm/gcp_key.json
  
 gcloud auth activate-service-account --key-file=helm/gcp_key.json
 
-if [ $BITBUCKET_BRANCH = "piping" ] ; then
+if [ $BITBUCKET_BRANCH = "master" ] ; then
   gcloud container clusters get-credentials nqlb-prod --region europe-west3 --project nqlb-207716
-  helm upgrade -i $projectName helm-charts/$chartName/$chart --namespace default -f helm/prod.yaml --dry-run --debug
+  helm upgrade -i $projectName helm-charts/$chartName/$chart --namespace default -f helm/prod.yaml
 fi
 
 #EOF
