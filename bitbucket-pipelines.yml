@@ -31,10 +31,9 @@ pipelines:
   default:
     - step:
         name: build
-        image: ubuntu:18.04
+        image: node:12.18.3
         script:
-          # - bash build.sh
-          - echo test
+          - bash build.sh
         artifacts:
           - dist/**
   branches:
