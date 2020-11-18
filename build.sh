@@ -9,16 +9,12 @@ apt-get install --no-install-recommends -y \
     build-essential \
     ca-certificates \
     curl \
-    nginx \
-    gettext-base \
-    nano
+    gettext-base
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ROOT="$(dirname "${SCRIPT_DIR}")"
 
 cd "${ROOT}"
-
-envsubst '$SERVER_NAME' < docker/nginx.conf > /etc/nginx/sites-available/default
 
 sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/about-nshp.vue
 sed -i "s|{{form_base_url}}|$FORM_BASE_URL|g" pages/faq.vue
