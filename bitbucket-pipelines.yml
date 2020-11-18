@@ -52,10 +52,10 @@ pipelines:
           - bash build_image.sh
         services:
           - docker
-    - step:
-        name: deploy
-        image: kiwigrid/gcloud-kubectl-helm
-        script:
-          - bash deploy.sh
-        services:
-          - docker
+    # - step:
+    #     name: deploy
+    #     image: kiwigrid/gcloud-kubectl-helm
+    #     script:
+    #       - bash deploy.sh
+    #     services:
+    #       - docker
