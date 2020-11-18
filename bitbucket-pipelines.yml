@@ -37,10 +37,10 @@ pipelines:
         artifacts:
           - dist/**
   branches:
-    "{master, staging}":
+    "{piping, staging}":
     - step:
         name: build
-        image: ubuntu:18.04
+        image: node:12.18.3
         script:
           - bash build.sh
         artifacts:

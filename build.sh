@@ -23,7 +23,5 @@ cd "${ROOT}"
 
 npm install
 
-echo exit status for npm install $?
-
 #EOF
 
