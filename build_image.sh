@@ -14,7 +14,7 @@ build_push () {
   docker push eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest
 }
 
-if [ $BITBUCKET_BRANCH = "master" ] ; then
+if [ $BITBUCKET_BRANCH = "piping" ] ; then
   echo "Deploying image to production repository"
   PROJECT_ID=$GOOGLE_PROJECT_ID
   echo $GCP_KEY > helm/prod_key.json
