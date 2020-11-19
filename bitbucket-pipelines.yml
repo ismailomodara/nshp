@@ -3,19 +3,19 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: php:7.1.29
 
 pipelines:
   custom:
-    deployment-to-kube:
-      - step:
-          name: 'Deploy to Kube Prod'
-          script:
-            - apt update && apt install -y openssh-client
+    # deployment-to-kube:
+    #   - step:
+    #       name: 'Deploy to Kube Prod'
+    #       script:
+    #         - apt update && apt install -y openssh-client
 
     deployment-to-aws-prod:
       - step:
           name: 'Deploy to AWS Prod'
+          image: php:7.1.29
           script:
             - apt update && apt install -y openssh-client
             - ssh bitbucket@$AWS_PROD_IP "sudo -s bash /var/www/html/mass-house-main-site/bin/deploy.sh $AWS_PROD_FORM_URL"
@@ -23,6 +23,39 @@ pipelines:
     staging:
       - step:
           name: 'Deploy to Staging'
+          image: php:7.1.29
           script:
             - apt update && apt install -y openssh-client
             - ssh bitbucket@$ETAX_DEV_IP "sudo -s bash /var/www/html/mass-house-main-site/bin/deploy.sh $STAGING_FORM_URL staging"
+  # kubernetes environment
+  default:
+    - step:
+        name: build
+        image: node:12.18.3
+        script:
+          - bash build.sh
+        artifacts:
+          - dist/**
+  branches:
+    "{master, staging}":
+    - step:
+        name: build
+        image: node:12.18.3
+        script:
+          - bash build.sh
+        artifacts:
+          - dist/**
+    - step:
+        name: build_image
+        image: google/cloud-sdk
+        script:
+          - bash build_image.sh
+        services:
+          - docker
+    - step:
+        name: deploy
+        image: kiwigrid/gcloud-kubectl-helm
+        script:
+          - bash deploy.sh
+        services:
+          - docker
