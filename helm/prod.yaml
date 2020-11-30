@@ -13,7 +13,7 @@ strategy:
     maxUnavailable: 0
 
 image:
-    repository: eu.gcr.io/nqlb-207716/mass-housing-main-production
+    repository: eu.gcr.io/nqlb-207716/mass-housing-main-master
     tag: latest
     pullPolicy: Always
 
