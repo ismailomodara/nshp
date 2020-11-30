@@ -1,14 +1,13 @@
 #! /bin/bash
 
-PROJECT_NAME=$PROJECT_NAME
-
 apt-get install -qq -y gettext
 
 build_push () {
   gcloud --quiet config set project $PROJECT_ID
   gcloud --quiet config set compute/zone $GOOGLE_COMPUTE_ZONE
+  PROJECT_NAME="$PROJECT_NAME-$BITBUCKET_BRANCH"
   docker build -t $PROJECT_NAME .
-  docker tag $PROJECT_NAME:latest eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest
+  docker tag $PROJECT_NAME eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest
   gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://eu.gcr.io
   echo pushing image .......
   docker push eu.gcr.io/$PROJECT_ID/$PROJECT_NAME:latest
