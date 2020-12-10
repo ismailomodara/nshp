@@ -63,7 +63,7 @@ export default {
       // {rel: 'apple-touch-icon', sizes: '180x180', href: './brand/platform-icons/ios-180.png'},
       // {rel: 'apple-touch-icon', sizes: '120x120', href: './brand/platform-icons/ios-120.png'},
       // {rel: 'apple-touch-icon', sizes: '152x152', href: './brand/platform-icons/ios-152.png'},
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@3600&display=swap'}
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600&display=swap', media: 'print', onload: `${this.onload=null}${this.media='all'}`}
     ],
     script: [
       // Google Analytics
