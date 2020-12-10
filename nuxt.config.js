@@ -8,6 +8,9 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'NSHP - National Social Housing Programme',
+    htmlAttrs: {
+      lang: "en"
+    },
     meta: [
       { charset: 'utf-8' },
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
@@ -60,7 +63,7 @@ export default {
       // {rel: 'apple-touch-icon', sizes: '180x180', href: './brand/platform-icons/ios-180.png'},
       // {rel: 'apple-touch-icon', sizes: '120x120', href: './brand/platform-icons/ios-120.png'},
       // {rel: 'apple-touch-icon', sizes: '152x152', href: './brand/platform-icons/ios-152.png'},
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap'}
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@3600&display=swap'}
     ],
     script: [
       // Google Analytics

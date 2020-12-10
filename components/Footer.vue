@@ -1,12 +1,20 @@
 <template>
   <footer class="ms-footer">
-    <img class="footer-illustration" :src="getImage('footer-svg.png')" alt="" />
+    <img
+      class="footer-illustration"
+      :src="getImage('footer-svg.png')"
+      alt="."
+    />
     <el-container>
       <el-row type="flex" :gutter="10" class="flex-wrap">
         <el-col :sm="24" :md="12" :lg="12">
           <div class="footer-logo">
-            <img :src="getImage('partners/nesp.png')" alt="" />
-            <img :src="getImage('nshp-logo.svg')" alt="" />
+            <img
+              :src="getImage('partners/nesp.png')"
+              alt="NESP"
+              loading="lazy"
+            />
+            <img :src="getImage('nshp-logo.svg')" alt="NSHP" loading="lazy" />
           </div>
           <p>
             NSHP will provide low cost homes through alternative financing
