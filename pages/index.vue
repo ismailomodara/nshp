@@ -10,7 +10,7 @@
             ref="slider"
             :per-page="1"
             :loop="true"
-            :autoplay="true"
+            :autoplay="false"
             :autoplay-timeout="6000"
             :autoplay-hover-pause="false"
             :pagination-padding="6"
@@ -569,7 +569,6 @@ export default {
       transform: translateY(-50%);
       text-align: left;
       color: #fff !important;
-      opacity: 0;
 
       h1 {
         font-weight: 600;

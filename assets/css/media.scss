@@ -32,6 +32,19 @@
 }
 
 @media (max-width: 1024px) {
+
+  .ms-navbar {
+    .el-container {
+      top: -20px !important;
+    }
+
+    &.light {
+      .el-container {
+        top: 0 !important;
+      }
+    }
+  }
+
   .el-container,
   .ms-section--heading {
     max-width: 900px;

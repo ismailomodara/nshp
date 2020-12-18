@@ -131,10 +131,12 @@
 </template>
 
 <script>
+import VideoCta from '@/components/VideoCta'
 import image from '../mixin/image'
 
 export default {
   name: 'AboutUs',
+  components: { VideoCta },
   mixins: [image],
   data() {
     return {
