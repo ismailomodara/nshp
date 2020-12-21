@@ -10,8 +10,7 @@
       <el-container>
         <div class="ms-header--other__content">
           <h1>
-            Express interest <br />
-            for NSHP
+            Express Interest
           </h1>
         </div>
       </el-container>
