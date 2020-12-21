@@ -53,4 +53,10 @@ export default {
 .el-dropdown-menu {
   min-width: 180px !important;
 }
+
+@media (max-width: 600px) {
+  .el-dropdown {
+    margin-bottom: 10px;
+  }
+}
 </style>
