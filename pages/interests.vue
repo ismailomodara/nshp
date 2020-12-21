@@ -19,7 +19,7 @@
     </header>
     <div class="ms-partners ms-section">
       <div class="ms-section--heading">
-        <h3>Shown interest for National Social Housing Programme</h3>
+        <h3>Show interest for National Social Housing Programme</h3>
         <p>
           Our dynamic approach to ‘Reach All’ is based on partnerships with
           multiple stakeholders to build affordable homes and create jobs for
