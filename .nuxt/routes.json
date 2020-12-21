@@ -3,77 +3,66 @@
     "name": "about-nshp",
     "path": "/about-nshp",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/about-nshp.vue",
-    "chunkName": "pages/about-nshp",
-    "_name": "_595121dc"
+    "chunkName": "pages/about-nshp"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_faa342aa"
+    "chunkName": "pages/contact"
   },
   {
     "name": "faq",
     "path": "/faq",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/faq.vue",
-    "chunkName": "pages/faq",
-    "_name": "_7a784c21"
+    "chunkName": "pages/faq"
   },
   {
     "name": "interests",
     "path": "/interests",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/interests.vue",
-    "chunkName": "pages/interests",
-    "_name": "_3790ebd4"
+    "chunkName": "pages/interests"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/news/index.vue",
-    "chunkName": "pages/news/index",
-    "_name": "_160a754a"
+    "chunkName": "pages/news/index"
   },
   {
     "name": "partnerships",
     "path": "/partnerships",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/partnerships.vue",
-    "chunkName": "pages/partnerships",
-    "_name": "_230bd8f4"
+    "chunkName": "pages/partnerships"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/privacy-policy.vue",
-    "chunkName": "pages/privacy-policy",
-    "_name": "_bf825a48"
+    "chunkName": "pages/privacy-policy"
   },
   {
     "name": "terms-of-use",
     "path": "/terms-of-use",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/terms-of-use.vue",
-    "chunkName": "pages/terms-of-use",
-    "_name": "_4985a69c"
+    "chunkName": "pages/terms-of-use"
   },
   {
     "name": "news-NewsContent",
     "path": "/news/NewsContent",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/news/NewsContent.js",
-    "chunkName": "pages/news/NewsContent",
-    "_name": "_037299e0"
+    "chunkName": "pages/news/NewsContent"
   },
   {
     "name": "news-slug",
     "path": "/news/:slug",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/news/_slug.vue",
-    "chunkName": "pages/news/_slug",
-    "_name": "_1977b7da"
+    "chunkName": "pages/news/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/ismailomodara/Documents/Work/NQLB/NSHP/nshp/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_6ef81b1d"
+    "chunkName": "pages/index"
   }
 ]

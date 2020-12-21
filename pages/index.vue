@@ -1,13 +1,5 @@
 <template>
   <div>
-    <div class="ms-express-interest">
-      <nuxt-link to="/interests">
-        <el-button class="web" type="primary">Show Interest Here</el-button>
-        <el-button class="mobile" type="primary" size="small"
-          >Show Interest</el-button
-        >
-      </nuxt-link>
-    </div>
     <header class="ms-header">
       <div class="carousel-container">
         <span class="prev" @click="prevSlide">
@@ -51,8 +43,24 @@
     </header>
     <div class="ms-header--ctas ms-section">
       <el-container>
-        <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
-          <el-col :sm="24" :md="8" :lg="8">
+        <el-row
+          type="flex"
+          :gutter="40"
+          justify="center"
+          align="middle"
+          class="flex-wrap"
+        >
+          <el-col :sm="24" :md="4" :lg="4">
+            <div class="ms-express-interest">
+              <p>
+                Show Interest <br />
+                Here
+              </p>
+              <i class="el-icon-right web"></i>
+              <i class="el-icon-bottom mobile"></i>
+            </div>
+          </el-col>
+          <el-col :sm="24" :md="6" :lg="6">
             <div class="ms-header--cta individual">
               <a href="https://assessment.nshp.ng/individual"></a>
               <svg
@@ -74,7 +82,7 @@
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
-          <el-col :sm="24" :md="8" :lg="8">
+          <el-col :sm="24" :md="7" :lg="7">
             <div class="ms-header--cta">
               <a href="https://assessment.nshp.ng/co-operatives"></a>
               <svg
@@ -96,7 +104,7 @@
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
-          <el-col :sm="24" :md="8" :lg="8">
+          <el-col :sm="24" :md="7" :lg="7">
             <div class="ms-header--cta">
               <router-link to="/partnerships"></router-link>
               <svg
@@ -512,17 +520,32 @@ export default {
 
 <style lang="scss" scoped>
 .ms-express-interest {
-  position: fixed;
-  z-index: 99;
-  left: 40px;
-  bottom: 40px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #58bb8c;
+  border-radius: 5px;
+  text-align: center;
 
-  .el-button {
-    box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.2) !important;
+  p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-bottom: 5px;
   }
 
-  .mobile {
-    display: none;
+  i {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    animation: fadeInRight 3s ease-in both;
+
+    &.mobile {
+      display: none;
+    }
   }
 }
 
@@ -629,6 +652,7 @@ export default {
   }
 
   .ms-header--cta {
+    min-height: 150px;
     position: relative;
     padding: 40px 30px;
     display: flex;
@@ -963,6 +987,18 @@ export default {
     }
   }
   .ms-header--ctas {
+    .ms-express-interest {
+      margin-bottom: 20px;
+      i {
+        &.web {
+          display: none;
+        }
+
+        &.mobile {
+          display: block !important;
+        }
+      }
+    }
     .ms-header--cta {
       flex-direction: row !important;
       justify-content: flex-start;
@@ -1018,17 +1054,6 @@ export default {
 }
 
 @media (max-width: 600px) {
-  .ms-express-interest {
-    left: 15px;
-
-    .web {
-      display: none;
-    }
-
-    .mobile {
-      display: block !important;
-    }
-  }
   .ms-header {
     height: 80vh !important;
 
