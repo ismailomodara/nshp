@@ -9,9 +9,7 @@
       </div>
       <el-container>
         <div class="ms-header--other__content">
-          <h1>
-            Express Interest
-          </h1>
+          <h1>Express Interest</h1>
         </div>
       </el-container>
       <div class="overlay header-gradient"></div>
@@ -26,6 +24,10 @@
           strongest convictions to help us achieve our goal. If you share our
           vision, join us to build affordable homes.
         </p>
+      </div>
+      <div class="interest-cta">
+        <h5>Click on your Area of Interest</h5>
+        <i class="el-icon-bottom"></i>
       </div>
       <el-container>
         <el-row type="flex" :gutter="40" class="flex-wrap">
@@ -203,6 +205,25 @@ export default {
         margin-bottom: 0;
       }
     }
+  }
+}
+
+.interest-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px 40px;
+
+  h5 {
+    color: #58bb8c;
+    margin-bottom: 7px;
+  }
+
+  i {
+    font-size: 1.5rem;
+    color: #58bb8c;
+    font-weight: 600;
   }
 }
 

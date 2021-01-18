@@ -92,6 +92,7 @@ export default {
     opacity: 1;
   }
 }
+
 .ms-to-bottom {
   position: fixed;
   z-index: 99;
