@@ -8,12 +8,12 @@ strategy:
   type: RollingUpdate
   rollingUpdate:
     # number of pods to be added per time.
-    maxSurge: 2
+    maxSurge: 8
     # number of pods to be unavailable during a rolling update.
     maxUnavailable: 0
 
 image:
-    repository: eu.gcr.io/nqlb-207716/mass-housing-main-master
+    repository: eu.gcr.io/mass-housing/mass-housing-main-master
     tag: latest
     pullPolicy: Always
 
