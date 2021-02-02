@@ -102,6 +102,10 @@ export default {
           label: 'Contact',
           url: '/contact',
         },
+        {
+          label: 'Express Interest',
+          url: '/interests',
+        },
       ],
       page: '/',
     }
@@ -330,7 +334,7 @@ export default {
 .ms-mobile--menu.open .ms-mobile--menu__toggler {
   opacity: 1;
   transition: 0.7s ease-in;
-  right: 15% !important;
+  right: 7% !important;
 }
 
 .ms-mobile--menu__content {
@@ -396,19 +400,19 @@ export default {
   display: block;
   position: relative;
   opacity: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   cursor: pointer;
 }
 
 .ms-mobile--menu__links li a {
   color: #fff !important;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   opacity: 0.8;
   font-weight: 400;
 }
 
 .ms-mobile--menu__links li.active a {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   opacity: 1;
   color: #0b1207 !important;
   border-bottom: 4px solid #fcb320;
@@ -445,6 +449,11 @@ export default {
 .ms-mobile--menu.open .ms-mobile--menu__links li:nth-of-type(5) {
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
+}
+
+.ms-mobile--menu.open .ms-mobile--menu__links li:nth-of-type(6) {
+  -webkit-animation-delay: 0.85s;
+  animation-delay: 0.85s;
 }
 
 @-webkit-keyframes fadeInRight {
