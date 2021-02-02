@@ -10,7 +10,7 @@
             ref="slider"
             :per-page="1"
             :loop="true"
-            :autoplay="true"
+            :autoplay="false"
             :autoplay-timeout="6000"
             :autoplay-hover-pause="false"
             :pagination-padding="6"
@@ -43,8 +43,24 @@
     </header>
     <div class="ms-header--ctas ms-section">
       <el-container>
-        <el-row type="flex" :gutter="40" justify="center" class="flex-wrap">
-          <el-col :sm="24" :md="8" :lg="8">
+        <el-row
+          type="flex"
+          :gutter="40"
+          justify="center"
+          align="middle"
+          class="flex-wrap"
+        >
+          <el-col :sm="24" :md="4" :lg="4">
+            <div class="ms-express-interest">
+              <p>
+                Show Interest <br />
+                Here
+              </p>
+              <i class="el-icon-right web"></i>
+              <i class="el-icon-bottom mobile"></i>
+            </div>
+          </el-col>
+          <el-col :sm="24" :md="6" :lg="6">
             <div class="ms-header--cta individual">
               <a href="{{form_base_url}}/individual"></a>
               <svg
@@ -66,7 +82,7 @@
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
-          <el-col :sm="24" :md="8" :lg="8">
+          <el-col :sm="24" :md="7" :lg="7">
             <div class="ms-header--cta">
               <a href="{{form_base_url}}/co-operatives"></a>
               <svg
@@ -88,7 +104,7 @@
               <img :src="getImage('arrow-right.svg')" alt=">" />
             </div>
           </el-col>
-          <el-col :sm="24" :md="8" :lg="8">
+          <el-col :sm="24" :md="7" :lg="7">
             <div class="ms-header--cta">
               <router-link to="/partnerships"></router-link>
               <svg
@@ -210,7 +226,7 @@
               />
               <img
                 v-else-if="homeOption === 'four'"
-                :src="getImage('home/four.jpeg')"
+                :src="getImage('home/four.jpg')"
                 alt="Map"
               />
               <el-radio-group v-model="homeOption">
@@ -384,13 +400,13 @@
                     href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/facebook.svg')" alt=""
+                    ><img :src="getImage('contact/facebook.svg')" alt="Twitter"
                   /></a>
                   <a
                     href="https://mobile.twitter.com/nshp_ng"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/twitter.svg')" alt=""
+                    ><img :src="getImage('contact/twitter.svg')" alt="Twitter"
                   /></a>
                   <!--                  <a href="#" class="ms-social"-->
                   <!--                    ><img src="assets/img/contact/youtube.svg" alt=""-->
@@ -399,7 +415,9 @@
                     href="https://www.instagram.com/nshp_ng/"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/instagram-c.svg')" alt=""
+                    ><img
+                      :src="getImage('contact/instagram-c.svg')"
+                      alt="Instagram"
                   /></a>
                 </div>
               </div>
@@ -501,6 +519,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ms-express-interest {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #58bb8c;
+  border-radius: 5px;
+  text-align: center;
+
+  p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  i {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    animation: fadeInRight 3s ease-in both;
+
+    &.mobile {
+      display: none;
+    }
+  }
+}
+
 .ms-header {
   position: relative;
   height: 80vh;
@@ -567,7 +615,6 @@ export default {
       transform: translateY(-50%);
       text-align: left;
       color: #fff !important;
-      opacity: 0;
 
       h1 {
         font-weight: 600;
@@ -605,6 +652,7 @@ export default {
   }
 
   .ms-header--cta {
+    min-height: 150px;
     position: relative;
     padding: 40px 30px;
     display: flex;
@@ -939,6 +987,18 @@ export default {
     }
   }
   .ms-header--ctas {
+    .ms-express-interest {
+      margin-bottom: 20px;
+      i {
+        &.web {
+          display: none;
+        }
+
+        &.mobile {
+          display: block !important;
+        }
+      }
+    }
     .ms-header--cta {
       flex-direction: row !important;
       justify-content: flex-start;

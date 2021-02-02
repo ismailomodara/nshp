@@ -28,13 +28,15 @@
                     href="https://www.facebook.com/pages/category/Public---Government-Service/NSHP-104148954758836/"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/facebook.svg')" alt=""
+                    ><img
+                      :src="getImage('contact/facebook.svg')"
+                      alt="Facebook"
                   /></a>
                   <a
                     href="https://mobile.twitter.com/nshp_ng"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/twitter.svg')" alt=""
+                    ><img :src="getImage('contact/twitter.svg')" alt="Twitter"
                   /></a>
                   <!--                  <a href="#" class="ms-social"-->
                   <!--                    ><img src="assets/img/contact/youtube.svg" alt=""-->
@@ -43,7 +45,9 @@
                     href="https://www.instagram.com/nshp_ng/"
                     class="ms-social"
                     target="_blank"
-                    ><img :src="getImage('contact/instagram-c.svg')" alt=""
+                    ><img
+                      :src="getImage('contact/instagram-c.svg')"
+                      alt="Instagram"
                   /></a>
                 </div>
               </div>
@@ -67,10 +71,12 @@
 </template>
 
 <script>
+import VideoCta from '@/components/VideoCta'
 import image from '../mixin/image'
 
 export default {
   name: 'Contact',
+  components: { VideoCta },
   mixins: [image],
   data() {
     return {

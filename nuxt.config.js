@@ -8,6 +8,9 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'NSHP - National Social Housing Programme',
+    htmlAttrs: {
+      lang: "en"
+    },
     meta: [
       { charset: 'utf-8' },
       {'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
@@ -60,15 +63,9 @@ export default {
       // {rel: 'apple-touch-icon', sizes: '180x180', href: './brand/platform-icons/ios-180.png'},
       // {rel: 'apple-touch-icon', sizes: '120x120', href: './brand/platform-icons/ios-120.png'},
       // {rel: 'apple-touch-icon', sizes: '152x152', href: './brand/platform-icons/ios-152.png'},
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap'}
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600&display=swap', media: 'print', onload: `${this.onload=null}${this.media='all'}`}
     ],
     script: [
-      // Google Analytics
-      {
-        innerHTML: "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-178017824-1', 'auto');ga('send', 'pageview');",
-        type: 'text/javascript',
-        defer: true
-      },
 
       // Global site tag (gtag.js) - Google Analytics
       {

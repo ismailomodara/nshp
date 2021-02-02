@@ -1,11 +1,19 @@
 <template>
   <div class="video-cta">
-    <el-button type="primary" @click="playVideo('english')"
-      >Learn more <i class="el-icon-video-play"></i
-    ></el-button>
-    <el-button plain @click="playVideo('pidgin')"
-      >See Tori <i class="el-icon-video-play"></i
-    ></el-button>
+    <el-dropdown @command="command">
+      <el-button plain>
+        Learn more <i class="el-icon-video-play"></i>
+      </el-button>
+      <el-dropdown-menu slot="dropdown">
+        <el-dropdown-item command="english">English</el-dropdown-item>
+        <el-dropdown-item command="pidgin">Pidgin</el-dropdown-item>
+      </el-dropdown-menu>
+    </el-dropdown>
+    <nuxt-link to="/interests">
+      <el-button type="primary"
+        >Express Interest <i class="el-icon-document"></i
+      ></el-button>
+    </nuxt-link>
   </div>
 </template>
 
@@ -19,11 +27,14 @@ export default {
     playVideo(lang) {
       this.$store.dispatch('VIDEO', { play: true, lang })
     },
+    command(command) {
+      this.playVideo(command)
+    },
   },
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .video-cta {
   span {
     display: flex;
@@ -36,6 +47,16 @@ export default {
     font-size: 1.2rem;
     animation: pulsate 2s ease-in infinite;
     margin-left: 7px;
+  }
+}
+
+.el-dropdown-menu {
+  min-width: 180px !important;
+}
+
+@media (max-width: 600px) {
+  .el-dropdown {
+    margin-bottom: 10px;
   }
 }
 </style>

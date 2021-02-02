@@ -205,10 +205,12 @@
 </template>
 
 <script>
+import VideoCta from '@/components/VideoCta'
 import image from '../mixin/image'
 
 export default {
   name: 'Faq',
+  components: { VideoCta },
   mixins: [image],
   data() {
     return {

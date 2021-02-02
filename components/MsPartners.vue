@@ -28,7 +28,11 @@
               :data-index="index"
             >
               <div class="partner-logo">
-                <img :src="getImage(`partners/${partner}.png`)" alt="NSHP" />
+                <img
+                  :src="getImage(`partners/${partner}.png`)"
+                  alt="NSHP"
+                  loading="lazy"
+                />
               </div>
             </slide>
           </carousel>

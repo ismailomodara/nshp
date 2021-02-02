@@ -92,6 +92,7 @@ export default {
     opacity: 1;
   }
 }
+
 .ms-to-bottom {
   position: fixed;
   z-index: 99;
@@ -115,6 +116,12 @@ export default {
 
   .el-button {
     box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .ms-to-bottom {
+    bottom: 30px;
   }
 }
 </style>

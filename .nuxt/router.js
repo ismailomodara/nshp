@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _595121dc = () => interopDefault(import('../pages/about-nshp.vue' /* webpackChunkName: "pages/about-nshp" */))
 const _faa342aa = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _7a784c21 = () => interopDefault(import('../pages/faq.vue' /* webpackChunkName: "pages/faq" */))
+const _3790ebd4 = () => interopDefault(import('../pages/interests.vue' /* webpackChunkName: "pages/interests" */))
 const _160a754a = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
 const _230bd8f4 = () => interopDefault(import('../pages/partnerships.vue' /* webpackChunkName: "pages/partnerships" */))
 const _bf825a48 = () => interopDefault(import('../pages/privacy-policy.vue' /* webpackChunkName: "pages/privacy-policy" */))
@@ -42,6 +43,10 @@ export const routerOptions = {
     path: "/faq",
     component: _7a784c21,
     name: "faq"
+  }, {
+    path: "/interests",
+    component: _3790ebd4,
+    name: "interests"
   }, {
     path: "/news",
     component: _160a754a,
