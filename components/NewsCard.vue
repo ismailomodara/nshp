@@ -9,8 +9,10 @@
       />
     </div>
     <div class="ms-news--desc">
-      <h3 class="ms-news--title">{{ news.title }}</h3>
-      <p>{{ news.desc }}</p>
+      <div>
+        <h3 class="ms-news--title">{{ news.title }}</h3>
+        <p>{{ news.desc }}</p>
+      </div>
       <div class="ms-news--desc__footer">
         <nuxt-link to="{ name: 'news', params: { slug: 'the-news-title' } }"
           ><el-button type="primary" size="medium">Read more</el-button>
@@ -84,6 +86,7 @@ export default {
   }
 
   .ms-news--desc {
+    min-height: 450px;
     background: #fff;
     padding: 40px;
     text-align: left;
@@ -92,11 +95,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
 
     .ms-news--title {
       margin-bottom: 15px;
       line-height: 1.6;
+      font-size: 1.2rem;
     }
 
     p {
@@ -139,10 +143,13 @@ export default {
 
 @media (min-width: 601px) {
   .ms-news {
+    width: 100%;
+
     &.horizontal {
       flex-direction: row;
 
       .ms-news--image {
+        width: 40%;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         border-top-right-radius: 0;
@@ -156,8 +163,14 @@ export default {
       }
 
       .ms-news--desc {
+        width: 60%;
         border-bottom-right-radius: 10px;
         border-top-right-radius: 10px;
+        min-height: auto !important;
+
+        .ms-news--desc__footer {
+          margin-top: 20px;
+        }
       }
     }
   }

@@ -20,6 +20,21 @@
       <el-container>
         <el-row type="flex">
           <el-col :span="24">
+            <img
+              v-if="news.image2"
+              :src="getImage(`news/${news.image2}`)"
+              alt=""
+            />
+            <img
+              v-if="news.image3"
+              :src="getImage(`news/${news.image3}`)"
+              alt=""
+            />
+            <img
+              v-if="news.image4"
+              :src="getImage(`news/${news.image4}`)"
+              alt=""
+            />
             <div v-html="news.content"></div>
           </el-col>
         </el-row>
@@ -67,12 +82,11 @@ export default {
     margin: auto;
   }
 
-  .ms-sub--section {
-    margin-bottom: 20px;
-
-    h4 {
-      margin-bottom: 15px;
-    }
+  img {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 40px;
+    object-fit: cover;
   }
 
   p {
