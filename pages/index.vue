@@ -62,7 +62,7 @@
           </el-col>
           <el-col :sm="24" :md="6" :lg="6">
             <div class="ms-header--cta individual">
-              <a href="{{form_base_url}}/individual"></a>
+              <a href="http://staging-form.masshousing.ng/individual"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="27"
@@ -84,7 +84,7 @@
           </el-col>
           <el-col :sm="24" :md="7" :lg="7">
             <div class="ms-header--cta">
-              <a href="{{form_base_url}}/co-operatives"></a>
+              <a href="http://staging-form.masshousing.ng/co-operatives"></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
