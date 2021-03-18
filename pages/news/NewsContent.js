@@ -11,6 +11,7 @@ const newsContent = [
       '<p>The latest is Enugu state which has provided up to 60 hectares of land in Agbamere Eha-Alumona for the programme.</p>' +
       '<p>The National Social Housing Programme (NSHP) which is Nigeria government’s response to the health and economic challenges of Coronavirus is going to provide 300,000 homes and 1,800,000 jobs across the 36 states and the Federal Capital Territory of Nigeria.</p>' +
       '<p>The programme which is implemented by Family Homes Funds will cater mostly to Nigerians on low and middle income and create jobs which will help stimulate the economy and sustain millions of households.</p>' +
+      '<img src="enugu_provides_land_to_family_homes_funds_for_housing_scheme_2.jpeg" alt="Enugu" />' +
       '<p>Family Homes Funds has already developed One 2 Habitable Room Units and 3 Habitable Room Units which are priced from N2million and above for the NSHP in Dei Dei, Abuja. This was done to test the feasibility of the NSHP price points and acceptability of the housing among potential offtakers. After the launch of the model houses, the site was visited by the Vice President on the 2nd of January 2021.</p>' +
       '<p>Family Homes Funds has engaged with all 36 states and the FCT to provide land with adequate infrastructure for the National Social Housing Programme (NSHP).</p>' +
       '<p>The Fund also recently agreed on a partnership with Solar Home System Providers to provide off-grid power systems to all NSHP homes at very affordable rates for the low-income beneficiaries.</p>' +
@@ -28,6 +29,7 @@ const newsContent = [
     desc:
       'Ebonyi state has become the latest state to show interest in the National Social Housing Programme (NSHP) that plans to build 300,000 affordable houses for low-income earners across the country...',
     content:
+      '<img src="ebonyi_joins_nshp_provides_land_to_family_homes_funds_for_housing_scheme_2.jpeg" alt="Enugu" />' +
       '<p>Ebonyi state has become the latest state to show interest in the National Social Housing Programme (NSHP) that plans to build 300,000 affordable houses for low-income earners across the country.</p>' +
       '<p>At least 10 hectares have been provided by the state in Umuobuna, Uburu, Ohaozara local government area and zone 12, centenary city, Abakaliki for this development.</p>' +
       '<p>The National Social Housing Programme (NSHP) which is Nigeria government’s response to the health and economic challenges of Coronavirus is going to provide 300,000 homes and 1,800,000 jobs across the 36 states and the Federal Capital Territory of Nigeria.</p>' +
@@ -53,6 +55,7 @@ const newsContent = [
       '<p>In Osun, 61 hectares have been provided for this development in Ilesha, Osogbo, and Ile-ife, while 100 hectares have been provided by Kwara at a site in Illorin, the state capital.</p>' +
       '<p>The National Social Housing Programme (NSHP) which is Nigeria government’s response to the health and economic challenges of Coronavirus is going to provide 300,000 homes and 1,800,000 jobs across the 36 states and the Federal Capital Territory of Nigeria.</p>' +
       '<p>The programme which is implemented by Family Homes Funds will cater mostly to Nigerians on low and middle income and create jobs which will help stimulate the economy and sustain millions of households.</p>' +
+      '<img src="osun_kwara_latest_to_provide_lands_to_family_homes_funds_for_low_cost_housing_projects_2.jpeg" alt="NSHP: Osun, Kwara" />' +
       '<p>Family Homes Funds has already developed One 2 Habitable Room Units and 3 Habitable Room Units which are priced from N2million and above for the NSHP in Dei Dei, Abuja. This was done to test the feasibility of the NSHP price points and acceptability of the housing among potential offtakers. After the launch of the model houses, the site was visited by the Vice President on the 2nd of January 2021.</p>' +
       '<p>Family Homes Funds has engaged with all 36 states and the FCT to provide land with adequate infrastructure for the National Social Housing Programme (NSHP).</p>' +
       '<p>The Fund also recently agreed on a partnership with Solar Home System Providers to provide off-grid power systems to all NSHP homes at very affordable rates for the low-income beneficiaries.</p>' +
@@ -113,6 +116,7 @@ const newsContent = [
       '<p>The National Social Housing Programme (NSHP) which is Nigeria government’s response to the health and economic challenges of Coronavirus is going to provide 300,000 homes and 1,800,000 jobs across the 36 states and the Federal Capital Territory of Nigeria.</p>' +
       '<p>The programme which is implemented by Family Homes Funds will cater mostly to Nigerians on low and middle income and create jobs which will help stimulate the economy and sustain millions of households.</p>' +
       '<p>Family Homes Funds has already developed One 2 Habitable Room Units and 3 Habitable Room Units which are priced from N2million and above for the NSHP in Dei Dei, Abuja. This was done to test the feasibility of the NSHP price points and acceptability of the housing among potential offtakers. After the launch of the model houses, the site was visited by the Vice President on the 2nd of January 2021.</p>' +
+      '<img src="jigawa_others_provide_lands_to_family_homes_funds_for_low_cost_housing_projects_2.jpeg" alt="NSHP: Jigawa" />' +
       '<p>Family Homes Funds has engaged with all 36 states and the FCT to provide land with adequate infrastructure for the National Social Housing Programme (NSHP).</p>' +
       '<p>Given the positive responses from states so far, over 1,250 hectares of land has been committed for the NSHP in the FCT, Kwara, Plateau, Nasarawa, Ebonyi, Enugu, Anambra, Abia, Delta, Ogun, Osun, Ekiti, Jigawa, Kebbi, Sokoto, Kaduna, Katsina, Yobe, Borno, Bauchi. Construction work will start in up to 12 sites in January</p>' +
       '<p>In order to ease the process, a portal www.nshp.gov.ng has been created to enable citizens’ expression of interest in the programme and to provide stakeholders access to information and opportunities.</p>',
@@ -134,7 +138,11 @@ const newsContent = [
     desc:
       'The Vice President, who was accompanied by Sani Yusuf, the Chief Housing Investment Officer (CHIO) of Family Homes Funds expressed his satisfaction with the quality of the one-bedroom and two-bedroom model houses for low and middle income earners in Nigeria...',
     content:
+      '<img src="vice_president_yemi_osinbajo_visits_completed_nshp_model_houses_in_dei_dei_abuja_2.jpeg" alt="" />' +
       '<p>The Vice President, who was accompanied by Sani Yusuf, the Chief Housing Investment Officer (CHIO) of Family Homes Funds expressed his satisfaction with the quality of the one-bedroom and two-bedroom model houses for low and middle income earners in Nigeria.</p>' +
+      '<img src="vice_president_yemi_osinbajo_visits_completed_nshp_model_houses_in_dei_dei_abuja_3.jpeg" alt="" />' +
+      '<img src="vice_president_yemi_osinbajo_visits_completed_nshp_model_houses_in_dei_dei_abuja_4.jpeg" alt="" />' +
+      '<img src="vice_president_yemi_osinbajo_visits_completed_nshp_model_houses_in_dei_dei_abuja_5.jpeg" alt="" />' +
       '<p>The VP said that on the average, anyone earning ₦30,000 a month should be able to spend a third of that amount to acquire these homes that can be as affordable as ₦2,000,000 per unit. He also commended Family Homes Funds for their thoroughness and project delivery.</p>',
   },
   {

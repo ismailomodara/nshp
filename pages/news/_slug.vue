@@ -20,21 +20,6 @@
       <el-container>
         <el-row type="flex">
           <el-col :span="24">
-            <img
-              v-if="news.image2"
-              :src="getImage(`news/${news.image2}`)"
-              alt=""
-            />
-            <img
-              v-if="news.image3"
-              :src="getImage(`news/${news.image3}`)"
-              alt=""
-            />
-            <img
-              v-if="news.image4"
-              :src="getImage(`news/${news.image4}`)"
-              alt=""
-            />
             <div v-html="news.content"></div>
           </el-col>
         </el-row>
