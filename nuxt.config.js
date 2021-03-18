@@ -142,5 +142,8 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     filenames: {
       img: 'img/[name].[ext]'
     }
+  },
+  generate: {
+    fallback: true
   }
 }
