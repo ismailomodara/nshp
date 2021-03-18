@@ -74,6 +74,25 @@ export default {
     object-fit: cover;
   }
 
+  .img-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+    img {
+      height: 100%;
+      margin-right: 20px;
+      object-fit: cover;
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    p {
+      width: 50%;
+    }
+  }
+
   p {
     font-size: 1rem;
     line-height: 2.2;
