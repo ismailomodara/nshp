@@ -21,7 +21,7 @@
             v-for="(news, i) in allNews"
             :key="i"
             :sm="24"
-            :md="24"
+            :md="(i + 1) % 3 === 0 ? 24 : 12"
             :lg="(i + 1) % 3 === 0 ? 24 : 12"
           >
             <news-card
@@ -73,7 +73,7 @@ export default {
     padding-bottom: 80px;
 
     > .el-container {
-      max-width: 1000px !important;
+      max-width: 1200px !important;
     }
   }
 }
@@ -82,6 +82,14 @@ export default {
   .ms-all--news {
     > .el-container {
       max-width: 90% !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .ms-all--news {
+    > .el-container {
+      max-width: 96% !important;
     }
   }
 }

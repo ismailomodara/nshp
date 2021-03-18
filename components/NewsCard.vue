@@ -180,5 +180,9 @@ export default {
   .ms-news .ms-news--desc .ms-news--title {
     font-size: 1.125rem;
   }
+
+  .ms-news .ms-news--desc {
+    min-height: 300px !important;
+  }
 }
 </style>
